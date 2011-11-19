@@ -5,6 +5,7 @@
 #ifndef __IRR_COMPILE_CONFIG_H_INCLUDED__
 #define __IRR_COMPILE_CONFIG_H_INCLUDED__
 
+
 //! Irrlicht SDK Version
 #define IRRLICHT_VERSION_MAJOR 1
 #define IRRLICHT_VERSION_MINOR 8
@@ -835,6 +836,15 @@ precision will be lower but speed higher. currently X86 only
 
 #if defined(_IRR_SOLARIS_PLATFORM_)
 	#undef _IRR_COMPILE_WITH_JOYSTICK_EVENTS_
+#endif
+
+#ifdef _IRR_COMPILE_WITH_ANDROID_DEVICE_
+#include <android/log.h>
+#define T__ __android_log_print(ANDROID_LOG_DEBUG, "L", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
+#define alog(obj) __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", obj)  
+#else
+#define T__ ;
+#define alog(obj) (obj);  
 #endif
 
 #endif // __IRR_COMPILE_CONFIG_H_INCLUDED__

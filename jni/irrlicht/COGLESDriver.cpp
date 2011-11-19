@@ -1,3 +1,4 @@
+
 // Copyright (C) 2002-2008 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
 // For conditions of distribution and use, see copyright notice in irrlicht.h
@@ -16,7 +17,15 @@
 #ifdef _IRR_COMPILE_WITH_SDL_DEVICE_
 #include <SDL/SDL.h>
 #endif
+
+#ifdef _IRR_COMPILE_WITH_ANDROID_DEVICE_
 #include <android/log.h>
+#endif
+
+#define T __android_log_print(ANDROID_LOG_DEBUG, "L", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
+#define alog(obj) __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", obj)  
+
+extern NativeWindowType android_window;
 
 namespace irr
 {
@@ -42,7 +51,6 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 	,ViewDepthRenderbuffer(0)
 #endif
 {
-    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
 	#ifdef _DEBUG
 	setDebugName("COGLESDriver");
 	#endif
@@ -51,28 +59,29 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 	EglWindow = (NativeWindowType)data.OpenGLWin32.HWnd;
 	HDc = GetDC((HWND)EglWindow);
 	EglDisplay = eglGetDisplay((NativeDisplayType)HDc);
+#elif defined(_IRR_COMPILE_WITH_ANDROID_DEVICE_)
+    EglWindow = android_window;
+    EglDisplay = eglGetDisplay(EGL_DEFAULT_DISPLAY);
 #elif defined(_IRR_COMPILE_WITH_X11_DEVICE_)
 	EglWindow = (NativeWindowType)ExposedData.OpenGLLinux.X11Window;
 	EglDisplay = eglGetDisplay((NativeDisplayType)ExposedData.OpenGLLinux.X11Display);
 #elif defined(_IRR_COMPILE_WITH_IPHONE_DEVICE_)
 	Device = device;
 #endif
+    T
 #ifdef EGL_VERSION_1_0
-    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
 	if(EglDisplay == EGL_NO_DISPLAY)
 		EglDisplay = eglGetDisplay((NativeDisplayType) EGL_DEFAULT_DISPLAY);
 	if(EglDisplay == EGL_NO_DISPLAY)
 	{
-		os::Printer::log("Could not get OpenGL-ES1 display.");
+		alog("Could not get OpenGL-ES1 display.");
 	}
 
 	EGLint majorVersion, minorVersion;
 	if (!eglInitialize(EglDisplay, &majorVersion, &minorVersion))
 	{
-		os::Printer::log("Could not initialize OpenGL-ES1 display.");
+		alog("Could not initialize OpenGL-ES1 display.");
 	}
-	else
-		os::Printer::log("EGL version", core::stringc(majorVersion+(minorVersion/10.f)).c_str());
 
 	EGLint attribs[] =
 	{
@@ -87,129 +96,60 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 		EGL_STENCIL_SIZE, params.Stencilbuffer,
 		EGL_SAMPLE_BUFFERS, params.AntiAlias?1:0,
 		EGL_SAMPLES, params.AntiAlias,
-#ifdef EGL_VERSION_1_3
 		EGL_RENDERABLE_TYPE, EGL_OPENGL_ES_BIT,
-#endif
 		EGL_NONE, 0
 	};
-	EGLint contextAttrib[] =
-	{
-#ifdef EGL_VERSION_1_3
-		EGL_CONTEXT_CLIENT_VERSION, 1,
-#endif
-		EGL_NONE, 0
-	};
-
-    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
+    T    
 	EGLConfig config;
 	EGLint num_configs;
-	u32 steps=5;
-	while (!eglChooseConfig(EglDisplay, attribs, &config, 1, &num_configs) || !num_configs)
+	T
+    if (!eglChooseConfig(EglDisplay, attribs, &config, 1, &num_configs))
 	{
-		switch (steps)
-		{
-		case 5: // samples
-			if (attribs[19]>2)
-			{
-				--attribs[19];
-			}
-			else
-			{
-				attribs[17]=0;
-				attribs[19]=0;
-				--steps;
-			}
-			break;
-		case 4: // alpha
-			if (attribs[7])
-			{
-				attribs[7]=0;
-				if (params.AntiAlias)
-				{
-					attribs[17]=1;
-					attribs[19]=params.AntiAlias;
-					steps=5;
-				}
-			}
-			else
-				--steps;
-			break;
-		case 3: // stencil
-			if (attribs[15])
-			{
-				attribs[15]=0;
-				if (params.AntiAlias)
-				{
-					attribs[17]=1;
-					attribs[19]=params.AntiAlias;
-					steps=5;
-				}
-			}
-			else
-				--steps;
-			break;
-		case 2: // depth size
-			if (attribs[13]>16)
-			{
-				attribs[13]-=8;
-			}
-			else
-				--steps;
-			break;
-		case 1: // buffer size
-			if (attribs[9]>16)
-			{
-				attribs[9]-=8;
-			}
-			else
-				--steps;
-			break;
-		default:
-			os::Printer::log("Could not get config for OpenGL-ES1 display.");
-			return;
-		}
+        T
+		os::Printer::log("Could not get config for OpenGL-ES1 display.");
 	}
-	if (params.AntiAlias && !attribs[17])
-		os::Printer::log("No multisampling.");
-	if (params.WithAlphaChannel && !attribs[7])
-		os::Printer::log("No alpha.");
-	if (params.Stencilbuffer && !attribs[15])
-		os::Printer::log("No stencil buffer.");
-	if (params.ZBufferBits > attribs[13])
-		os::Printer::log("No full depth buffer.");
-	if (params.Bits > attribs[9])
-		os::Printer::log("No full color buffer.");
 
+    T
 	EglSurface = eglCreateWindowSurface(EglDisplay, config, EglWindow, NULL);
-	if (EGL_NO_SURFACE==EglSurface)
+	T
+    if (EGL_NO_SURFACE==EglSurface)
 		EglSurface = eglCreateWindowSurface(EglDisplay, config, NULL, NULL);
 	if (EGL_NO_SURFACE==EglSurface)
 	{
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 		testEGLError();
 		os::Printer::log("Could not create surface for OpenGL-ES1 display.");
 	}
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
 #ifdef EGL_VERSION_1_2
-	if (minorVersion>1)
-		eglBindAPI(EGL_OPENGL_ES_API);
+	eglBindAPI(EGL_OPENGL_ES_API);
 #endif
-	EglContext = eglCreateContext(EglDisplay, config, EGL_NO_CONTEXT, contextAttrib);
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
+	EglContext = eglCreateContext(EglDisplay, config, EGL_NO_CONTEXT, NULL);
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	if (testEGLError())
 	{
+        T
 		os::Printer::log("Could not create Context for OpenGL-ES1 display.");
 	}
 
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	eglMakeCurrent(EglDisplay, EglSurface, EglSurface, EglContext);
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	if (testEGLError())
 	{
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 		os::Printer::log("Could not make Context current for OpenGL-ES1 display.");
 	}
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
 	genericDriverInit(params.WindowSize, params.Stencilbuffer);
 
 	// set vsync
 	if (params.Vsync)
 		eglSwapInterval(EglDisplay, 1);
+    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 #elif defined(_IRR_ANDROID_PLATEFORM_)
 	genericDriverInit(params.WindowSize, params.Stencilbuffer);
 //TODO: ellis
@@ -262,6 +202,8 @@ COGLES1Driver::~COGLES1Driver()
 	if (HDc)
 		ReleaseDC((HWND)EglWindow, HDc);
 #endif
+#elif defined(_IRR_ANDROID_PLATEFORM_)
+// TODO: ellis
 #elif defined(GL_VERSION_ES_CM_1_0)
 	if (0 != ViewFramebuffer)
 	{
@@ -309,19 +251,6 @@ bool COGLES1Driver::genericDriverInit(const core::dimension2d<u32>& screenSize, 
 			stencilBuffer);
 	StencilBuffer=stencilBuffer;
 
-	DriverAttributes->setAttribute("MaxTextures", MaxTextureUnits);
-	DriverAttributes->setAttribute("MaxSupportedTextures", MaxSupportedTextures);
-	DriverAttributes->setAttribute("MaxLights", MaxLights);
-	DriverAttributes->setAttribute("MaxAnisotropy", MaxAnisotropy);
-	DriverAttributes->setAttribute("MaxUserClipPlanes", MaxUserClipPlanes);
-	DriverAttributes->setAttribute("MaxAuxBuffers", MaxAuxBuffers);
-	DriverAttributes->setAttribute("MaxMultipleRenderTargets", MaxMultipleRenderTargets);
-	DriverAttributes->setAttribute("MaxIndices", (s32)MaxIndices);
-	DriverAttributes->setAttribute("MaxTextureSize", (s32)MaxTextureSize);
-	DriverAttributes->setAttribute("MaxTextureLODBias", MaxTextureLODBias);
-	DriverAttributes->setAttribute("Version", Version);
-	DriverAttributes->setAttribute("AntiAlias", AntiAlias);
-
 	glPixelStorei(GL_PACK_ALIGNMENT, 1);
 
 	// Reset The Current Viewport
@@ -339,6 +268,10 @@ bool COGLES1Driver::genericDriverInit(const core::dimension2d<u32>& screenSize, 
 		setTransform(static_cast<E_TRANSFORMATION_STATE>(i), core::IdentityMatrix);
 
 	setAmbientLight(SColorf(0.0f,0.0f,0.0f,0.0f));
+#ifdef GL_EXT_separate_specular_color
+	if (FeatureAvailable[IRR_EXT_separate_specular_color])
+		glLightModeli(GL_LIGHT_MODEL_COLOR_CONTROL, GL_SEPARATE_SPECULAR_COLOR);
+#endif
 // TODO ogl-es
 //	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, 1);
 
@@ -449,6 +382,8 @@ bool COGLES1Driver::endScene()
 			os::Printer::log("Could not swap buffers for OpenGL-ES1 driver.");
 		return false;
 	}
+#elif defined(_IRR_ANDROID_PLATEFORM_)
+// TODO: ellis
 #elif defined(GL_VERSION_ES_CM_1_0)
 	glFlush();
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, ViewRenderbuffer);
@@ -494,6 +429,7 @@ bool COGLES1Driver::beginScene(bool backBuffer, bool zBuffer, SColor color,
 	}
 
 	glClear(mask);
+    __android_log_print(ANDROID_LOG_INFO, "Irrlicht", "beginScene");
 	return true;
 }
 
@@ -1397,7 +1333,7 @@ void COGLES1Driver::draw2DImage(const video::ITexture* texture,
 	core::array<S3DVertex> vertices;
 	core::array<u16> quadIndices;
 	vertices.reallocate(indices.size()*4);
-	quadIndices.reallocate(indices.size()*6);
+	quadIndices.reallocate(indices.size()*3);
 	for (u32 i=0; i<indices.size(); ++i)
 	{
 		const s32 currentIndex = indices[i];
@@ -1412,163 +1348,16 @@ void COGLES1Driver::draw2DImage(const video::ITexture* texture,
 
 		const core::rect<s32> poss(targetPos, sourceRects[currentIndex].getSize());
 
-		const u32 vstart = vertices.size();
-
 		vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.UpperLeftCorner.Y));
 		vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.UpperLeftCorner.Y));
 		vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.LowerRightCorner.Y));
 		vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.LowerRightCorner.Y));
-
-		quadIndices.push_back(vstart);
-		quadIndices.push_back(vstart+1);
-		quadIndices.push_back(vstart+2);
-		quadIndices.push_back(vstart);
-		quadIndices.push_back(vstart+2);
-		quadIndices.push_back(vstart+3);
 
 		targetPos.X += sourceRects[currentIndex].getWidth();
 	}
-	drawVertexPrimitiveList2d3d(vertices.pointer(), indices.size()*4, quadIndices.pointer(), 2*indices.size(), video::EVT_STANDARD, scene::EPT_TRIANGLES, EIT_16BIT, false);
+	drawVertexPrimitiveList2d3d(vertices.pointer(), 4, quadIndices.pointer(), 2*indices.size(), video::EVT_STANDARD, scene::EPT_TRIANGLES, EIT_16BIT, false);
 	if (clipRect)
 		glDisable(GL_SCISSOR_TEST);
-}
-
-
-//! draws a set of 2d images, using a color and the alpha channel of the texture if desired.
-void COGLES1Driver::draw2DImageBatch(const video::ITexture* texture,
-				const core::array<core::position2d<s32> >& positions,
-				const core::array<core::rect<s32> >& sourceRects,
-				const core::rect<s32>* clipRect,
-				SColor color,
-				bool useAlphaChannelOfTexture)
-{
-	if (!texture)
-		return;
-
-	const u32 drawCount = core::min_<u32>(positions.size(), sourceRects.size());
-
-	const core::dimension2d<u32>& ss = texture->getOriginalSize();
-	const f32 invW = 1.f / static_cast<f32>(ss.Width);
-	const f32 invH = 1.f / static_cast<f32>(ss.Height);
-	const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
-
-	disableTextures(1);
-	if (!setActiveTexture(0, texture))
-		return;
-	setRenderStates2DMode(color.getAlpha()<255, true, useAlphaChannelOfTexture);
-
-	core::array<S3DVertex> vertices;
-	core::array<u16> quadIndices;
-	vertices.reallocate(drawCount*4);
-	quadIndices.reallocate(drawCount*6);
-
-	for (u32 i=0; i<drawCount; ++i)
-	{
-		if (!sourceRects[i].isValid())
-			continue;
-
-		core::position2d<s32> targetPos(positions[i]);
-		core::position2d<s32> sourcePos(sourceRects[i].UpperLeftCorner);
-		// This needs to be signed as it may go negative.
-		core::dimension2d<s32> sourceSize(sourceRects[i].getSize());
-		if (clipRect)
-		{
-			if (targetPos.X < clipRect->UpperLeftCorner.X)
-			{
-				sourceSize.Width += targetPos.X - clipRect->UpperLeftCorner.X;
-				if (sourceSize.Width <= 0)
-					continue;
-
-				sourcePos.X -= targetPos.X - clipRect->UpperLeftCorner.X;
-				targetPos.X = clipRect->UpperLeftCorner.X;
-			}
-
-			if (targetPos.X + sourceSize.Width > clipRect->LowerRightCorner.X)
-			{
-				sourceSize.Width -= (targetPos.X + sourceSize.Width) - clipRect->LowerRightCorner.X;
-				if (sourceSize.Width <= 0)
-					continue;
-			}
-
-			if (targetPos.Y < clipRect->UpperLeftCorner.Y)
-			{
-				sourceSize.Height += targetPos.Y - clipRect->UpperLeftCorner.Y;
-				if (sourceSize.Height <= 0)
-					continue;
-
-				sourcePos.Y -= targetPos.Y - clipRect->UpperLeftCorner.Y;
-				targetPos.Y = clipRect->UpperLeftCorner.Y;
-			}
-
-			if (targetPos.Y + sourceSize.Height > clipRect->LowerRightCorner.Y)
-			{
-				sourceSize.Height -= (targetPos.Y + sourceSize.Height) - clipRect->LowerRightCorner.Y;
-				if (sourceSize.Height <= 0)
-					continue;
-			}
-		}
-
-		// clip these coordinates
-
-		if (targetPos.X<0)
-		{
-			sourceSize.Width += targetPos.X;
-			if (sourceSize.Width <= 0)
-				continue;
-
-			sourcePos.X -= targetPos.X;
-			targetPos.X = 0;
-		}
-
-		if (targetPos.X + sourceSize.Width > (s32)renderTargetSize.Width)
-		{
-			sourceSize.Width -= (targetPos.X + sourceSize.Width) - renderTargetSize.Width;
-			if (sourceSize.Width <= 0)
-				continue;
-		}
-
-		if (targetPos.Y<0)
-		{
-			sourceSize.Height += targetPos.Y;
-			if (sourceSize.Height <= 0)
-				continue;
-
-			sourcePos.Y -= targetPos.Y;
-			targetPos.Y = 0;
-		}
-
-		if (targetPos.Y + sourceSize.Height > (s32)renderTargetSize.Height)
-		{
-			sourceSize.Height -= (targetPos.Y + sourceSize.Height) - renderTargetSize.Height;
-			if (sourceSize.Height <= 0)
-				continue;
-		}
-
-		// ok, we've clipped everything.
-
-		const core::rect<f32> tcoords(
-				sourcePos.X * invW,
-				sourcePos.Y * invH,
-				(sourcePos.X + sourceSize.Width) * invW,
-				(sourcePos.Y + sourceSize.Height) * invH);
-
-		const core::rect<s32> poss(targetPos, sourceSize);
-
-		const u32 vstart = vertices.size();
-
-		vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.UpperLeftCorner.Y));
-		vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.UpperLeftCorner.Y));
-		vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.LowerRightCorner.Y));
-		vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.LowerRightCorner.Y));
-
-		quadIndices.push_back(vstart);
-		quadIndices.push_back(vstart+1);
-		quadIndices.push_back(vstart+2);
-		quadIndices.push_back(vstart);
-		quadIndices.push_back(vstart+2);
-		quadIndices.push_back(vstart+3);
-	}
-	drawVertexPrimitiveList2d3d(vertices.pointer(), 4*drawCount, quadIndices.pointer(), 2*drawCount, video::EVT_STANDARD, scene::EPT_TRIANGLES, EIT_16BIT, false);
 }
 
 
@@ -1642,22 +1431,6 @@ void COGLES1Driver::draw2DLine(const core::position2d<s32>& start,
 	drawVertexPrimitiveList2d3d(vertices, 2, indices, 1, video::EVT_STANDARD, scene::EPT_LINES, EIT_16BIT, false);
 }
 
-
-//! Draws a pixel
-void COGLES1Driver::drawPixel(u32 x, u32 y, const SColor &color)
-{
-	const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
-	if (x > (u32)renderTargetSize.Width || y > (u32)renderTargetSize.Height)
-		return;
-
-	disableTextures();
-	setRenderStates2DMode(color.getAlpha() < 255, false, false);
-
-	u16 indices[] = {0};
-	S3DVertex vertices[1];
-	vertices[0] = S3DVertex((f32)x, (f32)y, 0, 0, 0, 1, color, 0, 0);
-	drawVertexPrimitiveList2d3d(vertices, 1, indices, 1, video::EVT_STANDARD, scene::EPT_POINTS, EIT_16BIT, false);
-}
 
 
 bool COGLES1Driver::setActiveTexture(u32 stage, const video::ITexture* texture)
@@ -2277,42 +2050,31 @@ void COGLES1Driver::setRenderStates2DMode(bool alpha, bool texture, bool alphaCh
 		{
 			if (static_cast<u32>(LastMaterial.MaterialType) < MaterialRenderers.size())
 				MaterialRenderers[LastMaterial.MaterialType].Renderer->OnUnsetMaterial();
+			SMaterial mat;
+			mat.ZBuffer=ECFN_NEVER;
+			mat.Lighting=false;
+			mat.TextureLayer[0].BilinearFilter=false;
+			setBasicRenderStates(mat, mat, true);
+			LastMaterial = mat;
+			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		}
-		if (Transformation3DChanged)
-		{
-			glMatrixMode(GL_PROJECTION);
 
-			const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
-			core::matrix4 m;
-			m.buildProjectionMatrixOrthoLH(f32(renderTargetSize.Width), f32(-(s32)(renderTargetSize.Height)), -1.0, 1.0);
-			m.setTranslation(core::vector3df(-1,1,0));
-			glLoadMatrixf(m.pointer());
+		glMatrixMode(GL_PROJECTION);
 
-			glMatrixMode(GL_MODELVIEW);
-			glLoadIdentity();
-			glTranslatef(0.375, 0.375, 0.0);
+		const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
+		core::matrix4 m;
+		m.buildProjectionMatrixOrthoLH(f32(renderTargetSize.Width), f32(-(s32)(renderTargetSize.Height)), -1.0, 1.0);
+		m.setTranslation(core::vector3df(-1,1,0));
+		glLoadMatrixf(m.pointer());
 
-			// Make sure we set first texture matrix
-			if (MultiTextureExtension)
-				extGlActiveTexture(GL_TEXTURE0);
+		glMatrixMode(GL_MODELVIEW);
+		glLoadIdentity();
+		glTranslatef(0.375, 0.375, 0.0);
 
-			glMatrixMode(GL_TEXTURE);
-			glLoadIdentity();
+		glMatrixMode(GL_TEXTURE);
+		glLoadIdentity();
 
-			Transformation3DChanged = false;
-		}
-		if (!OverrideMaterial2DEnabled)
-		{
-			setBasicRenderStates(InitMaterial2D, LastMaterial, true);
-			LastMaterial = InitMaterial2D;
-		}
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	}
-	if (OverrideMaterial2DEnabled)
-	{
-		OverrideMaterial2D.Lighting=false;
-		setBasicRenderStates(OverrideMaterial2D, LastMaterial, false);
-		LastMaterial = OverrideMaterial2D;
+		Transformation3DChanged = false;
 	}
 
 	if (alphaChannel || alpha)
@@ -2329,19 +2091,11 @@ void COGLES1Driver::setRenderStates2DMode(bool alpha, bool texture, bool alphaCh
 
 	if (texture)
 	{
-		if (!OverrideMaterial2DEnabled)
-		{
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-		}
+		glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+		glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
-		Material.setTexture(0, const_cast<video::ITexture*>(CurrentTexture[0]));
-		setTransform(ETS_TEXTURE_0, core::IdentityMatrix);
-		// Due to the transformation change, the previous line would call a reset each frame
-		// but we can safely reset the variable as it was false before
-		Transformation3DChanged=false;
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
 		if (alphaChannel)
 		{
@@ -3022,21 +2776,330 @@ void COGLES1Driver::clearZBuffer()
 	glDepthMask(enabled);
 }
 
+//! draws a set of 2d images, using a color and the alpha channel of the texture if desired.
+
+void COGLES1Driver::draw2DImageBatch(const video::ITexture* texture,
+
+                const core::array<core::position2d<s32> >& positions,
+
+                const core::array<core::rect<s32> >& sourceRects,
+
+                const core::rect<s32>* clipRect,
+
+                SColor color,
+
+                bool useAlphaChannelOfTexture)
+
+{
+
+    if (!texture)
+
+        return;
+
+
+
+    const u32 drawCount = core::min_<u32>(positions.size(), sourceRects.size());
+
+
+
+    const core::dimension2d<u32>& ss = texture->getOriginalSize();
+
+    const f32 invW = 1.f / static_cast<f32>(ss.Width);
+
+    const f32 invH = 1.f / static_cast<f32>(ss.Height);
+
+    const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
+
+
+
+    disableTextures(1);
+
+    if (!setActiveTexture(0, texture))
+
+        return;
+
+    setRenderStates2DMode(color.getAlpha()<255, true, useAlphaChannelOfTexture);
+
+
+
+    core::array<S3DVertex> vertices;
+
+    core::array<u16> quadIndices;
+
+    vertices.reallocate(drawCount*4);
+
+    quadIndices.reallocate(drawCount*6);
+
+
+
+    for (u32 i=0; i<drawCount; ++i)
+
+    {
+
+        if (!sourceRects[i].isValid())
+
+            continue;
+
+
+
+        core::position2d<s32> targetPos(positions[i]);
+
+        core::position2d<s32> sourcePos(sourceRects[i].UpperLeftCorner);
+
+        // This needs to be signed as it may go negative.
+
+        core::dimension2d<s32> sourceSize(sourceRects[i].getSize());
+
+        if (clipRect)
+
+        {
+
+            if (targetPos.X < clipRect->UpperLeftCorner.X)
+
+            {
+
+                sourceSize.Width += targetPos.X - clipRect->UpperLeftCorner.X;
+
+                if (sourceSize.Width <= 0)
+
+                    continue;
+
+
+
+                sourcePos.X -= targetPos.X - clipRect->UpperLeftCorner.X;
+
+                targetPos.X = clipRect->UpperLeftCorner.X;
+
+            }
+
+
+
+            if (targetPos.X + sourceSize.Width > clipRect->LowerRightCorner.X)
+
+            {
+
+                sourceSize.Width -= (targetPos.X + sourceSize.Width) - clipRect->LowerRightCorner.X;
+
+                if (sourceSize.Width <= 0)
+
+                    continue;
+
+            }
+
+
+
+            if (targetPos.Y < clipRect->UpperLeftCorner.Y)
+
+            {
+
+                sourceSize.Height += targetPos.Y - clipRect->UpperLeftCorner.Y;
+
+                if (sourceSize.Height <= 0)
+
+                    continue;
+
+
+
+                sourcePos.Y -= targetPos.Y - clipRect->UpperLeftCorner.Y;
+
+                targetPos.Y = clipRect->UpperLeftCorner.Y;
+
+            }
+
+
+
+            if (targetPos.Y + sourceSize.Height > clipRect->LowerRightCorner.Y)
+
+            {
+
+                sourceSize.Height -= (targetPos.Y + sourceSize.Height) - clipRect->LowerRightCorner.Y;
+
+                if (sourceSize.Height <= 0)
+
+                    continue;
+
+            }
+
+        }
+
+
+
+        // clip these coordinates
+
+
+
+        if (targetPos.X<0)
+
+        {
+
+            sourceSize.Width += targetPos.X;
+
+            if (sourceSize.Width <= 0)
+
+                continue;
+
+
+
+            sourcePos.X -= targetPos.X;
+
+            targetPos.X = 0;
+
+        }
+
+
+
+        if (targetPos.X + sourceSize.Width > (s32)renderTargetSize.Width)
+
+        {
+
+            sourceSize.Width -= (targetPos.X + sourceSize.Width) - renderTargetSize.Width;
+
+            if (sourceSize.Width <= 0)
+
+                continue;
+
+        }
+
+
+
+        if (targetPos.Y<0)
+
+        {
+
+            sourceSize.Height += targetPos.Y;
+
+            if (sourceSize.Height <= 0)
+
+                continue;
+
+
+
+            sourcePos.Y -= targetPos.Y;
+
+            targetPos.Y = 0;
+
+        }
+
+
+
+        if (targetPos.Y + sourceSize.Height > (s32)renderTargetSize.Height)
+
+        {
+
+            sourceSize.Height -= (targetPos.Y + sourceSize.Height) - renderTargetSize.Height;
+
+            if (sourceSize.Height <= 0)
+
+                continue;
+
+        }
+
+
+
+        // ok, we've clipped everything.
+
+
+
+        const core::rect<f32> tcoords(
+
+                sourcePos.X * invW,
+
+                sourcePos.Y * invH,
+
+                (sourcePos.X + sourceSize.Width) * invW,
+
+                (sourcePos.Y + sourceSize.Height) * invH);
+
+
+
+        const core::rect<s32> poss(targetPos, sourceSize);
+
+
+
+        const u32 vstart = vertices.size();
+
+
+
+        vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.UpperLeftCorner.Y));
+
+        vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.UpperLeftCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.UpperLeftCorner.Y));
+
+        vertices.push_back(S3DVertex((f32)poss.LowerRightCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.LowerRightCorner.X, tcoords.LowerRightCorner.Y));
+
+        vertices.push_back(S3DVertex((f32)poss.UpperLeftCorner.X, (f32)poss.LowerRightCorner.Y, 0, 0,0,1, color, tcoords.UpperLeftCorner.X, tcoords.LowerRightCorner.Y));
+
+
+
+        quadIndices.push_back(vstart);
+
+        quadIndices.push_back(vstart+1);
+
+        quadIndices.push_back(vstart+2);
+
+        quadIndices.push_back(vstart);
+
+        quadIndices.push_back(vstart+2);
+
+        quadIndices.push_back(vstart+3);
+
+    }
+
+    drawVertexPrimitiveList2d3d(vertices.pointer(), 4*drawCount, quadIndices.pointer(), 2*drawCount, video::EVT_STANDARD, scene::EPT_TRIANGLES, EIT_16BIT, false);
+
+}
+
+
+
+ 
+
+ 
+
+//! Draws a pixel
+
+void COGLES1Driver::drawPixel(u32 x, u32 y, const SColor &color)
+
+{
+
+    const core::dimension2d<u32>& renderTargetSize = getCurrentRenderTargetSize();
+
+    if (x > (u32)renderTargetSize.Width || y > (u32)renderTargetSize.Height)
+
+        return;
+
+
+
+    disableTextures();
+
+    setRenderStates2DMode(color.getAlpha() < 255, false, false);
+
+
+
+    u16 indices[] = {0};
+
+    S3DVertex vertices[1];
+
+    vertices[0] = S3DVertex((f32)x, (f32)y, 0, 0, 0, 1, color, 0, 0);
+
+    drawVertexPrimitiveList2d3d(vertices, 1, indices, 1, video::EVT_STANDARD, scene::EPT_POINTS, EIT_16BIT, false);
+
+}
+
+
+
+ 
 
 //! Returns an image created from the last rendered frame.
 // We want to read the front buffer to get the latest render finished.
 // This is not possible under ogl-es, though, so one has to call this method
 // outside of the render loop only.
-IImage* COGLES1Driver::createScreenShot(video::ECOLOR_FORMAT format, video::E_RENDER_TARGET target)
+IImage* COGLES1Driver::createScreenShot(video::ECOLOR_FORMAT format_, video::E_RENDER_TARGET target)
 {
-	if (target==video::ERT_MULTI_RENDER_TEXTURES || target==video::ERT_RENDER_TEXTURE || target==video::ERT_STEREO_BOTH_BUFFERS)
-		return 0;
-	GLint internalformat=GL_RGBA;
-	GLint type=GL_UNSIGNED_BYTE;
-	if (false && (FeatureAvailable[IRR_IMG_read_format] || FeatureAvailable[IRR_OES_read_format] || FeatureAvailable[IRR_EXT_read_format_bgra]))
+	int format=GL_RGBA;
+	int type=GL_UNSIGNED_BYTE;
+	if (FeatureAvailable[IRR_IMG_read_format] || FeatureAvailable[IRR_OES_read_format] || FeatureAvailable[IRR_EXT_read_format_bgra])
 	{
 #ifdef GL_IMPLEMENTATION_COLOR_READ_TYPE_OES
-		glGetIntegerv(GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES, &internalformat);
+		glGetIntegerv(GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES, &format);
 		glGetIntegerv(GL_IMPLEMENTATION_COLOR_READ_TYPE_OES, &type);
 #endif
 		// there are formats we don't support ATM
@@ -3049,9 +3112,9 @@ IImage* COGLES1Driver::createScreenShot(video::ECOLOR_FORMAT format, video::E_RE
 	}
 
 	IImage* newImage = 0;
-	if ((GL_RGBA==internalformat)
+	if ((GL_RGBA==format)
 #ifdef GL_EXT_read_format_bgra
-			|| (GL_BGRA_EXT==internalformat)
+			|| (GL_BGRA_EXT==format)
 #endif
 			)
 	{
@@ -3075,7 +3138,7 @@ IImage* COGLES1Driver::createScreenShot(video::ECOLOR_FORMAT format, video::E_RE
 		return 0;
 	}
 
-	glReadPixels(0, 0, ScreenSize.Width, ScreenSize.Height, internalformat, type, pixels);
+	glReadPixels(0, 0, ScreenSize.Width, ScreenSize.Height, format, type, pixels);
 
 	// opengl images are horizontally flipped, so we have to fix that here.
 	const s32 pitch=newImage->getPitch();
@@ -3205,7 +3268,7 @@ namespace video
 // -----------------------------------
 // WINDOWS VERSION
 // -----------------------------------
-#if defined(_IRR_COMPILE_WITH_X11_DEVICE_) || defined(_IRR_COMPILE_WITH_ANDROID_DEVICE_) || defined(_IRR_COMPILE_WITH_SDL_DEVICE_) || defined(_IRR_COMPILE_WITH_WINDOWS_DEVICE_)
+#if defined(_IRR_COMPILE_WITH_X11_DEVICE_) || defined(_IRR_COMPILE_WITH_SDL_DEVICE_) || defined(_IRR_COMPILE_WITH_WINDOWS_DEVICE_)
 IVideoDriver* createOGLES1Driver(const SIrrlichtCreationParameters& params,
 		video::SExposedVideoData& data, io::IFileSystem* io)
 {
@@ -3247,6 +3310,21 @@ IVideoDriver* createOGLES1Driver(const SIrrlichtCreationParameters& params,
 #endif // _IRR_COMPILE_WITH_OGLES1_
 }
 #endif // _IRR_COMPILE_WITH_IPHONE_DEVICE_
+
+// -----------------------------------
+// ANDROID VERSION
+// -----------------------------------
+#if defined(_IRR_COMPILE_WITH_ANDROID_DEVICE_)
+IVideoDriver* createOGLES1Driver(const SIrrlichtCreationParameters& params,
+		video::SExposedVideoData& data, io::IFileSystem* io)
+{
+#ifdef _IRR_COMPILE_WITH_OGLES1_
+	return new COGLES1Driver(params, data, io);
+#else
+	return 0;
+#endif // _IRR_COMPILE_WITH_OGLES1_
+}
+#endif // _IRR_COMPILE_WITH_ANDROID_DEVICE_
 
 } // end namespace
 } // end namespace

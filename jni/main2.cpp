@@ -56,12 +56,18 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
+#define T __android_log_print(ANDROID_LOG_DEBUG, "L", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
 /**
  * This is the main entry point of a native application that is using
  * android_native_app_glue.  It runs in its own thread, with its own
  * event loop for receiving input events and doing other things.
  */
+static IrrlichtDevice *device;
+static IVideoDriver* driver;
+static ISceneManager* smgr;
+static IGUIEnvironment* guienv;
+extern int android_height, android_width;
 extern "C" void android_main_2() {
 
     /*
@@ -100,8 +106,8 @@ extern "C" void android_main_2() {
 
     __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
-    IrrlichtDevice *device =
-        createDevice( video::EDT_OGLES1, dimension2d<u32>(640, 480), 16,
+    device =
+        createDevice( video::EDT_OGLES1, dimension2d<u32>(800, 600), 16,
             false, false, false, 0);
     __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
@@ -125,56 +131,62 @@ extern "C" void android_main_2() {
     device->getVideoDriver(), device->getSceneManager(), or
     device->getGUIEnvironment().
     */
-    IVideoDriver* driver = device->getVideoDriver();
-    ISceneManager* smgr = device->getSceneManager();
-    IGUIEnvironment* guienv = device->getGUIEnvironment();
+    driver = device->getVideoDriver();
+    smgr = device->getSceneManager();
+    guienv = device->getGUIEnvironment();
 
     /*
     We add a hello world label to the window, using the GUI environment.
     The text is placed at the position (10,10) as top left corner and
     (260,22) as lower right corner.
     */
-    guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
-        rect<s32>(10,10,260,22), true);
+    IAnimatedMesh* mesh = smgr->getMesh("/sdcard/Irrlicht/sydney.md2");
+    if (!mesh)
+    {
+        device->drop();
+    }
+    IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );
 
+    /*
+    To let the mesh look a little bit nicer, we change its material. We
+    disable lighting because we do not have a dynamic light in here, and
+    the mesh would be totally black otherwise. Then we set the frame loop,
+    such that the predefined STAND animation is used. And last, we apply a
+    texture to the mesh. Without it the mesh would be drawn using only a
+    color.
+    */
+    if (node)
+    {
+        node->setMaterialFlag(EMF_LIGHTING, false);
+        node->setMD2Animation(scene::EMAT_STAND);
+        node->setMaterialTexture( 0, driver->getTexture("/sdcard/Irrlicht/sydney.bmp") );
+    }
     /*
     To look at the mesh, we place a camera into 3d space at the position
     (0, 30, -40). The camera looks from there to (0,5,0), which is
     approximately the place where our md2 model is.
     */
     smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
+}
 
+extern "C" void main_loop_interation(){
     /*
     Ok, now we have set up the scene, lets draw everything: We run the
     device in a while() loop, until the device does not want to run any
     more. This would be when the user closes the window or presses ALT+F4
     (or whatever keycode closes a window).
     */
-    while(device->run())
-    {
-        /*
-        Anything can be drawn between a beginScene() and an endScene()
-        call. The beginScene() call clears the screen with a color and
-        the depth buffer, if desired. Then we let the Scene Manager and
-        the GUI Environment draw their content. With the endScene()
-        call everything is presented on the screen.
-        */
-        driver->beginScene(true, true, SColor(255,100,101,140));
-
-        smgr->drawAll();
-        guienv->drawAll();
-
-        driver->endScene();
-    }
-
+    device->run();
     /*
-    After we are done with the render loop, we have to delete the Irrlicht
-    Device created before with createDevice(). In the Irrlicht Engine, you
-    have to delete all objects you created with a method or function which
-    starts with 'create'. The object is simply deleted by calling ->drop().
-    See the documentation at irr::IReferenceCounted::drop() for more
-    information.
+    Anything can be drawn between a beginScene() and an endScene()
+    call. The beginScene() call clears the screen with a color and
+    the depth buffer, if desired. Then we let the Scene Manager and
+    the GUI Environment draw their content. With the endScene()
+    call everything is presented on the screen.
     */
-    device->drop();
+    driver->beginScene(true, true, SColor(255,100,101,140));
+    smgr->drawAll();
+    guienv->drawAll();
+    driver->endScene();
 }
 //END_INCLUDE(all)

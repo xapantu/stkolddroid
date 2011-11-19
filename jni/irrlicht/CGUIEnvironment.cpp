@@ -43,6 +43,7 @@
 #include "BuiltInFont.h"
 #include "os.h"
 
+
 namespace irr
 {
 namespace gui
@@ -204,11 +205,9 @@ void CGUIEnvironment::drawAll()
 			updateAbsolutePosition();
 		}
 	}
-
 	// make sure tooltip is always on top
 	if (ToolTip.Element)
 		bringToFront(ToolTip.Element);
-
 	draw();
 	OnPostRender ( os::Timer::getTime () );
 }

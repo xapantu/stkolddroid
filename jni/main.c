@@ -39,6 +39,8 @@ struct saved_state {
     int32_t y;
 };
 
+int android_height, android_width;
+NativeWindowType android_window;
 /**
  * Shared state for our app.
  */
@@ -192,8 +194,8 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
         case APP_CMD_INIT_WINDOW:
             // The window is being shown, get it ready.
             if (engine->app->window != NULL) {
-                engine_init_display(engine);
-                engine_draw_frame(engine);
+                android_window = engine->app->window;
+                android_main_2 ();
             }
             break;
         case APP_CMD_TERM_WINDOW:
@@ -224,6 +226,7 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
     }
 }
 
+
 /**
  * This is the main entry point of a native application that is using
  * android_native_app_glue.  It runs in its own thread, with its own
@@ -247,13 +250,10 @@ void android_main(struct android_app* state) {
             ASENSOR_TYPE_ACCELEROMETER);
     engine.sensorEventQueue = ASensorManager_createEventQueue(engine.sensorManager,
             state->looper, LOOPER_ID_USER, NULL, NULL);
-
     if (state->savedState != NULL) {
         // We are starting with a previous saved state; restore from it.
         engine.state = *(struct saved_state*)state->savedState;
     }
-    android_main_2 ();
-    return;
 
     // loop waiting for stuff to do.
 
@@ -293,6 +293,7 @@ void android_main(struct android_app* state) {
                 return;
             }
         }
+            main_loop_interation();
 
         if (engine.animating) {
             // Done with events; draw next animation frame.
@@ -303,7 +304,6 @@ void android_main(struct android_app* state) {
 
             // Drawing is throttled to the screen update rate, so there
             // is no need to do timing here.
-            engine_draw_frame(&engine);
         }
     }
 }
