@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts
+END
+libpng.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/libpng.pc.in
+END
+libpng-config-head.in
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/libpng-config-head.in
+END
+makefile.mips
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.mips
+END
+makefile.freebsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.freebsd
+END
+pnglibconf.mak
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/pnglibconf.mak
+END
+makefile.mingw
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.mingw
+END
+makefile.sgi
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.sgi
+END
+makefile.msc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.msc
+END
+makefile.sco
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.sco
+END
+makefile.hpux
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.hpux
+END
+makefile.tc3
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.tc3
+END
+chkfmt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/chkfmt
+END
+makefile.cygwin
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.cygwin
+END
+sym.dfn
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/sym.dfn
+END
+makevms.com
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makevms.com
+END
+makefile.cegcc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.cegcc
+END
+makefile.elf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.elf
+END
+makefile.sunos
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.sunos
+END
+symbols.def
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/symbols.def
+END
+makefile.intel
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.intel
+END
+makefile.amiga
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.amiga
+END
+pnglibconf.h.prebuilt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/pnglibconf.h.prebuilt
+END
+makefile.hp64
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.hp64
+END
+SCOPTIONS.ppc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/libpng/scripts/SCOPTIONS.ppc
+END
+def.dfn
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/def.dfn
+END
+makefile.beos
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.beos
+END
+makefile.bc32
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.bc32
+END
+makefile.watcom
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.watcom
+END
+makefile.std
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.std
+END
+makefile.solaris-x86
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.solaris-x86
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/README.txt
+END
+makefile.atari
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.atari
+END
+libpng-config-body.in
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/libpng/scripts/libpng-config-body.in
+END
+makefile.64sunu
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.64sunu
+END
+makefile.ibmc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.ibmc
+END
+makefile.solaris
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.solaris
+END
+makefile.netbsd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.netbsd
+END
+makefile.aix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.aix
+END
+symbols.dfn
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/symbols.dfn
+END
+makefile.bor
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.bor
+END
+pngwin.def
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/libpng/scripts/pngwin.def
+END
+makefile.darwin
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.darwin
+END
+makefile.hpgcc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.hpgcc
+END
+pngos2.def
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/libpng/scripts/pngos2.def
+END
+makefile.vcwin32
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.vcwin32
+END
+pnglibconf.dfa
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/pnglibconf.dfa
+END
+makefile.ne12bsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.ne12bsd
+END
+makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.linux
+END
+makefile.32sunu
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.32sunu
+END
+makefile.acorn
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.acorn
+END
+makefile.os2
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.os2
+END
+smakefile.ppc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/smakefile.ppc
+END
+descrip.mms
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/descrip.mms
+END
+vers.dfn
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/vers.dfn
+END
+makefile.so9
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.so9
+END
+checksym.awk
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/checksym.awk
+END
+makefile.dj2
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.dj2
+END
+png32ce.def
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/libpng/scripts/png32ce.def
+END
+makefile.sggcc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.sggcc
+END
+pngwin.rc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/scripts/pngwin.rc
+END
+makefile.openbsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.openbsd
+END
+makefile.knr
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.knr
+END
+makefile.dec
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.dec
+END
+makefile.gcc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/makefile.gcc
+END
+options.awk
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/scripts/options.awk
+END

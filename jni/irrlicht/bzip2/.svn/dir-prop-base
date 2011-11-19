@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 4
+*.d
+
+K 13
+svn:mergeinfo
+V 522
+/branches/releases/1.4/source/Irrlicht/bzip2:1528-1537
+/branches/releases/1.5/source/Irrlicht/bzip2:2682-2716,2936-3074
+/branches/releases/1.6/source/Irrlicht/bzip2:2948-3137,3139-3170
+/branches/releases/1.7/source/Irrlicht/bzip2:3090-3138,3140-3197,3199-3270,3272-3288,3290-3299,3301-3355,3359-3364,3366-3387,3389-3414,3421-3447,3449-3513,3515-3533,3536-3554,3572-3829,3831-3846,3876-3908,3910-3924,3936-3942
+/trunk/source/Irrlicht/bzip2:2897-3172,3175-3365,3370-3559,3561-3726,3728-3830,3832-3943
+/vendor/bzip2:3450-3456
+END

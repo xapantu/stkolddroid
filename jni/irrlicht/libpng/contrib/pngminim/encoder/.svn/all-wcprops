@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder
+END
+gather.sh
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder/gather.sh
+END
+pngusr.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder/pngusr.h
+END
+pngusr.dfa
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder/pngusr.dfa
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/libpng/contrib/pngminim/encoder/makefile
+END

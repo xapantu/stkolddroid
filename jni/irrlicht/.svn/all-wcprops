@@ -1,0 +1,2897 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht
+END
+CDefaultGUIElementFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDefaultGUIElementFactory.cpp
+END
+CSoftwareDriver2.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CSoftwareDriver2.h
+END
+CGUIListBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIListBox.h
+END
+CIrrDeviceConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CIrrDeviceConsole.cpp
+END
+CD3D8ShaderMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8ShaderMaterialRenderer.cpp
+END
+CBlit.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CBlit.h
+END
+CLWOMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLWOMeshFileLoader.cpp
+END
+CD3D9NormalMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9NormalMapRenderer.h
+END
+CParticleAttractionAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleAttractionAffector.cpp
+END
+CSceneLoaderIrr.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CSceneLoaderIrr.h
+END
+CGUIMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMenu.cpp
+END
+CIrrDeviceStub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CIrrDeviceStub.cpp
+END
+CSTLMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSTLMeshFileLoader.h
+END
+CSoftwareDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CSoftwareDriver.h
+END
+CBoneSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBoneSceneNode.h
+END
+CCameraSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CCameraSceneNode.cpp
+END
+IZBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/IZBuffer.h
+END
+CTRTextureGouraudAddNoZ2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudAddNoZ2.cpp
+END
+CGUIFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIFont.h
+END
+CSTLMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSTLMeshWriter.h
+END
+Irrlicht_xbox.sln
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/2364/branches/ogl-es/source/Irrlicht/Irrlicht_xbox.sln
+END
+SoftwareDriver2_compile_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/SoftwareDriver2_compile_config.h
+END
+CSoftwareDriver2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CSoftwareDriver2.cpp
+END
+COpenGLSLMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COpenGLSLMaterialRenderer.cpp
+END
+CWriteFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CWriteFile.cpp
+END
+CNullDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CNullDriver.h
+END
+CGUIScrollBar.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIScrollBar.h
+END
+CImageWriterPCX.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPCX.h
+END
+Irrlicht.rc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/Irrlicht.rc
+END
+CParticleAnimatedMeshSceneNodeEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleAnimatedMeshSceneNodeEmitter.cpp
+END
+CIrrDeviceWinCE.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CIrrDeviceWinCE.cpp
+END
+CCubeSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CCubeSceneNode.cpp
+END
+CZBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CZBuffer.cpp
+END
+CIrrDeviceConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrDeviceConsole.h
+END
+CD3D8ShaderMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8ShaderMaterialRenderer.h
+END
+CParticleSphereEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CParticleSphereEmitter.cpp
+END
+COGLES2SLMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3834/branches/ogl-es/source/Irrlicht/COGLES2SLMaterialRenderer.h
+END
+CIrrMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrMeshWriter.cpp
+END
+CShadowVolumeSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CShadowVolumeSceneNode.h
+END
+IBurningShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/IBurningShader.h
+END
+ISceneNodeAnimatorFinishing.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/ISceneNodeAnimatorFinishing.h
+END
+COctreeSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COctreeSceneNode.h
+END
+CTriangleBBSelector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTriangleBBSelector.cpp
+END
+CColorConverter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CColorConverter.h
+END
+COGLES2Renderer2D.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2Renderer2D.h
+END
+COctreeTriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COctreeTriangleSelector.h
+END
+Irrlicht8.0.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/1853/branches/ogl-es/source/Irrlicht/Irrlicht8.0.sln
+END
+COpenGLExtensionHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COpenGLExtensionHandler.cpp
+END
+CD3D8Driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CD3D8Driver.h
+END
+CMD3MeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMD3MeshFileLoader.cpp
+END
+CGUIScrollBar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIScrollBar.cpp
+END
+CIrrDeviceLinux.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CIrrDeviceLinux.cpp
+END
+COSOperator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COSOperator.cpp
+END
+CSceneNodeAnimatorCollisionResponse.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCollisionResponse.h
+END
+CTRGouraud2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRGouraud2.cpp
+END
+COGLES2SLMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3834/branches/ogl-es/source/Irrlicht/COGLES2SLMaterialRenderer.cpp
+END
+CLightSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLightSceneNode.h
+END
+CImageWriterPPM.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPPM.h
+END
+CGUITable.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CGUITable.h
+END
+CDMFLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDMFLoader.h
+END
+CSoftwareTexture2.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSoftwareTexture2.h
+END
+CWADReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CWADReader.h
+END
+CGUIToolBar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIToolBar.cpp
+END
+CParticlePointEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticlePointEmitter.cpp
+END
+COGLES2Renderer2D.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3834/branches/ogl-es/source/Irrlicht/COGLES2Renderer2D.cpp
+END
+COctreeTriangleSelector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COctreeTriangleSelector.cpp
+END
+CXMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CXMeshFileLoader.cpp
+END
+CD3D8ParallaxMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8ParallaxMapRenderer.cpp
+END
+CTRTextureLightMap2_M2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureLightMap2_M2.cpp
+END
+wglext.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/wglext.h
+END
+CMetaTriangleSelector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CMetaTriangleSelector.cpp
+END
+CPLYMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CPLYMeshFileLoader.h
+END
+CParticleRingEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleRingEmitter.cpp
+END
+COBJMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COBJMeshFileLoader.cpp
+END
+CImageLoaderPNG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CImageLoaderPNG.cpp
+END
+CIrrDeviceSDL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CIrrDeviceSDL.cpp
+END
+CWaterSurfaceSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CWaterSurfaceSceneNode.cpp
+END
+CEmptySceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CEmptySceneNode.cpp
+END
+CGUIMeshViewer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMeshViewer.cpp
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3301/branches/ogl-es/source/Irrlicht/SConstruct
+END
+COpenGLExtensionHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COpenGLExtensionHandler.h
+END
+CImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CImage.h
+END
+CGUIImageList.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/2695/branches/ogl-es/source/Irrlicht/CGUIImageList.h
+END
+CGUIListBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIListBox.cpp
+END
+CMD2MeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMD2MeshFileLoader.h
+END
+CGUICheckBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUICheckBox.cpp
+END
+CTerrainTriangleSelector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTerrainTriangleSelector.cpp
+END
+CMD3MeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMD3MeshFileLoader.h
+END
+CTRNormalMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRNormalMap.cpp
+END
+CTRTextureGouraud.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraud.cpp
+END
+CPakReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CPakReader.cpp
+END
+Irrlicht_xbox.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/Irrlicht_xbox.vcproj
+END
+CD3D9NormalMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9NormalMapRenderer.cpp
+END
+CParticleSystemSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CParticleSystemSceneNode.h
+END
+CSceneLoaderIrr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CSceneLoaderIrr.cpp
+END
+CParticleRotationAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleRotationAffector.h
+END
+CXMLWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMLWriter.h
+END
+CDummyTransformationSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CDummyTransformationSceneNode.cpp
+END
+CGUIStaticText.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIStaticText.h
+END
+CAnimatedMeshMD2.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CAnimatedMeshMD2.h
+END
+CPLYMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CPLYMeshFileLoader.cpp
+END
+CFileList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CFileList.cpp
+END
+CParticleAttractionAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleAttractionAffector.h
+END
+Irrlicht_mobile6.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/Irrlicht_mobile6.vcproj
+END
+CGUIToolBar.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIToolBar.h
+END
+CParticlePointEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticlePointEmitter.h
+END
+CImageWriterBMP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterBMP.cpp
+END
+CBillboardSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CBillboardSceneNode.cpp
+END
+CColladaMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CColladaMeshWriter.h
+END
+Irrlicht.aps
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/Irrlicht.aps
+END
+CImageLoaderJPG.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderJPG.h
+END
+CReadFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CReadFile.h
+END
+CGUIWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIWindow.h
+END
+CVolumeLightSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CVolumeLightSceneNode.cpp
+END
+CIrrDeviceSDL.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrDeviceSDL.h
+END
+CWaterSurfaceSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CWaterSurfaceSceneNode.h
+END
+Irrlicht7.1.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/Irrlicht7.1.vcproj
+END
+COGLESDriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3839/branches/ogl-es/source/Irrlicht/COGLESDriver.cpp
+END
+CParticleScaleAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/2695/branches/ogl-es/source/Irrlicht/CParticleScaleAffector.cpp
+END
+CGUIFileOpenDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIFileOpenDialog.cpp
+END
+CTRTextureGouraudAlphaNoZ.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudAlphaNoZ.cpp
+END
+eglext.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/1845/branches/ogl-es/source/Irrlicht/eglext.h
+END
+CDefaultSceneNodeAnimatorFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CDefaultSceneNodeAnimatorFactory.cpp
+END
+CIrrDeviceWin32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CIrrDeviceWin32.cpp
+END
+CGUITreeView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUITreeView.cpp
+END
+CAnimatedMeshHalfLife.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CAnimatedMeshHalfLife.h
+END
+IBurningShader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/IBurningShader.cpp
+END
+CShadowVolumeSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CShadowVolumeSceneNode.cpp
+END
+CGUIColorSelectDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGUIColorSelectDialog.cpp
+END
+CSceneCollisionManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CSceneCollisionManager.cpp
+END
+CGUIModalScreen.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIModalScreen.h
+END
+COGLES2ParallaxMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3782/branches/ogl-es/source/Irrlicht/COGLES2ParallaxMapRenderer.h
+END
+CImageLoaderTGA.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderTGA.h
+END
+CSphereSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSphereSceneNode.cpp
+END
+CIrrMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrMeshWriter.h
+END
+CSoftwareTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSoftwareTexture.cpp
+END
+CB3DMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CB3DMeshFileLoader.cpp
+END
+CIrrDeviceIPhone.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/2822/branches/ogl-es/source/Irrlicht/CIrrDeviceIPhone.cpp
+END
+CImageLoaderWAL.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderWAL.h
+END
+CLMTSMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLMTSMeshFileLoader.cpp
+END
+CFileSystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CFileSystem.cpp
+END
+CMeshCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMeshCache.h
+END
+CGUIButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIButton.h
+END
+CSceneNodeAnimatorCameraFPS.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCameraFPS.h
+END
+Irrlicht10.0.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/Irrlicht10.0.vcxproj
+END
+COGLES2ExtensionHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3839/branches/ogl-es/source/Irrlicht/COGLES2ExtensionHandler.cpp
+END
+CImageLoaderPPM.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CImageLoaderPPM.cpp
+END
+CSceneNodeAnimatorCollisionResponse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCollisionResponse.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/Makefile
+END
+CParticleFadeOutAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleFadeOutAffector.h
+END
+gles-ext.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3791/branches/ogl-es/source/Irrlicht/gles-ext.h
+END
+COGLESTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3584/branches/ogl-es/source/Irrlicht/COGLESTexture.h
+END
+CSceneNodeAnimatorFlyCircle.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFlyCircle.h
+END
+CIrrDeviceWin32.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CIrrDeviceWin32.h
+END
+CGUITreeView.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3369/branches/ogl-es/source/Irrlicht/CGUITreeView.h
+END
+CTRTextureFlatWire.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureFlatWire.cpp
+END
+CAnimatedMeshMD3.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CAnimatedMeshMD3.h
+END
+COGLESExtensionHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3837/branches/ogl-es/source/Irrlicht/COGLESExtensionHandler.h
+END
+CTRTextureDetailMap2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureDetailMap2.cpp
+END
+CLWOMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLWOMeshFileLoader.h
+END
+CImageWriterTGA.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterTGA.cpp
+END
+CGUIComboBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIComboBox.cpp
+END
+CMeshCache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMeshCache.cpp
+END
+CGeometryCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGeometryCreator.h
+END
+CGUIButton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIButton.cpp
+END
+CSceneNodeAnimatorCameraFPS.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCameraFPS.cpp
+END
+COGLES2Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2Utils.h
+END
+COGLES2Texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2Texture.h
+END
+CGUITabControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGUITabControl.h
+END
+COBJMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COBJMeshFileLoader.h
+END
+CImageLoaderPNG.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderPNG.h
+END
+Octree.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/Octree.h
+END
+CIrrDeviceIPhone.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/2757/branches/ogl-es/source/Irrlicht/CIrrDeviceIPhone.h
+END
+CTRTextureGouraudNoZ.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudNoZ.cpp
+END
+Irrlicht8.0.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/Irrlicht8.0.vcproj
+END
+CMeshSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMeshSceneNode.h
+END
+CTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTimer.h
+END
+CZipReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CZipReader.cpp
+END
+CImageWriterPSD.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPSD.cpp
+END
+CParticleCylinderEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleCylinderEmitter.cpp
+END
+COBJMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COBJMeshWriter.h
+END
+CIrrDeviceIPhone.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/2706/branches/ogl-es/source/Irrlicht/CIrrDeviceIPhone.m
+END
+CBurningShader_Raster_Reference.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBurningShader_Raster_Reference.cpp
+END
+CImageWriterPCX.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPCX.cpp
+END
+CSceneNodeAnimatorFollowSpline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFollowSpline.cpp
+END
+COGLES2FixedPipelineShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2FixedPipelineShader.h
+END
+CSceneManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CSceneManager.h
+END
+COGLES2NormalMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2NormalMapRenderer.h
+END
+CGUIStaticText.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIStaticText.cpp
+END
+CPakReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CPakReader.h
+END
+COGLES2Driver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3839/branches/ogl-es/source/Irrlicht/COGLES2Driver.cpp
+END
+CColladaMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CColladaMeshWriter.cpp
+END
+CDummyTransformationSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CDummyTransformationSceneNode.h
+END
+CCSMLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CCSMLoader.h
+END
+CGUISkin.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUISkin.h
+END
+CTarReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTarReader.h
+END
+CLimitReadFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLimitReadFile.h
+END
+CMeshSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CMeshSceneNode.cpp
+END
+COCTLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COCTLoader.h
+END
+CImageWriterBMP.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterBMP.h
+END
+CAnimatedMeshSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CAnimatedMeshSceneNode.cpp
+END
+CBillboardSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBillboardSceneNode.h
+END
+CMY3DMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CMY3DMeshFileLoader.h
+END
+CAttributes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CAttributes.cpp
+END
+CSceneNodeAnimatorDelete.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorDelete.h
+END
+COGLES2FixedPipelineShader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2FixedPipelineShader.cpp
+END
+CD3D8Texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8Texture.h
+END
+CSceneManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CSceneManager.cpp
+END
+CIrrDeviceFB.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrDeviceFB.h
+END
+CImageLoaderPCX.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderPCX.h
+END
+CGUIFileOpenDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIFileOpenDialog.h
+END
+CD3D9HLSLMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9HLSLMaterialRenderer.cpp
+END
+CParticleCylinderEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleCylinderEmitter.h
+END
+CQ3LevelMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CQ3LevelMesh.h
+END
+CTerrainSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CTerrainSceneNode.h
+END
+COpenGLParallaxMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLParallaxMapRenderer.cpp
+END
+CGUIModalScreen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIModalScreen.cpp
+END
+COSOperator.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COSOperator.h
+END
+CImageLoaderRGB.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderRGB.cpp
+END
+CGUIInOutFader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIInOutFader.cpp
+END
+CTRTextureGouraudNoZ2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudNoZ2.cpp
+END
+CVideoModeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CVideoModeList.cpp
+END
+CGUIFont.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGUIFont.cpp
+END
+COGLES2Driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3836/branches/ogl-es/source/Irrlicht/COGLES2Driver.h
+END
+CTRStencilShadow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRStencilShadow.cpp
+END
+Irrlicht.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/Irrlicht.cpp
+END
+CPLYMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CPLYMeshWriter.cpp
+END
+Irrlicht9.0.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/1853/branches/ogl-es/source/Irrlicht/Irrlicht9.0.sln
+END
+CSceneNodeAnimatorCameraMaya.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCameraMaya.cpp
+END
+CSceneNodeAnimatorTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorTexture.cpp
+END
+CNPKReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CNPKReader.h
+END
+CMY3DMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CMY3DMeshFileLoader.cpp
+END
+CCameraSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CCameraSceneNode.h
+END
+CMetaTriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CMetaTriangleSelector.h
+END
+CImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CImage.cpp
+END
+CParticleRingEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleRingEmitter.h
+END
+COpenGLShaderMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLShaderMaterialRenderer.h
+END
+CGUIImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIImage.cpp
+END
+CParticleGravityAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleGravityAffector.h
+END
+CQ3LevelMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CQ3LevelMesh.cpp
+END
+CTerrainSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CTerrainSceneNode.cpp
+END
+Irrlicht-gcc.cbp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/Irrlicht-gcc.cbp
+END
+COGLES2ExtensionHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3839/branches/ogl-es/source/Irrlicht/COGLES2ExtensionHandler.h
+END
+CImageLoaderPPM.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderPPM.h
+END
+CTRGouraudAlphaNoZ2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRGouraudAlphaNoZ2.cpp
+END
+CTRFlat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRFlat.cpp
+END
+COpenGLMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/COpenGLMaterialRenderer.h
+END
+CAnimatedMeshMD2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CAnimatedMeshMD2.cpp
+END
+CTRTextureGouraud.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraud.h
+END
+CImageLoaderDDS.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CImageLoaderDDS.cpp
+END
+CQuake3ShaderSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CQuake3ShaderSceneNode.cpp
+END
+COpenGLDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COpenGLDriver.h
+END
+CTRTextureGouraudAdd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudAdd.cpp
+END
+CParticleBoxEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleBoxEmitter.cpp
+END
+CSkyBoxSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSkyBoxSceneNode.h
+END
+CGUIEditBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIEditBox.h
+END
+CParticleSphereEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleSphereEmitter.h
+END
+CImageLoaderJPG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CImageLoaderJPG.cpp
+END
+CTRGouraud.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRGouraud.cpp
+END
+CVideoModeList.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CVideoModeList.h
+END
+CTextSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTextSceneNode.h
+END
+CD3D9Driver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CD3D9Driver.cpp
+END
+CTRTextureWire2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureWire2.cpp
+END
+CImageWriterPNG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPNG.cpp
+END
+CD3D9Texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CD3D9Texture.cpp
+END
+CSceneNodeAnimatorCameraMaya.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorCameraMaya.h
+END
+CSceneNodeAnimatorTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorTexture.h
+END
+CTRTextureGouraudWire.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudWire.cpp
+END
+CTRTextureLightMap2_Add.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureLightMap2_Add.cpp
+END
+CXMLReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMLReader.h
+END
+COGLES2NormalMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3834/branches/ogl-es/source/Irrlicht/COGLES2NormalMapRenderer.cpp
+END
+COGLESDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3838/branches/ogl-es/source/Irrlicht/COGLESDriver.h
+END
+CAnimatedMeshHalfLife.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CAnimatedMeshHalfLife.cpp
+END
+CParticleScaleAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/2695/branches/ogl-es/source/Irrlicht/CParticleScaleAffector.h
+END
+CLightSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLightSceneNode.cpp
+END
+CImageWriterPSD.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPSD.h
+END
+CGUIImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIImage.h
+END
+Irrlicht10.0.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/Irrlicht10.0.vcxproj.filters
+END
+CSMFMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CSMFMeshFileLoader.h
+END
+BuiltInFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/BuiltInFont.h
+END
+CDefaultGUIElementFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDefaultGUIElementFactory.h
+END
+COpenGLDriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COpenGLDriver.cpp
+END
+CIrrDeviceLinux.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrDeviceLinux.h
+END
+CD3D9ShaderMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CD3D9ShaderMaterialRenderer.h
+END
+CTriangleSelector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTriangleSelector.cpp
+END
+CGUISpriteBank.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUISpriteBank.cpp
+END
+CTextSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTextSceneNode.cpp
+END
+CCSMLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CCSMLoader.cpp
+END
+CGUISkin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUISkin.cpp
+END
+CTarReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTarReader.cpp
+END
+CSTLMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSTLMeshWriter.cpp
+END
+CD3D9ParallaxMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9ParallaxMapRenderer.cpp
+END
+os.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/os.cpp
+END
+CD3D8ParallaxMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8ParallaxMapRenderer.h
+END
+CSceneNodeAnimatorDelete.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorDelete.cpp
+END
+CGUIImageList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/2695/branches/ogl-es/source/Irrlicht/CGUIImageList.cpp
+END
+CTRFlatWire.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRFlatWire.cpp
+END
+CD3D9Driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CD3D9Driver.h
+END
+builtInFont.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/builtInFont.bmp
+END
+COpenGLNormalMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLNormalMapRenderer.h
+END
+COGLESTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3787/branches/ogl-es/source/Irrlicht/COGLESTexture.cpp
+END
+CAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CAttributes.h
+END
+C3DSMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/C3DSMeshFileLoader.cpp
+END
+CD3D9ShaderMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9ShaderMaterialRenderer.cpp
+END
+COpenGLParallaxMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLParallaxMapRenderer.h
+END
+CTRGouraudWire.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRGouraudWire.cpp
+END
+Irrlicht_mobile6.sln
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/Irrlicht_mobile6.sln
+END
+CDefaultSceneNodeFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDefaultSceneNodeFactory.h
+END
+COpenGLTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COpenGLTexture.cpp
+END
+CGUIMessageBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMessageBox.h
+END
+CZBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CZBuffer.h
+END
+CXMLReaderImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMLReaderImpl.h
+END
+CReadFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CReadFile.cpp
+END
+CGUISpriteBank.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUISpriteBank.h
+END
+CMeshManipulator.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CMeshManipulator.h
+END
+CMemoryFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMemoryFile.h
+END
+CGUIContextMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIContextMenu.cpp
+END
+CTRTextureLightMap2_M4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureLightMap2_M4.cpp
+END
+CMS3DMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMS3DMeshFileLoader.h
+END
+CParticleMeshEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleMeshEmitter.h
+END
+COpenGLShaderMaterialRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLShaderMaterialRenderer.cpp
+END
+CGUIComboBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUIComboBox.h
+END
+CPLYMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CPLYMeshWriter.h
+END
+CTRTextureGouraudVertexAlpha2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudVertexAlpha2.cpp
+END
+COGLESMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3782/branches/ogl-es/source/Irrlicht/COGLESMaterialRenderer.h
+END
+Irrlicht10.0.sln
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/Irrlicht10.0.sln
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/resource.h
+END
+CAttributeImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CAttributeImpl.h
+END
+CZipReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CZipReader.h
+END
+CImageWriterPPM.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPPM.cpp
+END
+CGUITable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUITable.cpp
+END
+CDepthBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDepthBuffer.cpp
+END
+CDefaultSceneNodeFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDefaultSceneNodeFactory.cpp
+END
+COgreMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/COgreMeshFileLoader.h
+END
+ITriangleRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/ITriangleRenderer.h
+END
+CMeshManipulator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CMeshManipulator.cpp
+END
+CMemoryFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMemoryFile.cpp
+END
+CSceneCollisionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneCollisionManager.h
+END
+CLimitReadFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLimitReadFile.cpp
+END
+CParticleBoxEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleBoxEmitter.h
+END
+CGUIEnvironment.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIEnvironment.h
+END
+IAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/IAttribute.h
+END
+CIrrDeviceStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CIrrDeviceStub.h
+END
+CXMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMeshFileLoader.h
+END
+CB3DMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CB3DMeshFileLoader.h
+END
+CColladaFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CColladaFileLoader.cpp
+END
+CGUIMeshViewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMeshViewer.h
+END
+CTRTextureGouraudAdd2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudAdd2.cpp
+END
+CFileSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CFileSystem.h
+END
+CSMFMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CSMFMeshFileLoader.cpp
+END
+CSceneNodeAnimatorFlyCircle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFlyCircle.cpp
+END
+CParticleSystemSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleSystemSceneNode.cpp
+END
+CFPSCounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CFPSCounter.h
+END
+CSkyDomeSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSkyDomeSceneNode.cpp
+END
+CWriteFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CWriteFile.h
+END
+CGUICheckBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUICheckBox.h
+END
+COgreMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/COgreMeshFileLoader.cpp
+END
+CTerrainTriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTerrainTriangleSelector.h
+END
+CAnimatedMeshMD3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CAnimatedMeshMD3.cpp
+END
+CIrrMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrMeshFileLoader.h
+END
+COctreeSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/COctreeSceneNode.cpp
+END
+CIrrDeviceWinCE.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrDeviceWinCE.h
+END
+CCubeSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CCubeSceneNode.h
+END
+IDepthBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/IDepthBuffer.h
+END
+CGUIInOutFader.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIInOutFader.h
+END
+CGeometryCreator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGeometryCreator.cpp
+END
+CTriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CTriangleSelector.h
+END
+CGUIWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIWindow.cpp
+END
+CImageLoaderBMP.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderBMP.h
+END
+CSkinnedMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CSkinnedMesh.h
+END
+glxext.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/glxext.h
+END
+CSceneNodeAnimatorRotation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorRotation.cpp
+END
+CTriangleBBSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTriangleBBSelector.h
+END
+CFileList.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CFileList.h
+END
+Irrlicht.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/1722/branches/ogl-es/source/Irrlicht/Irrlicht.dsp
+END
+os.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/os.h
+END
+IImagePresenter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/IImagePresenter.h
+END
+CFPSCounter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CFPSCounter.cpp
+END
+CVolumeLightSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CVolumeLightSceneNode.h
+END
+Irrlicht.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/Irrlicht.dsw
+END
+CDMFLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CDMFLoader.cpp
+END
+CBSPMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBSPMeshFileLoader.h
+END
+CSoftwareTexture2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSoftwareTexture2.cpp
+END
+CIrrMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CIrrMeshFileLoader.cpp
+END
+CDefaultSceneNodeAnimatorFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDefaultSceneNodeAnimatorFactory.h
+END
+CSceneNodeAnimatorFollowSpline.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFollowSpline.h
+END
+CSkyDomeSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSkyDomeSceneNode.h
+END
+CD3D8NormalMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8NormalMapRenderer.h
+END
+COGLES2MaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2MaterialRenderer.h
+END
+CSTLMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSTLMeshFileLoader.cpp
+END
+CSoftwareDriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CSoftwareDriver.cpp
+END
+CImageLoaderBMP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderBMP.cpp
+END
+CGUIColorSelectDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CGUIColorSelectDialog.h
+END
+CSkinnedMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CSkinnedMesh.cpp
+END
+irrXML.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/irrXML.cpp
+END
+CTRTextureBlend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureBlend.cpp
+END
+gles2-ext.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3791/branches/ogl-es/source/Irrlicht/gles2-ext.h
+END
+CD3D8MaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8MaterialRenderer.h
+END
+CGUIMenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMenu.h
+END
+CTRTextureGouraud2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraud2.cpp
+END
+CSoftwareTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSoftwareTexture.h
+END
+CMY3DHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMY3DHelper.h
+END
+CD3D8Texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CD3D8Texture.cpp
+END
+CGUIContextMenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIContextMenu.h
+END
+CImageWriterJPG.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterJPG.h
+END
+glext.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/glext.h
+END
+CNullDriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CNullDriver.cpp
+END
+CEmptySceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CEmptySceneNode.h
+END
+CGUISpinBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUISpinBox.cpp
+END
+CLMTSMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLMTSMeshFileLoader.h
+END
+CBSPMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBSPMeshFileLoader.cpp
+END
+S2DVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/S2DVertex.h
+END
+SoftwareDriver2_helper.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/SoftwareDriver2_helper.h
+END
+CParticleRotationAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleRotationAffector.cpp
+END
+CXMLWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMLWriter.cpp
+END
+COpenGLSLMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLSLMaterialRenderer.h
+END
+CMountPointReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CMountPointReader.cpp
+END
+CD3D8NormalMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D8NormalMapRenderer.cpp
+END
+CD3D9HLSLMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9HLSLMaterialRenderer.h
+END
+CDepthBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CDepthBuffer.h
+END
+COGLESExtensionHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3845/branches/ogl-es/source/Irrlicht/COGLESExtensionHandler.cpp
+END
+dmfsupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/dmfsupport.h
+END
+CColorConverter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CColorConverter.cpp
+END
+CParticleAnimatedMeshSceneNodeEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleAnimatedMeshSceneNodeEmitter.h
+END
+CImageLoaderRGB.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderRGB.h
+END
+CGUIEnvironment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGUIEnvironment.cpp
+END
+Irrlicht.dev
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3301/branches/ogl-es/source/Irrlicht/Irrlicht.dev
+END
+CNPKReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CNPKReader.cpp
+END
+CTRTextureLightMap2_M1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureLightMap2_M1.cpp
+END
+COGLES2Texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3811/branches/ogl-es/source/Irrlicht/COGLES2Texture.cpp
+END
+CGUITabControl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CGUITabControl.cpp
+END
+CD3D8Driver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CD3D8Driver.cpp
+END
+CLogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLogger.cpp
+END
+CSceneNodeAnimatorFlyStraight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFlyStraight.cpp
+END
+CImageWriterTGA.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterTGA.h
+END
+CImageWriterJPG.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterJPG.cpp
+END
+CD3D9ParallaxMapRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9ParallaxMapRenderer.h
+END
+COpenGLNormalMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLNormalMapRenderer.cpp
+END
+CParticleGravityAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleGravityAffector.cpp
+END
+COBJMeshWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COBJMeshWriter.cpp
+END
+CImageLoaderPSD.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderPSD.h
+END
+Irrlicht9.0.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3843/branches/ogl-es/source/Irrlicht/Irrlicht9.0.vcproj
+END
+CColladaFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CColladaFileLoader.h
+END
+CGUISpinBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/source/Irrlicht/CGUISpinBox.h
+END
+CWADReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CWADReader.cpp
+END
+C3DSMeshFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/C3DSMeshFileLoader.h
+END
+CGUIMessageBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CGUIMessageBox.cpp
+END
+CGUIEditBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/source/Irrlicht/CGUIEditBox.cpp
+END
+CSkyBoxSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSkyBoxSceneNode.cpp
+END
+CTRTextureGouraudAlpha.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureGouraudAlpha.cpp
+END
+CMountPointReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMountPointReader.h
+END
+CTRGouraudAlpha2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRGouraudAlpha2.cpp
+END
+COGLES2ParallaxMapRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/irrlicht/!svn/ver/3834/branches/ogl-es/source/Irrlicht/COGLES2ParallaxMapRenderer.cpp
+END
+CImageLoaderTGA.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderTGA.cpp
+END
+CTRTextureLightMapGouraud2_M4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureLightMapGouraud2_M4.cpp
+END
+CBoneSceneNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CBoneSceneNode.cpp
+END
+CImageLoaderDDS.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CImageLoaderDDS.h
+END
+CQuake3ShaderSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CQuake3ShaderSceneNode.h
+END
+CMS3DMeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CMS3DMeshFileLoader.cpp
+END
+COpenGLTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/COpenGLTexture.h
+END
+CParticleMeshEmitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleMeshEmitter.cpp
+END
+COCTLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/COCTLoader.cpp
+END
+CImageLoaderWAL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderWAL.cpp
+END
+CTRTextureFlat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CTRTextureFlat.cpp
+END
+Irrlicht7.1.sln
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/1853/branches/ogl-es/source/Irrlicht/Irrlicht7.1.sln
+END
+CD3D9MaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CD3D9MaterialRenderer.h
+END
+CSphereSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSphereSceneNode.h
+END
+CImageLoaderPSD.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageLoaderPSD.cpp
+END
+CSceneNodeAnimatorRotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorRotation.h
+END
+CXMLReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CXMLReader.cpp
+END
+CLogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CLogger.h
+END
+CIrrDeviceFB.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/CIrrDeviceFB.cpp
+END
+CImageLoaderPCX.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CImageLoaderPCX.cpp
+END
+CSceneNodeAnimatorFlyStraight.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSceneNodeAnimatorFlyStraight.h
+END
+CParticleFadeOutAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CParticleFadeOutAffector.cpp
+END
+CMD2MeshFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CMD2MeshFileLoader.cpp
+END
+CSoftware2MaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CSoftware2MaterialRenderer.h
+END
+CAnimatedMeshSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/source/Irrlicht/CAnimatedMeshSceneNode.h
+END
+CImageWriterPNG.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CImageWriterPNG.h
+END
+CD3D9Texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/CD3D9Texture.h
+END
+S4DVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/S4DVertex.h
+END
+source.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/source.txt
+END

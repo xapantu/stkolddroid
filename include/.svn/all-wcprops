@@ -1,0 +1,1091 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include
+END
+ITimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/ITimer.h
+END
+IMeshSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMeshSceneNode.h
+END
+path.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/path.h
+END
+triangle3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/triangle3d.h
+END
+ESceneNodeTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/ESceneNodeTypes.h
+END
+SColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/SColor.h
+END
+IGUIListBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IGUIListBox.h
+END
+Keycodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/Keycodes.h
+END
+driverChoice.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/driverChoice.h
+END
+ITexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ITexture.h
+END
+ILightManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/ILightManager.h
+END
+IGUIEditBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IGUIEditBox.h
+END
+irrXML.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/irrXML.h
+END
+ITriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/ITriangleSelector.h
+END
+EMessageBoxFlags.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EMessageBoxFlags.h
+END
+IMeshManipulator.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/IMeshManipulator.h
+END
+SceneParameters.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SceneParameters.h
+END
+SAnimatedMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SAnimatedMesh.h
+END
+IParticleMeshEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleMeshEmitter.h
+END
+SViewFrustum.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/SViewFrustum.h
+END
+IFileList.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IFileList.h
+END
+IGUIComboBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IGUIComboBox.h
+END
+coreutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/coreutil.h
+END
+ICursorControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ICursorControl.h
+END
+EVertexAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3370/branches/ogl-es/include/EVertexAttributes.h
+END
+CMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/CMeshBuffer.h
+END
+IrrCompileConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/IrrCompileConfig.h
+END
+irrArray.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/irrArray.h
+END
+IBillboardTextSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IBillboardTextSceneNode.h
+END
+IVolumeLightSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IVolumeLightSceneNode.h
+END
+IMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMeshBuffer.h
+END
+IGUIFileOpenDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIFileOpenDialog.h
+END
+EPrimitiveTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EPrimitiveTypes.h
+END
+IParticleSystemSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IParticleSystemSceneNode.h
+END
+fast_atof.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/fast_atof.h
+END
+SMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SMeshBuffer.h
+END
+IAnimatedMeshMD2.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IAnimatedMeshMD2.h
+END
+IGUIColorSelectDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIColorSelectDialog.h
+END
+line3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/line3d.h
+END
+SMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SMesh.h
+END
+aabbox3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/aabbox3d.h
+END
+SParticle.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SParticle.h
+END
+SVertexIndex.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SVertexIndex.h
+END
+EDeviceTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3174/branches/ogl-es/include/EDeviceTypes.h
+END
+irrMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/irrMap.h
+END
+EAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EAttributes.h
+END
+IMeshLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMeshLoader.h
+END
+IAnimatedMeshSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IAnimatedMeshSceneNode.h
+END
+IMaterialRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMaterialRenderer.h
+END
+ISceneNodeAnimatorFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/ISceneNodeAnimatorFactory.h
+END
+IAttributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IAttributes.h
+END
+SMeshBufferLightMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SMeshBufferLightMap.h
+END
+ISceneManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/ISceneManager.h
+END
+ISceneNodeAnimatorCollisionResponse.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneNodeAnimatorCollisionResponse.h
+END
+IMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMeshWriter.h
+END
+ILightSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ILightSceneNode.h
+END
+IGUICheckBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUICheckBox.h
+END
+EMeshWriterEnums.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EMeshWriterEnums.h
+END
+ISceneNodeAnimator.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneNodeAnimator.h
+END
+IParticleAnimatedMeshSceneNodeEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleAnimatedMeshSceneNodeEmitter.h
+END
+IParticleSphereEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleSphereEmitter.h
+END
+SMaterialLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SMaterialLayer.h
+END
+IDummyTransformationSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IDummyTransformationSceneNode.h
+END
+IVideoModeList.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IVideoModeList.h
+END
+IBoneSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IBoneSceneNode.h
+END
+EMaterialFlags.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/EMaterialFlags.h
+END
+ITextSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ITextSceneNode.h
+END
+ISkinnedMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISkinnedMesh.h
+END
+EGUIAlignment.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EGUIAlignment.h
+END
+IReferenceCounted.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IReferenceCounted.h
+END
+vector3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/vector3d.h
+END
+SLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SLight.h
+END
+IXMLReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IXMLReader.h
+END
+IParticleFadeOutAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleFadeOutAffector.h
+END
+CDynamicMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/CDynamicMeshBuffer.h
+END
+EShaderTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3174/branches/ogl-es/include/EShaderTypes.h
+END
+ITerrainSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ITerrainSceneNode.h
+END
+IGUITreeView.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IGUITreeView.h
+END
+IShadowVolumeSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IShadowVolumeSceneNode.h
+END
+SExposedVideoData.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SExposedVideoData.h
+END
+dimension2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/dimension2d.h
+END
+IAnimatedMeshMD3.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IAnimatedMeshMD3.h
+END
+IParticleBoxEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleBoxEmitter.h
+END
+IParticleAttractionAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleAttractionAffector.h
+END
+IVertexBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IVertexBuffer.h
+END
+IGUIEnvironment.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIEnvironment.h
+END
+IQ3Shader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IQ3Shader.h
+END
+IGeometryCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGeometryCreator.h
+END
+IMetaTriangleSelector.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMetaTriangleSelector.h
+END
+ISceneUserDataSerializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneUserDataSerializer.h
+END
+IFileArchive.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IFileArchive.h
+END
+IFileSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IFileSystem.h
+END
+irrAllocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/irrAllocator.h
+END
+IrrlichtDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IrrlichtDevice.h
+END
+irrMath.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/irrMath.h
+END
+IAnimatedMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IAnimatedMesh.h
+END
+IIndexBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IIndexBuffer.h
+END
+IGPUProgrammingServices.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGPUProgrammingServices.h
+END
+ISceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/ISceneNode.h
+END
+IEventReceiver.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IEventReceiver.h
+END
+IGUIToolbar.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIToolbar.h
+END
+IGUISpriteBank.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUISpriteBank.h
+END
+SMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/SMaterial.h
+END
+IGUISkin.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IGUISkin.h
+END
+quaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/quaternion.h
+END
+plane3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/plane3d.h
+END
+ECullingTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ECullingTypes.h
+END
+ESceneNodeAnimatorTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ESceneNodeAnimatorTypes.h
+END
+irrList.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/irrList.h
+END
+ISceneNodeAnimatorCameraFPS.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/ISceneNodeAnimatorCameraFPS.h
+END
+IVideoDriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IVideoDriver.h
+END
+IImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IImage.h
+END
+EDriverFeatures.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/EDriverFeatures.h
+END
+IParticleCylinderEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleCylinderEmitter.h
+END
+IGUIImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIImage.h
+END
+SSharedMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/SSharedMeshBuffer.h
+END
+IQ3LevelMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IQ3LevelMesh.h
+END
+IGUIScrollBar.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIScrollBar.h
+END
+IDynamicMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IDynamicMeshBuffer.h
+END
+IMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMesh.h
+END
+IXMLWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IXMLWriter.h
+END
+IGUIStaticText.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IGUIStaticText.h
+END
+ISceneCollisionManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneCollisionManager.h
+END
+irrlicht.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/irrlicht.h
+END
+IShaderConstantSetCallBack.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IShaderConstantSetCallBack.h
+END
+IImageLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IImageLoader.h
+END
+IColladaMeshWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IColladaMeshWriter.h
+END
+IGUIWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIWindow.h
+END
+ICameraSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/ICameraSceneNode.h
+END
+heapsort.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/heapsort.h
+END
+IParticleRingEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleRingEmitter.h
+END
+IGUIContextMenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIContextMenu.h
+END
+IImageWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IImageWriter.h
+END
+EGUIElementTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EGUIElementTypes.h
+END
+SIrrCreationParameters.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/SIrrCreationParameters.h
+END
+matrix4.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/matrix4.h
+END
+IParticleGravityAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleGravityAffector.h
+END
+IGUIMeshViewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIMeshViewer.h
+END
+EDebugSceneTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EDebugSceneTypes.h
+END
+SSkinMeshBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/SSkinMeshBuffer.h
+END
+IAttributeExchangingObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/IAttributeExchangingObject.h
+END
+IWriteFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IWriteFile.h
+END
+CIndexBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/CIndexBuffer.h
+END
+IGUITable.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IGUITable.h
+END
+EHardwareBufferFlags.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EHardwareBufferFlags.h
+END
+SKeyMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/SKeyMap.h
+END
+SVertexManipulator.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SVertexManipulator.h
+END
+SMeshBufferTangents.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/SMeshBufferTangents.h
+END
+line2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/line2d.h
+END
+IGUIInOutFader.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIInOutFader.h
+END
+IGUIFontBitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIFontBitmap.h
+END
+irrTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/irrTypes.h
+END
+IRandomizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3944/branches/ogl-es/include/IRandomizer.h
+END
+IGUIFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIFont.h
+END
+IBillboardSceneNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IBillboardSceneNode.h
+END
+S3DVertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/S3DVertex.h
+END
+ISceneNodeAnimatorCameraMaya.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneNodeAnimatorCameraMaya.h
+END
+EMaterialTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EMaterialTypes.h
+END
+IMeshCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/IMeshCache.h
+END
+IGUIButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IGUIButton.h
+END
+position2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/position2d.h
+END
+IGUIImageList.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3174/branches/ogl-es/include/IGUIImageList.h
+END
+ISceneLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3727/branches/ogl-es/include/ISceneLoader.h
+END
+rect.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/rect.h
+END
+IGUIElementFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIElementFactory.h
+END
+IGUISpinBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/IGUISpinBox.h
+END
+IMaterialRendererServices.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IMaterialRendererServices.h
+END
+ISceneNodeFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ISceneNodeFactory.h
+END
+IParticleRotationAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleRotationAffector.h
+END
+IParticleEmitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleEmitter.h
+END
+IOSOperator.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/IOSOperator.h
+END
+ETerrainElements.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ETerrainElements.h
+END
+IGUIElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IGUIElement.h
+END
+CVertexBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/CVertexBuffer.h
+END
+irrString.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/irrString.h
+END
+IReadFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IReadFile.h
+END
+IGUITabControl.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/include/IGUITabControl.h
+END
+EDriverTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/EDriverTypes.h
+END
+IParticleAffector.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/IParticleAffector.h
+END
+ILogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/include/ILogger.h
+END
+vector2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/irrlicht/!svn/ver/3910/branches/ogl-es/include/vector2d.h
+END

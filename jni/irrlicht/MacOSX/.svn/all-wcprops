@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/MacOSX
+END
+OSXClipboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/MacOSX/OSXClipboard.h
+END
+CIrrDeviceMacOSX.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/MacOSX/CIrrDeviceMacOSX.h
+END
+MacOSX_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/MacOSX/MacOSX_Prefix.pch
+END
+AppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/MacOSX/AppDelegate.h
+END
+OSXClipboard.mm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/MacOSX/OSXClipboard.mm
+END
+CIrrDeviceMacOSX.mm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/3831/branches/ogl-es/source/Irrlicht/MacOSX/CIrrDeviceMacOSX.mm
+END
+AppDelegate.mm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/3560/branches/ogl-es/source/Irrlicht/MacOSX/AppDelegate.mm
+END
+Irrlicht-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/irrlicht/!svn/ver/2695/branches/ogl-es/source/Irrlicht/MacOSX/Irrlicht-Info.plist
+END
+DemoApp-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/MacOSX/DemoApp-Info.plist
+END
+._MainMenu.nib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/irrlicht/!svn/ver/1522/branches/ogl-es/source/Irrlicht/MacOSX/._MainMenu.nib
+END
