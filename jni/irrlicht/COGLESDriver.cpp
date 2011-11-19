@@ -16,6 +16,7 @@
 #ifdef _IRR_COMPILE_WITH_SDL_DEVICE_
 #include <SDL/SDL.h>
 #endif
+#include <android/log.h>
 
 namespace irr
 {
@@ -41,6 +42,7 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 	,ViewDepthRenderbuffer(0)
 #endif
 {
+    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
 	#ifdef _DEBUG
 	setDebugName("COGLESDriver");
 	#endif
@@ -56,6 +58,7 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 	Device = device;
 #endif
 #ifdef EGL_VERSION_1_0
+    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
 	if(EglDisplay == EGL_NO_DISPLAY)
 		EglDisplay = eglGetDisplay((NativeDisplayType) EGL_DEFAULT_DISPLAY);
 	if(EglDisplay == EGL_NO_DISPLAY)
@@ -97,6 +100,7 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 		EGL_NONE, 0
 	};
 
+    __android_log_print(ANDROID_LOG_INFO,"Irrlicht","%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);
 	EGLConfig config;
 	EGLint num_configs;
 	u32 steps=5;
@@ -206,6 +210,9 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 	// set vsync
 	if (params.Vsync)
 		eglSwapInterval(EglDisplay, 1);
+#elif defined(_IRR_ANDROID_PLATEFORM_)
+	genericDriverInit(params.WindowSize, params.Stencilbuffer);
+//TODO: ellis
 #elif defined(GL_VERSION_ES_CM_1_0)
 	glGenFramebuffersOES(1, &ViewFramebuffer);
 	glGenRenderbuffersOES(1, &ViewRenderbuffer);
@@ -3198,7 +3205,7 @@ namespace video
 // -----------------------------------
 // WINDOWS VERSION
 // -----------------------------------
-#if defined(_IRR_COMPILE_WITH_X11_DEVICE_) || defined(_IRR_COMPILE_WITH_SDL_DEVICE_) || defined(_IRR_COMPILE_WITH_WINDOWS_DEVICE_)
+#if defined(_IRR_COMPILE_WITH_X11_DEVICE_) || defined(_IRR_COMPILE_WITH_ANDROID_DEVICE_) || defined(_IRR_COMPILE_WITH_SDL_DEVICE_) || defined(_IRR_COMPILE_WITH_WINDOWS_DEVICE_)
 IVideoDriver* createOGLES1Driver(const SIrrlichtCreationParameters& params,
 		video::SExposedVideoData& data, io::IFileSystem* io)
 {

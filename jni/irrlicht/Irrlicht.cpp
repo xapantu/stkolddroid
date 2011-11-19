@@ -85,6 +85,10 @@ namespace irr
 			dev = new CIrrDeviceMacOSX(params);
 #endif
 
+#ifdef _IRR_COMPILE_WITH_ANDROID_DEVICE_
+			dev = new CIrrDeviceAndroid(params);
+#endif
+
 #ifdef _IRR_COMPILE_WITH_IPHONE_DEVICE_
 		if (params.DeviceType == EIDT_IPHONE || (!dev && params.DeviceType == EIDT_BEST))
 			dev = new CIrrDeviceIPhone(params);

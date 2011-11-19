@@ -174,10 +174,10 @@ You should only use this define if you really need the OpenGL-ES driver, and
 it should be usually the only HW accelerated one. OpenGL is currently disabled
 if using this driver, to avoid problems with the ogl-es emulators.
 */
-//#define _IRR_COMPILE_WITH_OGLES1_
 #ifdef NO_IRR_COMPILE_WITH_OGLES1_
 #undef _IRR_COMPILE_WITH_OGLES1_
 #endif
+#define _IRR_COMPILE_WITH_OGLES1_
 
 //! Define _IRR_COMPILE_WITH_OGLES2_ to compile the Irrlicht engine with OpenGL-ES 2.x.
 /** If you do not wish the engine to be compiled with OpenGL-ES 2.x, comment

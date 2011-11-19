@@ -21,6 +21,7 @@
 
 #include <EGL/egl.h>
 #include <GLES/gl.h>
+#include <main.h>
 
 #include <android/sensor.h>
 #include <android/log.h>
@@ -251,6 +252,8 @@ void android_main(struct android_app* state) {
         // We are starting with a previous saved state; restore from it.
         engine.state = *(struct saved_state*)state->savedState;
     }
+    android_main_2 ();
+    return;
 
     // loop waiting for stuff to do.
 

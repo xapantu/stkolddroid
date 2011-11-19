@@ -46,7 +46,7 @@ CIrrDeviceAndroid::~CIrrDeviceAndroid()
 //! create the driver
 void CIrrDeviceAndroid::createDriver()
 {
-	__android_log_print(ANDROID_LOG_INFO, "Irrlicht", "CIrrDeviceAndroid::createDriver2");
+	__android_log_print(ANDROID_LOG_INFO, "Irrlicht", "CIrrDeviceAndroid::createDriver");
 #if 0
 	switch(CreationParams.DriverType)
 	{
