@@ -1156,17 +1156,23 @@ int main2(int argc, char *argv[] )
         alog("Material loaded");
         GUIEngine::addLoadingIcon( irr_driver->getTexture(
                            file_manager->getGUIDir() + "/options_video.png") );
+        LOGI("Loading karts...");
         kart_properties_manager -> loadAllKarts    ();
+        LOGI("Karts loaded");
         unlock_manager          = new UnlockManager();
         //m_tutorial_manager      = new TutorialManager();
+        LOGI("Add textures....");
         GUIEngine::addLoadingIcon( irr_driver->getTexture(
                                file_manager->getTextureFile("gui_lock.png")) );
+        LOGI("projectile....");
         projectile_manager      -> loadData        ();
 
         // Both item_manager and powerup_manager load models and therefore
         // textures from the model directory. To avoid reading the 
         // materials.xml twice, we do this here once for both:
+        LOGI("push texture...");
         file_manager->pushTextureSearchPath(file_manager->getModelFile(""));
+        LOGI("get model file....");
         const std::string materials_file = 
             file_manager->getModelFile("materials.xml");
         if(materials_file!="")
@@ -1178,24 +1184,33 @@ int main2(int argc, char *argv[] )
             // implementation) make the temporary materials permanent anyway.
             material_manager->addSharedMaterial(materials_file);
         }
+        T__
         Referee::init();
         powerup_manager         -> loadAllPowerups ();
         item_manager            -> loadDefaultItems();
 
+        T__
         GUIEngine::addLoadingIcon( irr_driver->getTexture(
                                     file_manager->getGUIDir() + "/gift.png") );
 
+        T__
         file_manager->popTextureSearchPath();
 
         attachment_manager      -> loadModels      ();
 
+        T__
         GUIEngine::addLoadingIcon( irr_driver->getTexture(
             file_manager->getGUIDir() + "/banana.png") );
 
+        T__
         //handleCmdLine() needs InitTuxkart() so it can't be called first
         if(!handleCmdLine(argc, argv)) exit(0);
 
+        T__
+        UserConfigParams::m_no_start_screen = true;
         addons_manager->checkInstalledAddons();
+        
+        T__
         if(!UserConfigParams::m_no_start_screen)
         {
             StateManager::get()->pushScreen(MainMenuScreen::getInstance());
@@ -1244,34 +1259,45 @@ int main2(int argc, char *argv[] )
         }
         else 
         {
+            T__
             InputDevice *device;
 
+            T__
             // Use keyboard 0 by default in --no-start-screen
             device = input_manager->getDeviceList()->getKeyboard(0);
 
+            T__
             // Create player and associate player with keyboard
             StateManager::get()->createActivePlayer( 
                     UserConfigParams::m_all_players.get(0), device );
 
+            T__
             if (kart_properties_manager->getKart(UserConfigParams::m_default_kart) == NULL)
             {
+                T__
+                    LOGI("Kart %s unknown", UserConfigParams::m_default_kart.c_str());
                 printf("Kart '%s' is unknown so will use the default kart.\n", UserConfigParams::m_default_kart.c_str());
                 race_manager->setLocalKartInfo(0, UserConfigParams::m_default_kart.getDefaultValue());
             }
             else
             {
+                T__
                 // Set up race manager appropriately
                 race_manager->setLocalKartInfo(0, UserConfigParams::m_default_kart);
             }
             
+            T__
             // ASSIGN should make sure that only input from assigned devices
             // is read.
             input_manager->getDeviceList()->setAssignMode(ASSIGN);
 
+            T__
             // Go straight to the race
             StateManager::get()->enterGameState();
+            T__
         }
 
+        T__
         // Replay a race
         // =============
         if(history->replayHistory())
@@ -1287,6 +1313,7 @@ int main2(int argc, char *argv[] )
             exit(-3);
         }
 
+        T__
         // Initialise connection in case that a command line option was set
         // configuring a client or server. Otherwise this function does nothing
         // here (and will be called again from the network gui).
@@ -1295,12 +1322,14 @@ int main2(int argc, char *argv[] )
             fprintf(stderr, "Problems initialising network connections,\n"
                             "Running in non-network mode.\n");
         }
+        T__
         // On the server start with the network information page for now
         if(network_manager->getMode()==NetworkManager::NW_SERVER)
         {
             // TODO - network menu
             //menu_manager->pushMenu(MENUID_NETWORK_GUI);
         }
+        T__
         // Not replaying
         // =============
         if(!ProfileWorld::isProfileMode())

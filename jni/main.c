@@ -197,6 +197,7 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
                 android_window = engine->app->window;
                 android_main_2 ();
             }
+            engine->animating = 1;
             break;
         case APP_CMD_TERM_WINDOW:
             // The window is being hidden or closed, clean it up.

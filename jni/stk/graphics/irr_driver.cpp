@@ -217,8 +217,8 @@ void IrrDriver::initDevice()
         if(!m_device)
         {
             T__
-            UserConfigParams::m_width  = 300;
-            UserConfigParams::m_height = 200;
+            UserConfigParams::m_width  = 800;
+            UserConfigParams::m_height = 600;
         
             T__
             m_device = createDevice(video::EDT_OGLES1,
@@ -359,7 +359,9 @@ void IrrDriver::showPointer()
     if (!m_pointer_shown)
     {
         m_pointer_shown = true;
+#ifndef ANDROID
         this->getDevice()->getCursorControl()->setVisible(true);
+#endif
     }
 }   // showPointer
 
@@ -369,7 +371,9 @@ void IrrDriver::hidePointer()
     if (m_pointer_shown)
     {
         m_pointer_shown = false;
+#ifndef ANDROID
         this->getDevice()->getCursorControl()->setVisible(false);
+#endif
     }
 }   // hidePointer
 
