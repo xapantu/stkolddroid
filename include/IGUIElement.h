@@ -315,7 +315,7 @@ public:
 		{
 			core::list<IGUIElement*>::Iterator it = Children.begin();
 			for (; it != Children.end(); ++it)
-//				(*it)->draw();
+                ;//				(*it)->draw();
 		}
 	}
 

@@ -1,0 +1,286 @@
+<<<<<<< .working
+// Copyright (C) 2002-2011 Nikolaus Gebhardt
+=======
+// Copyright (C) 2002-2009 Nikolaus Gebhardt
+>>>>>>> .merge-right.r2896
+// This file is part of the "Irrlicht Engine".
+// For conditions of distribution and use, see copyright notice in irrlicht.h
+
+#include "CMeshCache.h"
+#include "IAnimatedMesh.h"
+#include "IMesh.h"
+
+namespace irr
+{
+namespace scene
+{
+
+<<<<<<< .working
+static const io::SNamedPath emptyNamedPath;
+=======
+static const io::path emptyPath = "";
+>>>>>>> .merge-right.r2896
+
+
+CMeshCache::~CMeshCache()
+{
+	clear();
+}
+
+
+//! adds a mesh to the list
+void CMeshCache::addMesh(const io::path& filename, IAnimatedMesh* mesh)
+{
+	mesh->grab();
+
+	MeshEntry e ( filename );
+	e.Mesh = mesh;
+
+	Meshes.push_back(e);
+}
+
+
+//! Removes a mesh from the cache.
+void CMeshCache::removeMesh(const IMesh* const mesh)
+{
+	if ( !mesh )
+		return;
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh == mesh || (Meshes[i].Mesh && Meshes[i].Mesh->getMesh(0) == mesh))
+		{
+			Meshes[i].Mesh->drop();
+			Meshes.erase(i);
+			return;
+		}
+	}
+}
+
+
+//! Returns amount of loaded meshes
+u32 CMeshCache::getMeshCount() const
+{
+	return Meshes.size();
+}
+
+
+//! Returns current number of the mesh
+s32 CMeshCache::getMeshIndex(const IMesh* const mesh) const
+{
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh == mesh || (Meshes[i].Mesh && Meshes[i].Mesh->getMesh(0) == mesh))
+			return (s32)i;
+	}
+
+	return -1;
+}
+
+
+//! Returns a mesh based on its index number
+IAnimatedMesh* CMeshCache::getMeshByIndex(u32 number)
+{
+	if (number >= Meshes.size())
+		return 0;
+
+	return Meshes[number].Mesh;
+}
+
+
+<<<<<<< .working
+//! Returns a mesh based on its name.
+IAnimatedMesh* CMeshCache::getMeshByName(const io::path& name)
+=======
+//! Returns a mesh based on its file name.
+IAnimatedMesh* CMeshCache::getMeshByFilename(const io::path& filename)
+>>>>>>> .merge-right.r2896
+{
+<<<<<<< .working
+	MeshEntry e ( name );
+=======
+	MeshEntry e ( filename );
+>>>>>>> .merge-right.r2896
+	s32 id = Meshes.binary_search(e);
+	return (id != -1) ? Meshes[id].Mesh : 0;
+}
+
+
+<<<<<<< .working
+//! Get the name of a loaded mesh, based on its index.
+const io::SNamedPath& CMeshCache::getMeshName(u32 index) const
+=======
+//! Returns name of a mesh based on its index number
+const io::path& CMeshCache::getMeshFilename(u32 number) const
+>>>>>>> .merge-right.r2896
+{
+<<<<<<< .working
+	if (index >= Meshes.size())
+		return emptyNamedPath;
+=======
+	if (number >= Meshes.size())
+		return emptyPath;
+>>>>>>> .merge-right.r2896
+
+<<<<<<< .working
+	return Meshes[index].NamedPath;
+=======
+	return Meshes[number].Name;
+>>>>>>> .merge-right.r2896
+}
+
+
+<<<<<<< .working
+//! Get the name of a loaded mesh, if there is any.
+const io::SNamedPath& CMeshCache::getMeshName(const IMesh* const mesh) const
+=======
+
+//! Returns the filename of a loaded mesh, if there is any.
+const io::path& CMeshCache::getMeshFilename(const IAnimatedMesh* const mesh) const
+>>>>>>> .merge-right.r2896
+{
+<<<<<<< .working
+	if (!mesh)
+		return emptyNamedPath;
+=======
+	if(!mesh)
+		return emptyPath;
+
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh == mesh)
+			return Meshes[i].Name;
+	}
+>>>>>>> .merge-right.r2896
+
+<<<<<<< .working
+=======
+	return emptyPath;
+}
+
+
+//! Returns the filename of a loaded mesh, if there is any. Returns 0 if there is none.
+const io::path& CMeshCache::getMeshFilename(const IMesh* const mesh) const
+{
+>>>>>>> .merge-right.r2896
+	if (!mesh)
+		return emptyPath;
+
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+<<<<<<< .working
+		if (Meshes[i].Mesh == mesh || (Meshes[i].Mesh && Meshes[i].Mesh->getMesh(0) == mesh))
+			return Meshes[i].NamedPath;
+=======
+		// IMesh may actually be an IAnimatedMesh, so do a direct comparison
+		// as well as getting an IMesh from our stored IAnimatedMeshes
+		if (Meshes[i].Mesh && (Meshes[i].Mesh == mesh || Meshes[i].Mesh->getMesh(0) == mesh))
+			return Meshes[i].Name;
+>>>>>>> .merge-right.r2896
+	}
+
+<<<<<<< .working
+	return emptyNamedPath;
+=======
+	return emptyPath;
+>>>>>>> .merge-right.r2896
+}
+
+<<<<<<< .working
+//! Renames a loaded mesh.
+bool CMeshCache::renameMesh(u32 index, const io::path& name)
+=======
+
+
+//! Renames a loaded mesh, if possible.
+bool CMeshCache::setMeshFilename(u32 index, const io::path& filename)
+>>>>>>> .merge-right.r2896
+{
+	if (index >= Meshes.size())
+		return false;
+
+	Meshes[index].NamedPath.setPath(name);
+	Meshes.sort();
+	return true;
+}
+
+
+<<<<<<< .working
+//! Renames a loaded mesh.
+bool CMeshCache::renameMesh(const IMesh* const mesh, const io::path& name)
+=======
+//! Renames a loaded mesh, if possible.
+bool CMeshCache::setMeshFilename(const IAnimatedMesh* const mesh, const io::path& filename)
+>>>>>>> .merge-right.r2896
+{
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh == mesh || (Meshes[i].Mesh && Meshes[i].Mesh->getMesh(0) == mesh))
+		{
+			Meshes[i].NamedPath.setPath(name);
+			Meshes.sort();
+			return true;
+		}
+	}
+
+	return false;
+}
+
+
+<<<<<<< .working
+=======
+//! Renames a loaded mesh, if possible.
+bool CMeshCache::setMeshFilename(const IMesh* const mesh, const io::path& filename)
+{
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh && Meshes[i].Mesh->getMesh(0) == mesh)
+		{
+			Meshes[i].Name = filename;
+			Meshes.sort();
+			return true;
+		}
+	}
+
+	return false;
+}
+
+
+>>>>>>> .merge-right.r2896
+//! returns if a mesh already was loaded
+<<<<<<< .working
+bool CMeshCache::isMeshLoaded(const io::path& name)
+=======
+bool CMeshCache::isMeshLoaded(const io::path& filename)
+>>>>>>> .merge-right.r2896
+{
+	return getMeshByName(name) != 0;
+}
+
+
+//! Clears the whole mesh cache, removing all meshes.
+void CMeshCache::clear()
+{
+	for (u32 i=0; i<Meshes.size(); ++i)
+		Meshes[i].Mesh->drop();
+
+	Meshes.clear();
+}
+
+//! Clears all meshes that are held in the mesh cache but not used anywhere else.
+void CMeshCache::clearUnusedMeshes()
+{
+	for (u32 i=0; i<Meshes.size(); ++i)
+	{
+		if (Meshes[i].Mesh->getReferenceCount() == 1)
+		{
+			Meshes[i].Mesh->drop();
+			Meshes.erase(i);
+			--i;
+		}
+	}
+}
+
+
+} // end namespace scene
+} // end namespace irr
+

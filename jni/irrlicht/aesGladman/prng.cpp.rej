@@ -1,0 +1,11 @@
+--- aesGladman/prng.cpp	(revision 3995)
++++ aesGladman/prng.cpp	(working copy)
+@@ -39,6 +39,8 @@
+ */
+ 
+ #include <memory.h>
++#include <string.h>
++#include <stdio.h>
+ #include "prng.h"
+ 
+ /* mix a random data pool using the SHA1 compression function (as   */

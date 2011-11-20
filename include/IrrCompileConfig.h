@@ -106,11 +106,9 @@
 #define _IRR_COMPILE_WITH_IPHONE_DEVICE_
 #define _IRR_COMPILE_WITH_OGLES1_ // necessary for IPhone for now
 #else
-#define _IRR_COMPILE_WITH_OSX_DEVICE_
+//#define _IRR_COMPILE_WITH_OSX_DEVICE_
 #endif
-#endif
-#define _IRR_COMPILE_WITH_X11_DEVICE_
-#endif
+//#define _IRR_COMPILE_WITH_X11_DEVICE_
 
 
 //! Define _IRR_COMPILE_WITH_JOYSTICK_SUPPORT_ if you want joystick events.

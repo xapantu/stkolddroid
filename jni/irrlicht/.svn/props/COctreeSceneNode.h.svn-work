@@ -1,0 +1,12 @@
+K 13
+svn:eol-style
+V 4
+CRLF
+K 13
+svn:mergeinfo
+V 467
+/branches/releases/1.4/source/Irrlicht/COctTreeSceneNode.h:1528-1537
+/branches/releases/1.5/source/Irrlicht/COctTreeSceneNode.h:2682-2716
+/branches/releases/1.7/source/Irrlicht/COctreeSceneNode.h:3090-3138,3140-3197,3199-3270,3272-3288,3290-3299,3301-3355,3359-3364,3366-3387,3389-3414,3421-3447,3449-3513,3515-3533,3536-3554,3572-3829,3831-3846,3876-3908,3910-3924,3936-3942
+/trunk/source/Irrlicht/COctreeSceneNode.h:3175-3365,3370-3559,3561-3726,3728-3830,3832-3995
+END

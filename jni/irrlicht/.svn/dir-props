@@ -1,0 +1,24 @@
+K 10
+svn:ignore
+V 106
+*.a
+*.d
+*.dll
+*.ncb
+*.obj
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.layout
+*.depend
+Release - Fast FPU
+ipch
+obj
+tags
+
+K 13
+svn:mergeinfo
+V 32
+/trunk/source/Irrlicht:3910-3995
+END
