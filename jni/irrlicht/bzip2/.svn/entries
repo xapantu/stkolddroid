@@ -11,7 +11,7 @@ https://irrlicht.svn.sourceforge.net/svnroot/irrlicht
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -876,40 +876,6 @@ hybrid
 
 945
 
-LICENSE
-file
-
-
-
-
-2011-11-19T13:47:38.876154Z
-ddeb76cd34e791893c0f539fdab879bb
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1901
-
 README.XML.STUFF
 file
 
@@ -943,6 +909,40 @@ hybrid
 
 
 1364
+
+LICENSE
+file
+
+
+
+
+2011-11-19T13:47:38.876154Z
+ddeb76cd34e791893c0f539fdab879bb
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1901
 
 blocksort.c
 file

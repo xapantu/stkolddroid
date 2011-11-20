@@ -11,7 +11,7 @@ https://irrlicht.svn.sourceforge.net/svnroot/irrlicht
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -471,40 +471,6 @@ hybrid
 
 4768
 
-pngtest.png
-file
-
-
-
-
-2011-11-19T13:47:43.148154Z
-f9b6f9b1ff83b93d9dac007cd37a1442
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8695
-
 pnglibconf.h
 file
 
@@ -538,6 +504,40 @@ hybrid
 
 
 6471
+
+pngtest.png
+file
+
+
+
+
+2011-11-19T13:47:43.148154Z
+f9b6f9b1ff83b93d9dac007cd37a1442
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8695
 
 CHANGES
 file
@@ -607,40 +607,6 @@ has-props
 
 115282
 
-example.c
-file
-
-
-
-
-2011-11-19T13:47:43.156154Z
-bdd6bb536f9aa517e7da95efb7b1500d
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-31909
-
 libpng.3
 file
 
@@ -675,17 +641,18 @@ hybrid
 
 245483
 
-CMakeLists.txt
+example.c
 file
 
 
 
 
 2011-11-19T13:47:43.156154Z
-b1450c1246bac1a3aefd2cbeb8221c28
+bdd6bb536f9aa517e7da95efb7b1500d
 2011-10-16T10:48:26.144137Z
 3944
 hybrid
+has-props
 
 
 
@@ -706,8 +673,7 @@ hybrid
 
 
 
-
-12642
+31909
 
 pngtrans.c
 file
@@ -743,6 +709,40 @@ has-props
 
 20605
 
+CMakeLists.txt
+file
+
+
+
+
+2011-11-19T13:47:43.156154Z
+b1450c1246bac1a3aefd2cbeb8221c28
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12642
+
 pngrio.c
 file
 
@@ -776,40 +776,6 @@ has-props
 
 
 5398
-
-pngconf.h
-file
-
-
-
-
-2011-11-19T13:47:43.160154Z
-56b628163f7f3b5abd3e09a38bfd173e
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-21975
 
 pngwrite.c
 file
@@ -845,14 +811,14 @@ has-props
 
 52174
 
-pngpread.c
+pngconf.h
 file
 
 
 
 
 2011-11-19T13:47:43.160154Z
-6f7f37aa65673052d1e35faf104070dc
+56b628163f7f3b5abd3e09a38bfd173e
 2011-10-16T10:48:26.144137Z
 3944
 hybrid
@@ -877,7 +843,7 @@ has-props
 
 
 
-53102
+21975
 
 pngset.c
 file
@@ -912,6 +878,40 @@ has-props
 
 
 37254
+
+pngpread.c
+file
+
+
+
+
+2011-11-19T13:47:43.160154Z
+6f7f37aa65673052d1e35faf104070dc
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53102
 
 LICENSE
 file

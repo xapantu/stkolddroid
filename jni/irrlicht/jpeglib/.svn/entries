@@ -11,7 +11,7 @@ https://irrlicht.svn.sourceforge.net/svnroot/irrlicht
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -536,16 +536,16 @@ has-props
 
 17146
 
-jmemmgr.c
+jcsample.c
 file
 
 
 
 
-2011-11-19T13:47:49.832154Z
-2e76dcd4da1c7bbfef7d886759ef128f
-2009-09-16T12:48:19.452316Z
-2695
+2011-11-19T13:47:49.828154Z
+d083eeb0c34fc9ccd4de8648da9cf4aa
+2010-01-23T20:13:43.996668Z
+3174
 hybrid
 has-props
 
@@ -568,7 +568,7 @@ has-props
 
 
 
-42106
+20468
 
 jcmarker.c
 file
@@ -604,50 +604,16 @@ has-props
 
 18408
 
-jcsample.c
-file
-
-
-
-
-2011-11-19T13:47:49.828154Z
-d083eeb0c34fc9ccd4de8648da9cf4aa
-2010-01-23T20:13:43.996668Z
-3174
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20468
-
-jdsample.c
+jmemmgr.c
 file
 
 
 
 
 2011-11-19T13:47:49.832154Z
-36ad6089bba877b4177400feea302e5b
-2010-01-23T20:13:43.996668Z
-3174
+2e76dcd4da1c7bbfef7d886759ef128f
+2009-09-16T12:48:19.452316Z
+2695
 hybrid
 has-props
 
@@ -670,7 +636,7 @@ has-props
 
 
 
-12329
+42106
 
 jdmarker.c
 file
@@ -706,16 +672,16 @@ has-props
 
 43997
 
-jmorecfg.h
+jdsample.c
 file
 
 
 
 
 2011-11-19T13:47:49.832154Z
-32aecad56f972290270f296825618cae
-2010-07-18T21:25:27.939061Z
-3369
+36ad6089bba877b4177400feea302e5b
+2010-01-23T20:13:43.996668Z
+3174
 hybrid
 has-props
 
@@ -738,41 +704,7 @@ has-props
 
 
 
-13084
-
-rdcolmap.c
-file
-
-
-
-
-2011-11-19T13:47:49.832154Z
-43f175d9d6bb71e218508a9d66bf65a4
-2009-09-16T12:48:19.452316Z
-2695
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7102
+12329
 
 usage.txt
 file
@@ -808,6 +740,74 @@ hybrid
 
 31359
 
+rdcolmap.c
+file
+
+
+
+
+2011-11-19T13:47:49.832154Z
+43f175d9d6bb71e218508a9d66bf65a4
+2009-09-16T12:48:19.452316Z
+2695
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7102
+
+jmorecfg.h
+file
+
+
+
+
+2011-11-19T13:47:49.832154Z
+32aecad56f972290270f296825618cae
+2010-07-18T21:25:27.939061Z
+3369
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13084
+
 jinclude.h
 file
 
@@ -841,40 +841,6 @@ has-props
 
 
 3341
-
-jpegint.h
-file
-
-
-
-
-2011-11-19T13:47:49.832154Z
-4b50517eeaa5a03bebaede6baeafc402
-2010-07-18T21:25:27.939061Z
-3369
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16877
 
 testprog.jpg
 file
@@ -910,6 +876,40 @@ has-props
 
 5655
 
+jpegint.h
+file
+
+
+
+
+2011-11-19T13:47:49.832154Z
+4b50517eeaa5a03bebaede6baeafc402
+2010-07-18T21:25:27.939061Z
+3369
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16877
+
 rdrle.c
 file
 
@@ -944,40 +944,6 @@ has-props
 
 12060
 
-libjpeg.txt
-file
-
-
-
-
-2011-11-19T13:47:49.836154Z
-35b4c614f378ba8355e6af104491e00e
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-165878
-
 makewmak.vc6
 file
 
@@ -1011,6 +977,40 @@ hybrid
 
 
 2584
+
+libjpeg.txt
+file
+
+
+
+
+2011-11-19T13:47:49.836154Z
+35b4c614f378ba8355e6af104491e00e
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+165878
 
 jdinput.c
 file
@@ -2134,40 +2134,6 @@ hybrid
 
 2185
 
-makejdsw.vc6
-file
-
-
-
-
-2011-11-19T13:47:49.844154Z
-ab60a7881187950ca8ae737bf2399b71
-2010-01-23T20:13:43.996668Z
-3174
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-561
-
 makefile.sas
 file
 
@@ -2201,6 +2167,40 @@ hybrid
 
 
 13287
+
+makejdsw.vc6
+file
+
+
+
+
+2011-11-19T13:47:49.844154Z
+ab60a7881187950ca8ae737bf2399b71
+2010-01-23T20:13:43.996668Z
+3174
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+561
 
 coderules.txt
 file
@@ -2338,40 +2338,6 @@ hybrid
 
 13919
 
-jmemname.c
-file
-
-
-
-
-2011-11-19T13:47:49.848154Z
-f21d2a9a826020f655de12e367d1788b
-2009-09-16T12:48:19.452316Z
-2695
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8590
-
 jdct.h
 file
 
@@ -2405,6 +2371,40 @@ has-props
 
 
 17538
+
+jmemname.c
+file
+
+
+
+
+2011-11-19T13:47:49.848154Z
+f21d2a9a826020f655de12e367d1788b
+2009-09-16T12:48:19.452316Z
+2695
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8590
 
 jdatasrc.c
 file
@@ -2780,40 +2780,6 @@ hybrid
 
 146
 
-README
-file
-
-
-
-
-2011-11-19T13:47:49.848154Z
-2a7f9a9a1b2632f4c9551bb98a1854ab
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16249
-
 jconfig.txt
 file
 
@@ -2847,6 +2813,40 @@ hybrid
 
 
 5801
+
+README
+file
+
+
+
+
+2011-11-19T13:47:49.848154Z
+2a7f9a9a1b2632f4c9551bb98a1854ab
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16249
 
 jdmerge.c
 file
@@ -2984,40 +2984,6 @@ has-props
 
 21008
 
-Makefile.am
-file
-
-
-
-
-2011-11-19T13:47:49.852154Z
-050d84850284746ebaede61b8eb28302
-2010-07-18T21:25:27.939061Z
-3369
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5082
-
 cjpeg.c
 file
 
@@ -3052,16 +3018,16 @@ has-props
 
 21499
 
-aclocal.m4
+Makefile.am
 file
 
 
 
 
 2011-11-19T13:47:49.852154Z
-cb1161e01e2fbc12d8a6300099d58316
-2011-10-16T10:48:26.144137Z
-3944
+050d84850284746ebaede61b8eb28302
+2010-07-18T21:25:27.939061Z
+3369
 hybrid
 
 
@@ -3084,7 +3050,7 @@ hybrid
 
 
 
-350730
+5082
 
 jdcolor.c
 file
@@ -3120,6 +3086,40 @@ has-props
 
 13358
 
+aclocal.m4
+file
+
+
+
+
+2011-11-19T13:47:49.852154Z
+cb1161e01e2fbc12d8a6300099d58316
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+350730
+
 install-sh
 file
 
@@ -3154,40 +3154,6 @@ hybrid
 
 14183
 
-jdatadst.c
-file
-
-
-
-
-2011-11-19T13:47:49.852154Z
-9aad7bae8321c9d035eeec3577cbe197
-2010-07-18T21:25:27.939061Z
-3369
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8770
-
 testorig.jpg
 file
 
@@ -3221,6 +3187,40 @@ has-props
 
 
 5770
+
+jdatadst.c
+file
+
+
+
+
+2011-11-19T13:47:49.852154Z
+9aad7bae8321c9d035eeec3577cbe197
+2010-07-18T21:25:27.939061Z
+3369
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8770
 
 Makefile.in
 file
@@ -3392,14 +3392,14 @@ has-props
 
 5193
 
-depcomp
+maketmak.vc6
 file
 
 
 
 
 2011-11-19T13:47:49.852154Z
-c010e1cb65e323db5f478a8e6359d752
+3553b7cc7029b1547c7fb76981a02071
 2010-01-23T20:13:43.996668Z
 3174
 hybrid
@@ -3424,7 +3424,7 @@ hybrid
 
 
 
-19245
+2999
 
 makejfil.v10
 file
@@ -3460,14 +3460,14 @@ hybrid
 
 5974
 
-maketmak.vc6
+depcomp
 file
 
 
 
 
 2011-11-19T13:47:49.852154Z
-3553b7cc7029b1547c7fb76981a02071
+c010e1cb65e323db5f478a8e6359d752
 2010-01-23T20:13:43.996668Z
 3174
 hybrid
@@ -3492,7 +3492,7 @@ hybrid
 
 
 
-2999
+19245
 
 wrtarga.c
 file
@@ -3596,16 +3596,16 @@ hybrid
 
 1350
 
-jaricom.c
+maketdsp.vc6
 file
 
 
 
 
 2011-11-19T13:47:49.856154Z
-d4cc91481cb4cfd8c3de55e5e9b77b63
-2010-07-18T21:25:27.939061Z
-3369
+b15be640ac881bb6392c651b39d00556
+2010-01-23T20:13:43.996668Z
+3174
 hybrid
 
 
@@ -3628,7 +3628,7 @@ hybrid
 
 
 
-5219
+3407
 
 change.log
 file
@@ -3664,48 +3664,14 @@ hybrid
 
 13711
 
-maketdsp.vc6
+jaricom.c
 file
 
 
 
 
 2011-11-19T13:47:49.856154Z
-b15be640ac881bb6392c651b39d00556
-2010-01-23T20:13:43.996668Z
-3174
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3407
-
-makefile.ansi
-file
-
-
-
-
-2011-11-19T13:47:49.856154Z
-d78e94edbcbdcea2c4676073a41f2dfd
+d4cc91481cb4cfd8c3de55e5e9b77b63
 2010-07-18T21:25:27.939061Z
 3369
 hybrid
@@ -3730,7 +3696,7 @@ hybrid
 
 
 
-12460
+5219
 
 makecmak.vc6
 file
@@ -3765,6 +3731,40 @@ hybrid
 
 
 3436
+
+makefile.ansi
+file
+
+
+
+
+2011-11-19T13:47:49.856154Z
+d78e94edbcbdcea2c4676073a41f2dfd
+2010-07-18T21:25:27.939061Z
+3369
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12460
 
 makedvcx.v10
 file
@@ -3936,40 +3936,6 @@ hybrid
 
 1242
 
-makefile.vms
-file
-
-
-
-
-2011-11-19T13:47:49.856154Z
-95905fdbb948f2a48b3af5ed56c303a7
-2010-01-23T20:13:43.996668Z
-3174
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4563
-
 jfdctflt.c
 file
 
@@ -4004,14 +3970,14 @@ has-props
 
 6182
 
-makecdsp.vc6
+makefile.vms
 file
 
 
 
 
 2011-11-19T13:47:49.856154Z
-a8a95e9ef45bb76120092daba7b5bbe9
+95905fdbb948f2a48b3af5ed56c303a7
 2010-01-23T20:13:43.996668Z
 3174
 hybrid
@@ -4036,7 +4002,7 @@ hybrid
 
 
 
-3479
+4563
 
 jidctflt.c
 file
@@ -4071,6 +4037,40 @@ has-props
 
 
 8554
+
+makecdsp.vc6
+file
+
+
+
+
+2011-11-19T13:47:49.856154Z
+a8a95e9ef45bb76120092daba7b5bbe9
+2010-01-23T20:13:43.996668Z
+3174
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3479
 
 jctrans.c
 file
@@ -4140,16 +4140,16 @@ hybrid
 
 3608
 
-jutils.c
+testimg.jpg
 file
 
 
 
 
 2011-11-19T13:47:49.860154Z
-dde29155ff4491e85a393c7a95b722ee
-2010-07-18T21:25:27.939061Z
-3369
+12d067dbc31331db0d09c6b5099b14b9
+2010-01-23T20:13:43.996668Z
+3174
 hybrid
 has-props
 
@@ -4172,7 +4172,7 @@ has-props
 
 
 
-7004
+5764
 
 jcprepct.c
 file
@@ -4208,16 +4208,16 @@ has-props
 
 12574
 
-testimg.jpg
+jutils.c
 file
 
 
 
 
 2011-11-19T13:47:49.860154Z
-12d067dbc31331db0d09c6b5099b14b9
-2010-01-23T20:13:43.996668Z
-3174
+dde29155ff4491e85a393c7a95b722ee
+2010-07-18T21:25:27.939061Z
+3369
 hybrid
 has-props
 
@@ -4240,41 +4240,7 @@ has-props
 
 
 
-5764
-
-jconfig.mc6
-file
-
-
-
-
-2011-11-19T13:47:49.860154Z
-ecf68f5cf32dcc8ecedcd0be6abed16f
-2010-07-18T21:25:27.939061Z
-3369
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1713
+7004
 
 rdppm.c
 file
@@ -4309,6 +4275,40 @@ has-props
 
 
 14537
+
+jconfig.mc6
+file
+
+
+
+
+2011-11-19T13:47:49.860154Z
+ecf68f5cf32dcc8ecedcd0be6abed16f
+2010-07-18T21:25:27.939061Z
+3369
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1713
 
 ckconfig.c
 file

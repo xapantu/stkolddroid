@@ -11,7 +11,7 @@ https://irrlicht.svn.sourceforge.net/svnroot/irrlicht
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -66,7 +66,7 @@ file
 
 
 
-2011-11-19T13:47:52.284154Z
+2011-11-20T11:48:10.171818Z
 7592b02e42ea56c4c55aea14fa3a6265
 2011-06-09T07:08:47.947401Z
 3831
@@ -100,7 +100,7 @@ file
 
 
 
-2011-11-19T13:47:52.284154Z
+2011-11-20T11:48:10.155818Z
 ff196bcbd06915ccf8c590a082da88d7
 2011-10-16T10:48:26.144137Z
 3944
@@ -127,74 +127,6 @@ has-props
 
 
 5973
-
-CIrrDeviceConsole.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.288154Z
-544f73a2b01a8196148fbec39c263ca5
-2011-05-18T22:21:50.222645Z
-3727
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12648
-
-CD3D8ShaderMaterialRenderer.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.288154Z
-d5abed3aa9ae00ec520a903f1e20baa7
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8482
 
 CBlit.h
 file
@@ -230,6 +162,74 @@ has-props
 
 28030
 
+CD3D8ShaderMaterialRenderer.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.288154Z
+d5abed3aa9ae00ec520a903f1e20baa7
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8482
+
+CIrrDeviceConsole.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.288154Z
+544f73a2b01a8196148fbec39c263ca5
+2011-05-18T22:21:50.222645Z
+3727
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12648
+
 CLWOMeshFileLoader.cpp
 file
 
@@ -264,17 +264,18 @@ has-props
 
 56112
 
-CSceneLoaderIrr.h
+CD3D9NormalMapRenderer.h
 file
 
 
 
 
 2011-11-19T13:47:52.288154Z
-94d8c61e59a7bb20cebfdebd900cd5fe
-2011-05-18T22:21:50.222645Z
-3727
+3c32127042ad804983b602e2c75ea02e
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
+has-props
 
 
 
@@ -295,8 +296,7 @@ hybrid
 
 
 
-
-2100
+1463
 
 CParticleAttractionAffector.cpp
 file
@@ -332,18 +332,17 @@ has-props
 
 2213
 
-CD3D9NormalMapRenderer.h
+CSceneLoaderIrr.h
 file
 
 
 
 
 2011-11-19T13:47:52.288154Z
-3c32127042ad804983b602e2c75ea02e
-2011-01-14T15:36:50.758105Z
-3560
+94d8c61e59a7bb20cebfdebd900cd5fe
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
-has-props
 
 
 
@@ -364,7 +363,8 @@ has-props
 
 
 
-1463
+
+2100
 
 CGUIMenu.cpp
 file
@@ -434,40 +434,6 @@ has-props
 
 9849
 
-CSoftwareDriver.h
-file
-
-
-
-
-2011-11-19T13:47:52.292154Z
-faab6d8ccd6d0596c37ebd6cd3270e05
-2011-06-09T07:08:47.947401Z
-3831
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6341
-
 CSTLMeshFileLoader.h
 file
 
@@ -501,6 +467,40 @@ has-props
 
 
 1528
+
+CSoftwareDriver.h
+file
+
+
+
+
+2011-11-19T13:47:52.292154Z
+faab6d8ccd6d0596c37ebd6cd3270e05
+2011-06-09T07:08:47.947401Z
+3831
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6341
 
 CCameraSceneNode.cpp
 file
@@ -780,7 +780,7 @@ file
 
 
 
-2011-11-19T13:47:52.296154Z
+2011-11-20T11:48:10.171818Z
 795920c32f5f4eb376cae10508af6ec6
 2011-06-09T07:08:47.947401Z
 3831
@@ -882,7 +882,7 @@ file
 
 
 
-2011-11-19T13:47:52.296154Z
+2011-11-20T11:48:10.163818Z
 5d65e9d35dca68372c0ecde44e30051b
 2011-06-09T07:08:47.947401Z
 3831
@@ -1046,40 +1046,6 @@ has-props
 
 6247
 
-CCubeSceneNode.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.296154Z
-dc8325630017e1b302210e23707b3d14
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5226
-
 CIrrDeviceWinCE.cpp
 file
 
@@ -1113,6 +1079,40 @@ has-props
 
 
 22827
+
+CCubeSceneNode.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.296154Z
+dc8325630017e1b302210e23707b3d14
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5226
 
 CZBuffer.cpp
 file
@@ -1148,16 +1148,16 @@ has-props
 
 1705
 
-CIrrDeviceConsole.h
+CParticleSphereEmitter.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.300154Z
-3b57fde3db3e3dbe5393176da9a9c9f4
-2011-01-14T15:36:50.758105Z
-3560
+7ae91b334e14a96dbc77251e32e0aea4
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
 has-props
 
@@ -1180,7 +1180,7 @@ has-props
 
 
 
-9089
+6043
 
 CD3D8ShaderMaterialRenderer.h
 file
@@ -1216,16 +1216,16 @@ has-props
 
 2340
 
-CParticleSphereEmitter.cpp
+CIrrDeviceConsole.h
 file
 
 
 
 
 2011-11-19T13:47:52.300154Z
-7ae91b334e14a96dbc77251e32e0aea4
-2011-05-18T22:21:50.222645Z
-3727
+3b57fde3db3e3dbe5393176da9a9c9f4
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
 has-props
 
@@ -1248,7 +1248,7 @@ has-props
 
 
 
-6043
+9089
 
 COGLES2SLMaterialRenderer.h
 file
@@ -1284,74 +1284,6 @@ hybrid
 
 4592
 
-CIrrMeshWriter.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.300154Z
-b562eddf034de3c58004385632cf32fb
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7385
-
-CShadowVolumeSceneNode.h
-file
-
-
-
-
-2011-11-19T13:47:52.300154Z
-aca0a9e9cf2fbd9441fb5946b72c6b20
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2382
-
 IBurningShader.h
 file
 
@@ -1385,6 +1317,74 @@ has-props
 
 
 5672
+
+CShadowVolumeSceneNode.h
+file
+
+
+
+
+2011-11-20T11:48:10.171818Z
+aca0a9e9cf2fbd9441fb5946b72c6b20
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2382
+
+CIrrMeshWriter.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.300154Z
+b562eddf034de3c58004385632cf32fb
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7385
 
 ISceneNodeAnimatorFinishing.h
 file
@@ -1420,40 +1420,6 @@ has-props
 
 829
 
-COctreeSceneNode.h
-file
-
-
-
-
-2011-11-19T13:47:52.300154Z
-0febb32c0b310c2847af52d5c10a814d
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3229
-
 CTriangleBBSelector.cpp
 file
 
@@ -1487,6 +1453,40 @@ has-props
 
 
 1656
+
+COctreeSceneNode.h
+file
+
+
+
+
+2011-11-19T13:47:52.300154Z
+0febb32c0b310c2847af52d5c10a814d
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3229
 
 CColorConverter.h
 file
@@ -1522,74 +1522,6 @@ has-props
 
 4668
 
-COGLES2Renderer2D.h
-file
-
-
-
-
-2011-11-19T13:47:52.300154Z
-6fb00e5689b8537882f91dbaef56a735
-2011-06-07T08:56:52.434255Z
-3811
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1233
-
-COctreeTriangleSelector.h
-file
-
-
-
-
-2011-11-19T13:47:52.300154Z
-07ac834d9babaae6344f982e12f774d3
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2093
-
 Irrlicht8.0.sln
 file
 
@@ -1624,13 +1556,81 @@ hybrid
 
 1756
 
-COpenGLExtensionHandler.cpp
+COctreeTriangleSelector.h
 file
 
 
 
 
 2011-11-19T13:47:52.300154Z
+07ac834d9babaae6344f982e12f774d3
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2093
+
+COGLES2Renderer2D.h
+file
+
+
+
+
+2011-11-19T13:47:52.300154Z
+6fb00e5689b8537882f91dbaef56a735
+2011-06-07T08:56:52.434255Z
+3811
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1233
+
+COpenGLExtensionHandler.cpp
+file
+
+
+
+
+2011-11-20T11:48:10.163818Z
 647d99fa2f6ee4ecb13920ffec62afc6
 2011-10-16T10:48:26.144137Z
 3944
@@ -1664,7 +1664,7 @@ file
 
 
 
-2011-11-19T13:47:52.304154Z
+2011-11-20T11:48:10.151818Z
 2aa543554ffd0b27696df3b5f184c9dc
 2011-06-09T07:08:47.947401Z
 3831
@@ -1828,40 +1828,6 @@ has-props
 
 4745
 
-CSceneNodeAnimatorCollisionResponse.h
-file
-
-
-
-
-2011-11-19T13:47:52.304154Z
-63990df145c127f137f822fa8cef96da
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5941
-
 CTRGouraud2.cpp
 file
 
@@ -1896,14 +1862,14 @@ has-props
 
 13241
 
-CLightSceneNode.h
+CSceneNodeAnimatorCollisionResponse.h
 file
 
 
 
 
 2011-11-19T13:47:52.304154Z
-b5c74301d4c66eed476747047f292ccc
+63990df145c127f137f822fa8cef96da
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -1928,7 +1894,7 @@ has-props
 
 
 
-3469
+5941
 
 COGLES2SLMaterialRenderer.cpp
 file
@@ -1964,16 +1930,16 @@ hybrid
 
 15627
 
-CGUITable.h
+CLightSceneNode.h
 file
 
 
 
 
 2011-11-19T13:47:52.304154Z
-2b2eddcf6ded9f2c76f07a83f1059269
-2011-05-18T22:21:50.222645Z
-3727
+b5c74301d4c66eed476747047f292ccc
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
 has-props
 
@@ -1996,7 +1962,7 @@ has-props
 
 
 
-7286
+3469
 
 CImageWriterPPM.h
 file
@@ -2032,16 +1998,16 @@ has-props
 
 863
 
-CSoftwareTexture2.h
+CGUITable.h
 file
 
 
 
 
-2011-11-19T13:47:52.308154Z
-12bbdf9d11ad01d95f30a19593f2c242
-2011-01-14T15:36:50.758105Z
-3560
+2011-11-19T13:47:52.304154Z
+2b2eddcf6ded9f2c76f07a83f1059269
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
 has-props
 
@@ -2064,7 +2030,7 @@ has-props
 
 
 
-3033
+7286
 
 CDMFLoader.h
 file
@@ -2099,6 +2065,40 @@ has-props
 
 
 3329
+
+CSoftwareTexture2.h
+file
+
+
+
+
+2011-11-19T13:47:52.308154Z
+12bbdf9d11ad01d95f30a19593f2c242
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3033
 
 CWADReader.h
 file
@@ -2248,7 +2248,7 @@ file
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -2276,7 +2276,7 @@ file
 
 
 
-2011-11-19T13:47:52.308154Z
+2011-11-20T11:48:10.175818Z
 9580409763d6a966714e208538b0750a
 2011-05-18T22:21:50.222645Z
 3727
@@ -2514,7 +2514,7 @@ file
 
 
 
-2011-11-19T13:47:52.312154Z
+2011-11-20T11:48:10.163818Z
 a4330fea10e4725fc152d201251c294f
 2011-10-16T10:48:26.144137Z
 3944
@@ -2755,7 +2755,7 @@ file
 
 
 
-2011-11-19T13:47:52.316154Z
+2011-11-20T11:48:10.163818Z
 6090449e3a7d77523dadd8d57ea69c1f
 2011-10-16T10:48:26.144137Z
 3944
@@ -2857,7 +2857,7 @@ file
 
 
 
-2011-11-19T13:47:52.316154Z
+2011-11-20T11:48:10.155818Z
 db49587bb469d2bb38fe9aad90895d27
 2011-10-16T10:48:26.144137Z
 3944
@@ -3367,7 +3367,7 @@ file
 
 
 
-2011-11-19T13:47:52.320154Z
+2011-11-20T11:37:29.007795Z
 f56e52742837bdfaaacf138c75a5cfc3
 2011-10-16T10:48:26.144137Z
 3944
@@ -3673,7 +3673,7 @@ file
 
 
 
-2011-11-19T13:47:52.324154Z
+2011-11-20T11:48:10.147818Z
 91bc99c00779513f49bbdd5062ca09f9
 2011-09-08T22:15:27.165251Z
 3910
@@ -4081,7 +4081,7 @@ file
 
 
 
-2011-11-19T13:47:52.328154Z
+2011-11-20T11:48:10.155818Z
 828871026afbe9adb6776fad70579375
 2011-01-14T15:36:50.758105Z
 3560
@@ -4313,40 +4313,6 @@ has-props
 
 62194
 
-CShadowVolumeSceneNode.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.328154Z
-c7ea668cd0160cb2690e934990bcb471
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9702
-
 IBurningShader.cpp
 file
 
@@ -4380,6 +4346,40 @@ has-props
 
 
 2881
+
+CShadowVolumeSceneNode.cpp
+file
+
+
+
+
+2011-11-20T11:48:10.171818Z
+c7ea668cd0160cb2690e934990bcb471
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9702
 
 CGUIColorSelectDialog.cpp
 file
@@ -4421,7 +4421,7 @@ file
 
 
 
-2011-11-19T13:47:52.332154Z
+2011-11-20T11:48:10.167818Z
 f4c02c1a4680a33df90cf6dfc35b90aa
 2011-09-08T22:15:27.165251Z
 3910
@@ -4483,17 +4483,18 @@ has-props
 
 1895
 
-COGLES2ParallaxMapRenderer.h
+CSphereSceneNode.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.332154Z
-be131bf906db748d03f73ab4bcbae252
-2011-06-03T11:32:53.533820Z
-3782
+931a2de5d21d900c4c2b1bf9dc6f7f98
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
+has-props
 
 
 
@@ -4514,8 +4515,7 @@ hybrid
 
 
 
-
-1883
+4415
 
 CImageLoaderTGA.h
 file
@@ -4551,18 +4551,17 @@ has-props
 
 2250
 
-CSphereSceneNode.cpp
+COGLES2ParallaxMapRenderer.h
 file
 
 
 
 
 2011-11-19T13:47:52.332154Z
-931a2de5d21d900c4c2b1bf9dc6f7f98
-2011-01-14T15:36:50.758105Z
-3560
+be131bf906db748d03f73ab4bcbae252
+2011-06-03T11:32:53.533820Z
+3782
 hybrid
-has-props
 
 
 
@@ -4583,41 +4582,8 @@ has-props
 
 
 
-4415
-
-CIrrMeshWriter.h
-file
 
-
-
-
-2011-11-19T13:47:52.332154Z
-ad7f77584a07333bc534458742db2b8b
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1558
+1883
 
 CSoftwareTexture.cpp
 file
@@ -4652,6 +4618,40 @@ has-props
 
 
 2799
+
+CIrrMeshWriter.h
+file
+
+
+
+
+2011-11-19T13:47:52.332154Z
+ad7f77584a07333bc534458742db2b8b
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1558
 
 CB3DMeshFileLoader.cpp
 file
@@ -4795,7 +4795,7 @@ file
 
 
 
-2011-11-19T13:47:52.332154Z
+2011-11-20T11:48:10.151818Z
 7ce166a07b2cfafe3555b17733ba2c14
 2011-09-08T22:15:27.165251Z
 3910
@@ -4822,108 +4822,6 @@ has-props
 
 
 24556
-
-CMeshCache.h
-file
-
-
-
-
-2011-11-19T13:47:52.336154Z
-9eaad4f70a37911fe83f19e0c1dcd706
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4731
-
-CGUIButton.h
-file
-
-
-
-
-2011-11-19T13:47:52.336154Z
-bdf028eca6513b801000ed4c28230a4c
-2011-09-08T22:15:27.165251Z
-3910
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4551
-
-CSceneNodeAnimatorCameraFPS.h
-file
-
-
-
-
-2011-11-19T13:47:52.336154Z
-9bf9f91e44a2015a88557a6f33d628b5
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3462
 
 Irrlicht10.0.vcxproj
 file
@@ -4959,17 +4857,52 @@ hybrid
 
 91413
 
-COGLES2ExtensionHandler.cpp
+CSceneNodeAnimatorCameraFPS.h
+file
+
+
+
+
+2011-11-20T11:48:10.171818Z
+9bf9f91e44a2015a88557a6f33d628b5
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3462
+
+CGUIButton.h
 file
 
 
 
 
 2011-11-19T13:47:52.336154Z
-c504422b81ddd065df6780d568585661
-2011-06-09T16:19:22.414580Z
-3839
+bdf028eca6513b801000ed4c28230a4c
+2011-09-08T22:15:27.165251Z
+3910
 hybrid
+has-props
 
 
 
@@ -4990,8 +4923,41 @@ hybrid
 
 
 
+4551
+
+CMeshCache.h
+file
 
-6604
+
+
+
+2011-11-19T13:47:52.336154Z
+9eaad4f70a37911fe83f19e0c1dcd706
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4731
 
 CImageLoaderPPM.cpp
 file
@@ -5027,18 +4993,17 @@ has-props
 
 6093
 
-CSceneNodeAnimatorCollisionResponse.cpp
+COGLES2ExtensionHandler.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.336154Z
-a4a5060e4079d304373d71c4d016c4c6
-2011-01-14T15:36:50.758105Z
-3560
+c504422b81ddd065df6780d568585661
+2011-06-09T16:19:22.414580Z
+3839
 hybrid
-has-props
 
 
 
@@ -5059,7 +5024,8 @@ has-props
 
 
 
-7774
+
+6604
 
 Makefile
 file
@@ -5095,14 +5061,14 @@ has-props
 
 12470
 
-CParticleFadeOutAffector.h
+CSceneNodeAnimatorCollisionResponse.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.336154Z
-d051ec5bf428e507b89cf0ef87aae25d
+a4a5060e4079d304373d71c4d016c4c6
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -5127,7 +5093,7 @@ has-props
 
 
 
-2267
+7774
 
 gles-ext.h
 file
@@ -5162,6 +5128,40 @@ hybrid
 
 
 52514
+
+CParticleFadeOutAffector.h
+file
+
+
+
+
+2011-11-19T13:47:52.336154Z
+d051ec5bf428e507b89cf0ef87aae25d
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2267
 
 COGLESTexture.h
 file
@@ -5231,16 +5231,16 @@ has-props
 
 1829
 
-CIrrDeviceWin32.h
+CTRTextureFlatWire.cpp
 file
 
 
 
 
-2011-11-19T13:47:52.340154Z
-cc741743980840c0e34da2acaf09b2c9
-2011-05-18T22:21:50.222645Z
-3727
+2011-11-19T13:47:52.336154Z
+4ab1a7cf7ee2120fcc7a37ff9246d911
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
 has-props
 
@@ -5263,7 +5263,7 @@ has-props
 
 
 
-11478
+8718
 
 CGUITreeView.h
 file
@@ -5299,16 +5299,16 @@ has-props
 
 10547
 
-CTRTextureFlatWire.cpp
+CIrrDeviceWin32.h
 file
 
 
 
 
-2011-11-19T13:47:52.336154Z
-4ab1a7cf7ee2120fcc7a37ff9246d911
-2011-01-14T15:36:50.758105Z
-3560
+2011-11-19T13:47:52.340154Z
+cc741743980840c0e34da2acaf09b2c9
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
 has-props
 
@@ -5331,7 +5331,7 @@ has-props
 
 
 
-8718
+11478
 
 CAnimatedMeshMD3.h
 file
@@ -5339,7 +5339,7 @@ file
 
 
 
-2011-11-19T13:47:52.340154Z
+2011-11-20T11:31:40.079782Z
 f623ab5c2f6abf457ba741b1deaaaf21
 2011-01-14T15:36:50.758105Z
 3560
@@ -5366,40 +5366,6 @@ has-props
 
 
 3581
-
-COGLESExtensionHandler.h
-file
-
-
-
-
-2011-11-19T13:47:52.340154Z
-390973850276b4c0921a84dc219abf57
-2011-06-09T14:53:26.116461Z
-3837
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-15590
 
 CTRTextureDetailMap2.cpp
 file
@@ -5434,6 +5400,40 @@ has-props
 
 
 14008
+
+COGLESExtensionHandler.h
+file
+
+
+
+
+2011-11-19T13:47:52.340154Z
+390973850276b4c0921a84dc219abf57
+2011-06-09T14:53:26.116461Z
+3837
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15590
 
 CLWOMeshFileLoader.h
 file
@@ -5537,16 +5537,16 @@ has-props
 
 12680
 
-CMeshCache.cpp
+CSceneNodeAnimatorCameraFPS.cpp
 file
 
 
 
 
-2011-11-19T13:47:52.340154Z
-91e4002d12d739fddf91cf2eb8a32641
-2011-01-14T15:36:50.758105Z
-3560
+2011-11-20T11:48:10.171818Z
+30194871563686e31b062a8d12e089ca
+2011-10-16T10:48:26.144137Z
+3944
 hybrid
 has-props
 
@@ -5569,41 +5569,7 @@ has-props
 
 
 
-3541
-
-CGeometryCreator.h
-file
-
-
-
-
-2011-11-19T13:47:52.340154Z
-10543ee03dc2efca19995d90ce102155
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2177
+8789
 
 CGUIButton.cpp
 file
@@ -5639,16 +5605,16 @@ has-props
 
 12284
 
-CSceneNodeAnimatorCameraFPS.cpp
+CGeometryCreator.h
 file
 
 
 
 
 2011-11-19T13:47:52.340154Z
-30194871563686e31b062a8d12e089ca
-2011-10-16T10:48:26.144137Z
-3944
+10543ee03dc2efca19995d90ce102155
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
 has-props
 
@@ -5671,53 +5637,20 @@ has-props
 
 
 
-8789
+2177
 
-COGLES2Utils.h
-file
-
-
-
-
-2011-11-19T13:47:52.344154Z
-7e31e8d3c9e11cba4c8c7d859de12a10
-2011-06-07T08:56:52.434255Z
-3811
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1538
-
-COGLES2Texture.h
+CMeshCache.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.340154Z
-1287daadeed222e2be140eeb139328d6
-2011-06-07T08:56:52.434255Z
-3811
+91e4002d12d739fddf91cf2eb8a32641
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
+has-props
 
 
 
@@ -5738,8 +5671,7 @@ hybrid
 
 
 
-
-4265
+3541
 
 CGUITabControl.h
 file
@@ -5775,18 +5707,87 @@ has-props
 
 5791
 
-COBJMeshFileLoader.h
+COGLES2Texture.h
+file
+
+
+
+
+2011-11-19T13:47:52.340154Z
+1287daadeed222e2be140eeb139328d6
+2011-06-07T08:56:52.434255Z
+3811
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4265
+
+COGLES2Utils.h
 file
 
 
 
 
 2011-11-19T13:47:52.344154Z
-05501b45b2934872e74f715f04a92ad6
-2011-01-14T15:36:50.758105Z
-3560
+7e31e8d3c9e11cba4c8c7d859de12a10
+2011-06-07T08:56:52.434255Z
+3811
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1538
+
+Octree.h
+file
+
+
+
+
+2011-11-19T13:47:52.344154Z
+d66b8cfacbf578377f6230f30f90e24e
+2011-10-16T10:48:26.144137Z
+3944
 hybrid
 has-props
+has-prop-mods
 
 
 
@@ -5806,8 +5807,7 @@ has-props
 
 
 
-
-4488
+9461
 
 CImageLoaderPNG.h
 file
@@ -5843,82 +5843,14 @@ has-props
 
 1218
 
-Octree.h
+COBJMeshFileLoader.h
 file
 
 
 
 
 2011-11-19T13:47:52.344154Z
-d66b8cfacbf578377f6230f30f90e24e
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9461
-
-CIrrDeviceIPhone.h
-file
-
-
-
-
-2011-11-19T13:47:52.344154Z
-34c73b8770635404106d22fc2ba5310b
-2009-10-27T09:22:06.541313Z
-2757
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4328
-
-CTRTextureGouraudNoZ.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.344154Z
-b1daa670431982f201f07ead671a931a
+05501b45b2934872e74f715f04a92ad6
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -5943,7 +5875,7 @@ has-props
 
 
 
-11627
+4488
 
 Irrlicht8.0.vcproj
 file
@@ -5979,14 +5911,14 @@ hybrid
 
 70338
 
-CMeshSceneNode.h
+CTRTextureGouraudNoZ.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.344154Z
-6b4640b8a079ad48368442f5bebc2dd9
+b1daa670431982f201f07ead671a931a
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6011,7 +5943,75 @@ has-props
 
 
 
-2953
+11627
+
+CIrrDeviceIPhone.h
+file
+
+
+
+
+2011-11-19T13:47:52.344154Z
+34c73b8770635404106d22fc2ba5310b
+2009-10-27T09:22:06.541313Z
+2757
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4328
+
+CZipReader.cpp
+file
+
+
+
+
+2011-11-20T11:48:10.175818Z
+06858288fd1d326c0c8b44ef6e0fc7f4
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24464
 
 CTimer.h
 file
@@ -6047,16 +6047,16 @@ has-props
 
 3070
 
-CZipReader.cpp
+CMeshSceneNode.h
 file
 
 
 
 
 2011-11-19T13:47:52.344154Z
-06858288fd1d326c0c8b44ef6e0fc7f4
-2011-10-16T10:48:26.144137Z
-3944
+6b4640b8a079ad48368442f5bebc2dd9
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
 has-props
 
@@ -6079,7 +6079,7 @@ has-props
 
 
 
-24464
+2953
 
 CImageWriterPSD.cpp
 file
@@ -6149,14 +6149,14 @@ has-props
 
 6589
 
-COBJMeshWriter.h
+CBurningShader_Raster_Reference.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.348154Z
-f3f8d4442e80399df6fe9e9b287cd9f0
+9b03a727aa3d312ca74eee7ecab941f6
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6181,7 +6181,7 @@ has-props
 
 
 
-1495
+36715
 
 CIrrDeviceIPhone.m
 file
@@ -6217,14 +6217,14 @@ hybrid
 
 4020
 
-CBurningShader_Raster_Reference.cpp
+COBJMeshWriter.h
 file
 
 
 
 
 2011-11-19T13:47:52.348154Z
-9b03a727aa3d312ca74eee7ecab941f6
+f3f8d4442e80399df6fe9e9b287cd9f0
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6249,7 +6249,7 @@ has-props
 
 
 
-36715
+1495
 
 CImageWriterPCX.cpp
 file
@@ -6319,40 +6319,6 @@ has-props
 
 4499
 
-COGLES2FixedPipelineShader.h
-file
-
-
-
-
-2011-11-19T13:47:52.348154Z
-2ebf768d0f51a8ef7b54c84ff58eb971
-2011-06-07T08:56:52.434255Z
-3811
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3977
-
 CSceneManager.h
 file
 
@@ -6386,6 +6352,40 @@ has-props
 
 
 28256
+
+COGLES2FixedPipelineShader.h
+file
+
+
+
+
+2011-11-19T13:47:52.348154Z
+2ebf768d0f51a8ef7b54c84ff58eb971
+2011-06-07T08:56:52.434255Z
+3811
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3977
 
 COGLES2NormalMapRenderer.h
 file
@@ -6427,7 +6427,7 @@ file
 
 
 
-2011-11-19T13:47:52.348154Z
+2011-11-20T11:48:10.155818Z
 d649e472e8e34340073b527136364a6e
 2011-10-16T10:48:26.144137Z
 3944
@@ -6594,14 +6594,14 @@ has-props
 
 1535
 
-CCSMLoader.h
+CTarReader.h
 file
 
 
 
 
 2011-11-19T13:47:52.352154Z
-b204ca245c47965c6b3f9de4723c7671
+60eca82a37996489bfd486e7beb8133f
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6626,7 +6626,7 @@ has-props
 
 
 
-2851
+3927
 
 CGUISkin.h
 file
@@ -6662,14 +6662,14 @@ has-props
 
 10533
 
-CTarReader.h
+CCSMLoader.h
 file
 
 
 
 
 2011-11-19T13:47:52.352154Z
-60eca82a37996489bfd486e7beb8133f
+b204ca245c47965c6b3f9de4723c7671
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6694,7 +6694,7 @@ has-props
 
 
 
-3927
+2851
 
 CLimitReadFile.h
 file
@@ -6798,14 +6798,14 @@ has-props
 
 4029
 
-CImageWriterBMP.h
+CBillboardSceneNode.h
 file
 
 
 
 
-2011-11-19T13:47:52.352154Z
-7c86817d7a4ae76d5e260fea236836dc
+2011-11-20T11:31:45.671782Z
+303a197f541dda71327f0e3662b0be78
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6830,7 +6830,7 @@ has-props
 
 
 
-863
+2921
 
 CAnimatedMeshSceneNode.cpp
 file
@@ -6866,14 +6866,14 @@ has-props
 
 30806
 
-CBillboardSceneNode.h
+CImageWriterBMP.h
 file
 
 
 
 
 2011-11-19T13:47:52.352154Z
-303a197f541dda71327f0e3662b0be78
+7c86817d7a4ae76d5e260fea236836dc
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -6898,7 +6898,7 @@ has-props
 
 
 
-2921
+863
 
 CMY3DMeshFileLoader.h
 file
@@ -6934,40 +6934,6 @@ has-props
 
 4287
 
-CAttributes.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.356154Z
-513a7afd1b0882db04047e716f3b0faf
-2011-05-18T22:21:50.222645Z
-3727
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-41917
-
 CSceneNodeAnimatorDelete.h
 file
 
@@ -7002,17 +6968,18 @@ has-props
 
 1140
 
-COGLES2FixedPipelineShader.cpp
+CAttributes.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.356154Z
-36b68c714d1a99e6c7d04ce3433358df
-2011-06-07T08:56:52.434255Z
-3811
+513a7afd1b0882db04047e716f3b0faf
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
+has-props
 
 
 
@@ -7033,8 +7000,41 @@ hybrid
 
 
 
+41917
+
+CSceneManager.cpp
+file
 
-9272
+
+
+
+2011-11-20T11:48:10.167818Z
+4f5570a9409a55b67bc59e4f56c30516
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+66795
 
 CD3D8Texture.h
 file
@@ -7070,50 +7070,16 @@ has-props
 
 3051
 
-CSceneManager.cpp
+COGLES2FixedPipelineShader.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.356154Z
-4f5570a9409a55b67bc59e4f56c30516
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-66795
-
-CIrrDeviceFB.h
-file
-
-
-
-
-2011-11-19T13:47:52.356154Z
-306dfa28338a3df4c7e7509f5f45de82
-2011-01-14T15:36:50.758105Z
-3560
+36b68c714d1a99e6c7d04ce3433358df
+2011-06-07T08:56:52.434255Z
+3811
 hybrid
 
 
@@ -7136,7 +7102,7 @@ hybrid
 
 
 
-5055
+9272
 
 CImageLoaderPCX.h
 file
@@ -7172,13 +7138,47 @@ has-props
 
 2117
 
-CGUIFileOpenDialog.h
+CIrrDeviceFB.h
 file
 
 
 
 
 2011-11-19T13:47:52.356154Z
+306dfa28338a3df4c7e7509f5f45de82
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5055
+
+CGUIFileOpenDialog.h
+file
+
+
+
+
+2011-11-20T11:35:16.059790Z
 d8742824ca2af8b04a2e260bcd2b1b23
 2011-01-14T15:36:50.758105Z
 3560
@@ -7205,40 +7205,6 @@ has-props
 
 
 1961
-
-CD3D9HLSLMaterialRenderer.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.356154Z
-ffea4920a17051c82a0057ed122299a0
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8198
 
 CParticleCylinderEmitter.h
 file
@@ -7274,14 +7240,14 @@ has-props
 
 5989
 
-CQ3LevelMesh.h
+CD3D9HLSLMaterialRenderer.cpp
 file
 
 
 
 
-2011-11-19T13:47:52.360154Z
-d2a8a3611e1d3ca36303a2963ec57606
+2011-11-19T13:47:52.356154Z
+ffea4920a17051c82a0057ed122299a0
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -7306,7 +7272,7 @@ has-props
 
 
 
-14669
+8198
 
 CTerrainSceneNode.h
 file
@@ -7341,6 +7307,40 @@ has-props
 
 
 12927
+
+CQ3LevelMesh.h
+file
+
+
+
+
+2011-11-20T11:48:10.167818Z
+d2a8a3611e1d3ca36303a2963ec57606
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14669
 
 COpenGLParallaxMapRenderer.cpp
 file
@@ -7410,6 +7410,9 @@ has-props
 
 6064
 
+bzip2
+dir
+
 COSOperator.h
 file
 
@@ -7443,9 +7446,6 @@ has-props
 
 
 1658
-
-bzip2
-dir
 
 CImageLoaderRGB.cpp
 file
@@ -7651,40 +7651,6 @@ hybrid
 
 16349
 
-CTRStencilShadow.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.360154Z
-fad0dde430d9c6df6ac28ced6d94c907
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19603
-
 Irrlicht.cpp
 file
 
@@ -7719,18 +7685,17 @@ has-props
 
 4257
 
-CPLYMeshWriter.cpp
+CTRStencilShadow.cpp
 file
 
 
 
 
-2011-11-19T13:47:52.364154Z
-9afaa83c63f939ee0498eb30bbe88957
+2011-11-19T13:47:52.360154Z
+fad0dde430d9c6df6ac28ced6d94c907
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
-has-props
 
 
 
@@ -7751,7 +7716,8 @@ has-props
 
 
 
-4401
+
+19603
 
 Irrlicht9.0.sln
 file
@@ -7787,14 +7753,14 @@ hybrid
 
 2023
 
-CSceneNodeAnimatorCameraMaya.cpp
+CPLYMeshWriter.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.364154Z
-066d6b44dfc6db1a834e5bf35c139a8d
+9afaa83c63f939ee0498eb30bbe88957
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -7819,7 +7785,7 @@ has-props
 
 
 
-7615
+4401
 
 CSceneNodeAnimatorTexture.cpp
 file
@@ -7855,17 +7821,18 @@ has-props
 
 3088
 
-CNPKReader.h
+CSceneNodeAnimatorCameraMaya.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.364154Z
-efd2c26eabd27f0cccbf50815c279854
+066d6b44dfc6db1a834e5bf35c139a8d
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
+has-props
 
 
 
@@ -7886,8 +7853,7 @@ hybrid
 
 
 
-
-3649
+7615
 
 CMY3DMeshFileLoader.cpp
 file
@@ -7923,6 +7889,40 @@ has-props
 
 25581
 
+CNPKReader.h
+file
+
+
+
+
+2011-11-19T13:47:52.364154Z
+efd2c26eabd27f0cccbf50815c279854
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3649
+
 CCameraSceneNode.h
 file
 
@@ -7956,74 +7956,6 @@ has-props
 
 
 6527
-
-CMetaTriangleSelector.h
-file
-
-
-
-
-2011-11-19T13:47:52.364154Z
-d46d0401a05f56247ce8b863ed772d1a
-2011-05-18T22:21:50.222645Z
-3727
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2469
-
-CImage.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.364154Z
-893a9168377da40239660c70edddeb51
-2011-06-09T07:08:47.947401Z
-3831
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9809
 
 CParticleRingEmitter.h
 file
@@ -8059,6 +7991,74 @@ has-props
 
 5447
 
+CImage.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.364154Z
+893a9168377da40239660c70edddeb51
+2011-06-09T07:08:47.947401Z
+3831
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9809
+
+CMetaTriangleSelector.h
+file
+
+
+
+
+2011-11-19T13:47:52.364154Z
+d46d0401a05f56247ce8b863ed772d1a
+2011-05-18T22:21:50.222645Z
+3727
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2469
+
 COpenGLShaderMaterialRenderer.h
 file
 
@@ -8092,6 +8092,9 @@ has-props
 
 
 2744
+
+libpng
+dir
 
 CGUIImage.cpp
 file
@@ -8127,8 +8130,73 @@ has-props
 
 3762
 
-libpng
-dir
+CTerrainSceneNode.cpp
+file
+
+
+
+
+2011-11-19T13:47:52.368154Z
+b5c3846ecb7f9cd57ccf7d8001ca4742
+2011-06-09T07:08:47.947401Z
+3831
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+44887
+
+CQ3LevelMesh.cpp
+file
+
+
+
+
+2011-11-20T11:48:10.167818Z
+09960b86d1c8e8f7b7198a51879b1dce
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+48162
 
 CParticleGravityAffector.h
 file
@@ -8164,74 +8232,6 @@ has-props
 
 2267
 
-CQ3LevelMesh.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.368154Z
-09960b86d1c8e8f7b7198a51879b1dce
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-48162
-
-CTerrainSceneNode.cpp
-file
-
-
-
-
-2011-11-19T13:47:52.368154Z
-b5c3846ecb7f9cd57ccf7d8001ca4742
-2011-06-09T07:08:47.947401Z
-3831
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-44887
-
 Irrlicht-gcc.cbp
 file
 
@@ -8266,17 +8266,18 @@ hybrid
 
 49774
 
-COGLES2ExtensionHandler.h
+CTRGouraudAlphaNoZ2.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.368154Z
-7210a064d7b5ca787ee70cd6d7cc71ca
-2011-06-09T16:19:22.414580Z
-3839
+0166b00cb1cfdd4235a6f13e6297e510
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
+has-props
 
 
 
@@ -8297,8 +8298,7 @@ hybrid
 
 
 
-
-6199
+13602
 
 CImageLoaderPPM.h
 file
@@ -8334,18 +8334,17 @@ has-props
 
 1292
 
-CTRGouraudAlphaNoZ2.cpp
+COGLES2ExtensionHandler.h
 file
 
 
 
 
 2011-11-19T13:47:52.368154Z
-0166b00cb1cfdd4235a6f13e6297e510
-2011-01-14T15:36:50.758105Z
-3560
+7210a064d7b5ca787ee70cd6d7cc71ca
+2011-06-09T16:19:22.414580Z
+3839
 hybrid
-has-props
 
 
 
@@ -8366,7 +8365,8 @@ has-props
 
 
 
-13602
+
+6199
 
 CTRFlat.cpp
 file
@@ -8436,40 +8436,6 @@ has-props
 
 25546
 
-CTRTextureGouraud.h
-file
-
-
-
-
-2011-11-19T13:47:52.368154Z
-e59888df3e67d3fa5817daedd85d9ea5
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1925
-
 CAnimatedMeshMD2.cpp
 file
 
@@ -8504,14 +8470,14 @@ has-props
 
 14546
 
-CQuake3ShaderSceneNode.cpp
+CTRTextureGouraud.h
 file
 
 
 
 
-2011-11-19T13:47:52.372154Z
-1393ec2ea6c45f1d5042e10ba8d83224
+2011-11-19T13:47:52.368154Z
+e59888df3e67d3fa5817daedd85d9ea5
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -8536,7 +8502,7 @@ has-props
 
 
 
-37164
+1925
 
 CImageLoaderDDS.cpp
 file
@@ -8572,13 +8538,47 @@ hybrid
 
 16664
 
-COpenGLDriver.h
+CQuake3ShaderSceneNode.cpp
 file
 
 
 
 
 2011-11-19T13:47:52.372154Z
+1393ec2ea6c45f1d5042e10ba8d83224
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37164
+
+COpenGLDriver.h
+file
+
+
+
+
+2011-11-20T11:48:10.163818Z
 1cfcce8cb35e4dfeaced44817e99039a
 2011-06-09T07:08:47.947401Z
 3831
@@ -8680,7 +8680,7 @@ file
 
 
 
-2011-11-19T13:47:52.372154Z
+2011-11-20T11:48:10.155818Z
 c08f1227464766bacb0937c60b740bd5
 2011-10-16T10:48:26.144137Z
 3944
@@ -8884,7 +8884,7 @@ file
 
 
 
-2011-11-19T13:47:52.376154Z
+2011-11-20T11:48:10.175818Z
 fa748a0e89038fe533a3469c624e9339
 2011-05-18T22:21:50.222645Z
 3727
@@ -8918,7 +8918,7 @@ file
 
 
 
-2011-11-19T13:47:52.376154Z
+2011-11-20T11:48:10.151818Z
 cc4f92536cfde8f0f0cff0843e3e27dc
 2011-09-08T22:15:27.165251Z
 3910
@@ -9598,7 +9598,7 @@ file
 
 
 
-2011-11-19T13:47:52.384154Z
+2011-11-20T11:48:10.163818Z
 90bafc2e5a9593535fd276a66ed687d8
 2011-06-09T07:08:47.947401Z
 3831
@@ -9700,7 +9700,7 @@ file
 
 
 
-2011-11-19T13:47:52.384154Z
+2011-11-20T11:48:10.175818Z
 c73d7511f7930711e5575c8d3c2e0dd6
 2011-05-18T22:21:50.222645Z
 3727
@@ -9768,7 +9768,7 @@ file
 
 
 
-2011-11-19T13:47:52.384154Z
+2011-11-20T11:48:10.175818Z
 aeb5cfedae141a4e10ae3411f76158b1
 2011-05-18T22:21:50.222645Z
 3727
@@ -9972,7 +9972,7 @@ file
 
 
 
-2011-11-19T13:47:52.388154Z
+2011-11-20T11:48:10.195818Z
 a19a5798f5514b2afe562ce2cc76547e
 2011-10-16T10:48:26.144137Z
 3944
@@ -10142,7 +10142,7 @@ file
 
 
 
-2011-11-19T13:47:52.388154Z
+2011-11-20T11:48:10.151818Z
 97b9a26ec318782e29aa361f37fa54ac
 2011-06-09T07:08:47.947401Z
 3831
@@ -11434,7 +11434,7 @@ file
 
 
 
-2011-11-19T13:47:52.404154Z
+2011-11-20T11:48:10.163818Z
 13c55edd42afbc40fa65638088f5314d
 2011-06-09T07:08:47.947401Z
 3831
@@ -11604,7 +11604,7 @@ file
 
 
 
-2011-11-19T13:47:52.404154Z
+2011-11-20T11:48:10.155818Z
 b42f48d77bc1a720adc852a07b5d015e
 2011-01-14T15:36:50.758105Z
 3560
@@ -11774,7 +11774,7 @@ file
 
 
 
-2011-11-19T13:47:52.408154Z
+2011-11-20T11:48:10.147818Z
 5b468f6437f5d76f939292bbb4dbc8bd
 2011-10-16T10:48:26.144137Z
 3944
@@ -11876,7 +11876,7 @@ file
 
 
 
-2011-11-19T13:47:52.408154Z
+2011-11-20T11:48:10.151818Z
 a390249f3fa185d408d2e358a2474d86
 2011-05-18T22:21:50.222645Z
 3727
@@ -12216,7 +12216,7 @@ file
 
 
 
-2011-11-19T13:47:52.412154Z
+2011-11-20T11:48:10.147818Z
 b3e5a8ca4cb3ecba3a84288598243d3d
 2011-05-18T22:21:50.222645Z
 3727
@@ -12290,7 +12290,7 @@ file
 3944
 hybrid
 has-props
-
+has-prop-mods
 
 
 
@@ -12488,7 +12488,7 @@ file
 
 
 
-2011-11-19T13:47:52.412154Z
+2011-11-20T11:48:10.175818Z
 0647c81fd3fe04c17ddc90db383c93a3
 2011-05-18T22:21:50.222645Z
 3727
@@ -12593,7 +12593,7 @@ file
 
 
 
-2011-11-19T13:47:52.416154Z
+2011-11-20T11:48:10.171818Z
 7692e022fcd9446e26b15b0e71bbd364
 2011-10-16T10:48:26.144137Z
 3944
@@ -12627,7 +12627,7 @@ file
 
 
 
-2011-11-19T13:47:52.416154Z
+2011-11-20T11:48:10.179818Z
 3b8204da47928ecc3434507bfce72309
 2011-10-16T10:48:26.144137Z
 3944
