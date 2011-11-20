@@ -14,6 +14,14 @@
 #
 LOCAL_PATH := $(call my-dir)
 
+
+#include $(CLEAR_VARS)
+#LOCAL_MODULE    := my_gnustl_shared
+#LOCAL_SRC_FILES := external/lib/$(TARGET_ARCH_ABI)/libgnustl_shared.so
+#include $(PREBUILT_SHARED_LIBRARY)
+
+
+
 include $(CLEAR_VARS)
 # PNG (also includez zlib and bzip)
 #
@@ -37,6 +45,7 @@ png = 	irrlicht/libpng/pngrtran.c irrlicht/libpng/pngrio.c irrlicht/libpng/pngwi
 #include $(CLEAR_VARS)
 
 #LOCAL_MODULE    := jpeg
+#LOCAL_SRC_FILES
 jpeg = irrlicht/jpeglib/jcarith.c irrlicht/jpeglib/rdcolmap.c irrlicht/jpeglib/jfdctflt.c irrlicht/jpeglib/jdapimin.c \
 	irrlicht/jpeglib/rdppm.c irrlicht/jpeglib/wrgif.c irrlicht/jpeglib/jdcolor.c irrlicht/jpeglib/jerror.c irrlicht/jpeglib/jquant1.c \
 	irrlicht/jpeglib/rdbmp.c irrlicht/jpeglib/jaricom.c irrlicht/jpeglib/jcmaster.c irrlicht/jpeglib/jcinit.c irrlicht/jpeglib/jdapistd.c \
@@ -49,11 +58,12 @@ jpeg = irrlicht/jpeglib/jcarith.c irrlicht/jpeglib/rdcolmap.c irrlicht/jpeglib/j
 	irrlicht/jpeglib/wrrle.c irrlicht/jpeglib/jcparam.c irrlicht/jpeglib/jquant2.c irrlicht/jpeglib/jcmarker.c irrlicht/jpeglib/jccoefct.c \
 	irrlicht/jpeglib/jdarith.c irrlicht/jpeglib/wrbmp.c irrlicht/jpeglib/jdatadst.c irrlicht/jpeglib/jidctflt.c irrlicht/jpeglib/jdpostct.c \
 	irrlicht/jpeglib/jcprepct.c irrlicht/jpeglib/jdtrans.c irrlicht/jpeglib/jidctint.c irrlicht/jpeglib/jcmainct.c irrlicht/jpeglib/jccolor.c
+
 #LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
 #LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
 #include $(BUILD_STATIC_LIBRARY)
 
-#include $(CLEAR_VARS)
+include $(CLEAR_VARS)
 
 
 #LOCAL_MODULE    := libirrlicht
@@ -302,15 +312,6 @@ irrlicht = irrlicht/CIrrDeviceAndroid.cpp \
 
 #include $(BUILD_STATIC_LIBRARY)
 #include $(CLEAR_VARS)
-
-LOCAL_MODULE    := irrlicht
-LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(jpeg) $(png)
-LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-LOCAL_STATIC_LIBRARIES := android_native_app_glue #libirrlicht jpeg png
-
-include $(BUILD_SHARED_LIBRARY)
-
 
 #include $(CLEAR_VARS)
 
@@ -656,5 +657,15 @@ STK = stk/challenges/unlock_manager.cpp \
 #LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
 #LOCAL_STATIC_LIBRARIES := android_native_app_glue #libirrlicht jpeg png
 #include $(BUILD_SHARED_LIBRARY)
+
+LOCAL_MODULE    := irrlicht
+LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(png) $(jpeg) $(STK)
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+LOCAL_STATIC_LIBRARIES := android_native_app_glue #jpeg #libirrlicht jpeg png
+#LOCAL_SHARED_LIBRARIES := jpeg
+
+include $(BUILD_SHARED_LIBRARY)
+
 
 $(call import-module,android/native_app_glue)
