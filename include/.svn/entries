@@ -10,8 +10,8 @@ https://irrlicht.svn.sourceforge.net/svnroot/irrlicht
 2011-10-16T10:48:26.144137Z
 3944
 hybrid
-
-
+has-props
+has-prop-mods
 
 
 
@@ -25,6 +25,15 @@ hybrid
 
 
 dfc29bdd-3216-0410-991c-e03cc46cb475
+
+
+
+
+
+
+
+
+((conflict path.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/path.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/path.h file)) (conflict driverChoice.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/driverChoice.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/driverChoice.h file)) (conflict ILightManager.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/ILightManager.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/ILightManager.h file)) (conflict IBillboardTextSceneNode.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IBillboardTextSceneNode.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IBillboardTextSceneNode.h file)) (conflict EPrimitiveTypes.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/EPrimitiveTypes.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/EPrimitiveTypes.h file)) (conflict EDeviceTypes.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/EDeviceTypes.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/EDeviceTypes.h file)) (conflict EAttributes.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/EAttributes.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/EAttributes.h file)) (conflict EShaderTypes.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/EShaderTypes.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/EShaderTypes.h file)) (conflict IGUITreeView.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IGUITreeView.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IGUITreeView.h file)) (conflict IGeometryCreator.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IGeometryCreator.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IGeometryCreator.h file)) (conflict IFileArchive.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IFileArchive.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IFileArchive.h file)) (conflict IColladaMeshWriter.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IColladaMeshWriter.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IColladaMeshWriter.h file)) (conflict SVertexManipulator.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/SVertexManipulator.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/SVertexManipulator.h file)) (conflict IRandomizer.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IRandomizer.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IRandomizer.h file)) (conflict IGUIImageList.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/IGUIImageList.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/IGUIImageList.h file)) (conflict ISceneLoader.h file merge added added (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 3 642 include/ISceneLoader.h file) (version https://irrlicht.svn.sourceforge.net/svnroot/irrlicht 4 3995 trunk/include/ISceneLoader.h file)))
 
 ITimer.h
 file
@@ -536,40 +545,6 @@ has-props
 
 752
 
-IMeshManipulator.h
-file
-
-
-
-
-2011-11-19T13:55:16.356171Z
-a9b19d34c91b18c61356abc6a59acd37
-2011-06-09T07:08:47.947401Z
-3831
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16849
-
 SceneParameters.h
 file
 
@@ -603,6 +578,40 @@ has-props
 
 
 6914
+
+IMeshManipulator.h
+file
+
+
+
+
+2011-11-19T13:55:16.356171Z
+a9b19d34c91b18c61356abc6a59acd37
+2011-06-09T07:08:47.947401Z
+3831
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16849
 
 SAnimatedMesh.h
 file
@@ -638,40 +647,6 @@ has-props
 
 4386
 
-IParticleMeshEmitter.h
-file
-
-
-
-
-2011-11-19T13:55:16.356171Z
-271bcd0c6552ee6ac34a4450cc8b26b2
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1733
-
 SViewFrustum.h
 file
 
@@ -705,6 +680,40 @@ has-props
 
 
 10922
+
+IParticleMeshEmitter.h
+file
+
+
+
+
+2011-11-19T13:55:16.356171Z
+271bcd0c6552ee6ac34a4450cc8b26b2
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1733
 
 IFileList.h
 file
@@ -740,40 +749,6 @@ has-props
 
 4089
 
-IGUIComboBox.h
-file
-
-
-
-
-2011-11-19T13:55:16.356171Z
-97c92e8551950193fc6be1de742a6a6b
-2011-09-08T22:15:27.165251Z
-3910
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2355
-
 coreutil.h
 file
 
@@ -807,6 +782,40 @@ has-props
 
 
 4554
+
+IGUIComboBox.h
+file
+
+
+
+
+2011-11-19T13:55:16.356171Z
+97c92e8551950193fc6be1de742a6a6b
+2011-09-08T22:15:27.165251Z
+3910
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2355
 
 ICursorControl.h
 file
@@ -842,40 +851,6 @@ has-props
 
 6025
 
-EVertexAttributes.h
-file
-
-
-
-
-2011-11-19T13:55:16.360171Z
-9a974e35ad64541179308376fbff42b3
-2010-08-08T17:46:48.050039Z
-3370
-hybrid
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-691
-
 CMeshBuffer.h
 file
 
@@ -910,18 +885,17 @@ has-props
 
 7929
 
-IrrCompileConfig.h
+EVertexAttributes.h
 file
 
 
 
 
 2011-11-19T13:55:16.360171Z
-67e03a68eee46c2e42acc680b4c4a1ae
-2011-06-09T07:08:47.947401Z
-3831
+9a974e35ad64541179308376fbff42b3
+2010-08-08T17:46:48.050039Z
+3370
 hybrid
-has-props
 
 
 
@@ -942,7 +916,8 @@ has-props
 
 
 
-34433
+
+691
 
 irrArray.h
 file
@@ -978,16 +953,16 @@ has-props
 
 15904
 
-IBillboardTextSceneNode.h
+IrrCompileConfig.h
 file
 
 
 
 
 2011-11-19T13:55:16.360171Z
-4e1a4b3a63286262ba2ef7d3767768bd
-2011-01-14T15:36:50.758105Z
-3560
+67e03a68eee46c2e42acc680b4c4a1ae
+2011-06-09T07:08:47.947401Z
+3831
 hybrid
 has-props
 
@@ -1010,7 +985,7 @@ has-props
 
 
 
-2095
+34433
 
 IVolumeLightSceneNode.h
 file
@@ -1045,6 +1020,40 @@ has-props
 
 
 1769
+
+IBillboardTextSceneNode.h
+file
+
+
+
+
+2011-11-19T13:55:16.360171Z
+4e1a4b3a63286262ba2ef7d3767768bd
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2095
 
 IGUIFileOpenDialog.h
 file
@@ -2168,16 +2177,16 @@ has-props
 
 1367
 
-IVideoModeList.h
+EMaterialFlags.h
 file
 
 
 
 
 2011-11-19T13:55:16.372171Z
-abfe1684edf6bcb839174ac8ee970bfd
-2011-01-14T15:36:50.758105Z
-3560
+f8fa728ae6bd42ec175bf22eb09f8da8
+2011-05-18T22:21:50.222645Z
+3727
 hybrid
 has-props
 
@@ -2200,7 +2209,7 @@ has-props
 
 
 
-2411
+2847
 
 IBoneSceneNode.h
 file
@@ -2236,48 +2245,14 @@ has-props
 
 2942
 
-EMaterialFlags.h
+IVideoModeList.h
 file
 
 
 
 
 2011-11-19T13:55:16.372171Z
-f8fa728ae6bd42ec175bf22eb09f8da8
-2011-05-18T22:21:50.222645Z
-3727
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2847
-
-ITextSceneNode.h
-file
-
-
-
-
-2011-11-19T13:55:16.372171Z
-5afa74f2dfb7370d93eb5f3f4c3805fe
+abfe1684edf6bcb839174ac8ee970bfd
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -2302,7 +2277,7 @@ has-props
 
 
 
-894
+2411
 
 ISkinnedMesh.h
 file
@@ -2338,6 +2313,40 @@ has-props
 
 6326
 
+ITextSceneNode.h
+file
+
+
+
+
+2011-11-19T13:55:16.372171Z
+5afa74f2dfb7370d93eb5f3f4c3805fe
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+894
+
 EGUIAlignment.h
 file
 
@@ -2372,40 +2381,6 @@ has-props
 
 780
 
-IReferenceCounted.h
-file
-
-
-
-
-2011-11-19T13:55:16.372171Z
-b1e8547a91ab0f2479adc7cee27e9ae9
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6245
-
 vector3d.h
 file
 
@@ -2439,6 +2414,40 @@ has-props
 
 
 17176
+
+IReferenceCounted.h
+file
+
+
+
+
+2011-11-19T13:55:16.372171Z
+b1e8547a91ab0f2479adc7cee27e9ae9
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6245
 
 SLight.h
 file
@@ -2508,40 +2517,6 @@ has-props
 
 1099
 
-IParticleFadeOutAffector.h
-file
-
-
-
-
-2011-11-19T13:55:16.376171Z
-e506f0c4ed5c001521186f66a2fa0bc9
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1279
-
 CDynamicMeshBuffer.h
 file
 
@@ -2575,6 +2550,40 @@ has-props
 
 
 2454
+
+IParticleFadeOutAffector.h
+file
+
+
+
+
+2011-11-19T13:55:16.376171Z
+e506f0c4ed5c001521186f66a2fa0bc9
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1279
 
 EShaderTypes.h
 file
@@ -2712,40 +2721,6 @@ has-props
 
 1007
 
-SExposedVideoData.h
-file
-
-
-
-
-2011-11-19T13:55:16.376171Z
-5a90647aa1476593f27b3114f9130666
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2619
-
 dimension2d.h
 file
 
@@ -2779,6 +2754,40 @@ has-props
 
 
 5801
+
+SExposedVideoData.h
+file
+
+
+
+
+2011-11-19T13:55:16.376171Z
+5a90647aa1476593f27b3114f9130666
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2619
 
 IAnimatedMeshMD3.h
 file
@@ -2814,40 +2823,6 @@ has-props
 
 7481
 
-IParticleBoxEmitter.h
-file
-
-
-
-
-2011-11-19T13:55:16.376171Z
-7a0644fef4d273e1f6ad2b9769979ebe
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-834
-
 IParticleAttractionAffector.h
 file
 
@@ -2881,6 +2856,40 @@ has-props
 
 
 1836
+
+IParticleBoxEmitter.h
+file
+
+
+
+
+2011-11-19T13:55:16.376171Z
+7a0644fef4d273e1f6ad2b9769979ebe
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+834
 
 IVertexBuffer.h
 file
@@ -3120,40 +3129,6 @@ has-props
 
 4523
 
-IFileSystem.h
-file
-
-
-
-
-2011-11-19T13:55:16.380171Z
-7863e42f65ee1dcd8482072635557db2
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19013
-
 irrAllocator.h
 file
 
@@ -3187,6 +3162,40 @@ has-props
 
 
 2377
+
+IFileSystem.h
+file
+
+
+
+
+2011-11-19T13:55:16.380171Z
+7863e42f65ee1dcd8482072635557db2
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19013
 
 IrrlichtDevice.h
 file
@@ -3426,40 +3435,6 @@ has-props
 
 15515
 
-IGUIToolbar.h
-file
-
-
-
-
-2011-11-19T13:55:16.384171Z
-b5983f2f79523ee0357df0df7271b09b
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1062
-
 IGUISpriteBank.h
 file
 
@@ -3493,6 +3468,40 @@ has-props
 
 
 2812
+
+IGUIToolbar.h
+file
+
+
+
+
+2011-11-19T13:55:16.384171Z
+b5983f2f79523ee0357df0df7271b09b
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1062
 
 SMaterial.h
 file
@@ -3664,40 +3673,6 @@ has-props
 
 930
 
-ESceneNodeAnimatorTypes.h
-file
-
-
-
-
-2011-11-19T13:55:16.388171Z
-a577fb99ba79628ea24101c015b71f11
-2011-01-14T15:36:50.758105Z
-3560
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1295
-
 irrList.h
 file
 
@@ -3731,6 +3706,40 @@ has-props
 
 
 9664
+
+ESceneNodeAnimatorTypes.h
+file
+
+
+
+
+2011-11-19T13:55:16.388171Z
+a577fb99ba79628ea24101c015b71f11
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1295
 
 ISceneNodeAnimatorCameraFPS.h
 file
@@ -3766,40 +3775,6 @@ has-props
 
 2358
 
-IVideoDriver.h
-file
-
-
-
-
-2011-11-19T13:55:16.388171Z
-afb0202ea8c8d199afe1e1e2ab4435eb
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-67673
-
 IImage.h
 file
 
@@ -3833,6 +3808,40 @@ has-props
 
 
 4605
+
+IVideoDriver.h
+file
+
+
+
+
+2011-11-19T13:55:16.388171Z
+afb0202ea8c8d199afe1e1e2ab4435eb
+2011-10-16T10:48:26.144137Z
+3944
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67673
 
 EDriverFeatures.h
 file
@@ -3868,16 +3877,16 @@ has-props
 
 3166
 
-IParticleCylinderEmitter.h
+SSharedMeshBuffer.h
 file
 
 
 
 
 2011-11-19T13:55:16.388171Z
-67c0f7c2f7709f08ada2da41214644da
-2011-01-14T15:36:50.758105Z
-3560
+e3507fb494af1356c2b5775fbe9aa93a
+2011-10-16T10:48:26.144137Z
+3944
 hybrid
 has-props
 
@@ -3900,7 +3909,7 @@ has-props
 
 
 
-1650
+6338
 
 IGUIImage.h
 file
@@ -3936,48 +3945,14 @@ has-props
 
 1507
 
-SSharedMeshBuffer.h
+IParticleCylinderEmitter.h
 file
 
 
 
 
 2011-11-19T13:55:16.388171Z
-e3507fb494af1356c2b5775fbe9aa93a
-2011-10-16T10:48:26.144137Z
-3944
-hybrid
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6338
-
-IQ3LevelMesh.h
-file
-
-
-
-
-2011-11-19T13:55:16.388171Z
-7ae11cbf090e3c512d6c309ab38be3f5
+67c0f7c2f7709f08ada2da41214644da
 2011-01-14T15:36:50.758105Z
 3560
 hybrid
@@ -4002,7 +3977,7 @@ has-props
 
 
 
-1298
+1650
 
 IGUIScrollBar.h
 file
@@ -4037,6 +4012,40 @@ has-props
 
 
 1742
+
+IQ3LevelMesh.h
+file
+
+
+
+
+2011-11-19T13:55:16.388171Z
+7ae11cbf090e3c512d6c309ab38be3f5
+2011-01-14T15:36:50.758105Z
+3560
+hybrid
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1298
 
 IDynamicMeshBuffer.h
 file
@@ -4242,18 +4251,17 @@ has-props
 
 13871
 
-IShaderConstantSetCallBack.h
+IColladaMeshWriter.h
 file
 
 
 
 
 2011-11-19T13:55:16.392171Z
-dca032b41013adfa3b8fd09599c704e4
-2011-01-14T15:36:50.758105Z
-3560
+4f46457c4222fb0b0e76d4260f2e7eea
+2011-10-16T10:48:26.144137Z
+3944
 hybrid
-has-props
 
 
 
@@ -4274,7 +4282,8 @@ has-props
 
 
 
-3338
+
+8465
 
 IImageLoader.h
 file
@@ -4310,17 +4319,18 @@ has-props
 
 1582
 
-IColladaMeshWriter.h
+IShaderConstantSetCallBack.h
 file
 
 
 
 
 2011-11-19T13:55:16.392171Z
-4f46457c4222fb0b0e76d4260f2e7eea
-2011-10-16T10:48:26.144137Z
-3944
+dca032b41013adfa3b8fd09599c704e4
+2011-01-14T15:36:50.758105Z
+3560
 hybrid
+has-props
 
 
 
@@ -4341,8 +4351,7 @@ hybrid
 
 
 
-
-8465
+3338
 
 IGUIWindow.h
 file
@@ -6060,9 +6069,9 @@ has-props
 
 
 
-
-
-
+EDriverTypes.h.merge-left.r1521
+EDriverTypes.h.merge-right.r3995
+EDriverTypes.h.working
 
 
 

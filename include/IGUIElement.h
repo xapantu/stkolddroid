@@ -314,10 +314,8 @@ public:
 		if ( isVisible() )
 		{
 			core::list<IGUIElement*>::Iterator it = Children.begin();
-            for (; it != Children.end(); ++it)
-            {
-		//		(*it)->draw();
-            }
+			for (; it != Children.end(); ++it)
+//				(*it)->draw();
 		}
 	}
 
