@@ -1,0 +1,1082 @@
+Index: states_screens/race_gui_base.cpp
+===================================================================
+--- states_screens/race_gui_base.cpp	(revision 10230)
++++ states_screens/race_gui_base.cpp	(working copy)
+@@ -28,7 +28,8 @@
+ #  ifdef WIN32
+ #    include <windows.h>
+ #  endif
+-#  include <GL/gl.h>
++#  include <GLES/gl.h>
++#include <GLES/gl.h>
+ #endif
+ 
+ #include "audio/music_manager.hpp"
+@@ -472,7 +473,7 @@
+ void RaceGUIBase::renderPlayerView(const Kart *kart)
+ {
+     const core::recti &viewport    = kart->getCamera()->getViewport();
+-
++#if 0
+     if (m_lightning > 0.0f)
+     {
+         GLint glviewport[4];
+@@ -500,6 +501,7 @@
+         glEnable(GL_TEXTURE_2D);
+         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+     }
++#endif
+ #if 0 // Rainy look, off, TODO: needs to be settable per track
+     else
+     {
+Index: utils/translation.hpp
+===================================================================
+--- utils/translation.hpp	(revision 10230)
++++ utils/translation.hpp	(working copy)
+@@ -28,6 +28,9 @@
+ #  include "tinygettext/tinygettext.hpp"
+ 
+ #  define _(String, ...)        (translations->fribidize(StringUtils::insertValues(translations->w_gettext(String), ##__VA_ARGS__)))
++#ifdef _C
++#   undef _C
++#endif
+ #  define _C(Ctx, String, ...)  (translations->fribidize(StringUtils::insertValues(translations->w_gettext(String, Ctx), ##__VA_ARGS__)))
+ #  define _LTR(String, ...)     (StringUtils::insertValues(translations->w_gettext(String), ##__VA_ARGS__))
+ #  define gettext_noop(String)  (String)
+Index: audio/sfx_buffer.hpp
+===================================================================
+--- audio/sfx_buffer.hpp	(revision 10230)
++++ audio/sfx_buffer.hpp	(working copy)
+@@ -21,10 +21,14 @@
+ #define HEADER_SFX_BUFFER_HPP
+ 
+ 
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ #include "utils/no_copy.hpp"
+@@ -48,14 +52,16 @@
+     
+     /** The file that contains the OGG audio data */
+     std::string m_file;
+-    
++
++#ifndef NO_SOUND
+     ALuint   m_buffer;
++#endif
+     bool     m_positional;
+     float    m_rolloff;
+     float    m_gain;
+-    
++#ifndef NO_SOUND 
+     bool loadVorbisBuffer(const std::string &name, ALuint buffer);
+-    
++#endif
+ public:
+     
+     SFXBuffer(const std::string& file,
+@@ -86,10 +92,12 @@
+     
+     /** \return whether this buffer was loaded from disk */
+     bool     isLoaded()       const { return m_loaded; }
+-    
++
++#ifndef NO_SOUND
+     /** Only returns a valid buffer if isLoaded() returned true */
+     ALuint   getBuffer()      const { return m_buffer; }
+-    
++#endif
++
+     bool     isPositional()   const { return m_positional; }
+     float    getRolloff()     const { return m_rolloff; }
+     float    getGain()        const { return m_gain; }
+Index: audio/sfx_openal.cpp
+===================================================================
+--- audio/sfx_openal.cpp	(revision 10230)
++++ audio/sfx_openal.cpp	(working copy)
+@@ -27,10 +27,14 @@
+ #include <stdio.h>
+ #include <string>
+ 
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ #include "config/user_config.hpp"
+@@ -39,7 +43,9 @@
+ SFXOpenAL::SFXOpenAL(SFXBuffer* buffer, bool positional, float gain) : SFXBase()
+ {
+     m_soundBuffer = buffer;
++#ifndef NO_SOUND
+     m_soundSource = 0;
++#endif
+     m_ok          = false;
+     m_positional  = positional;
+     m_defaultGain = gain;
+@@ -59,16 +65,19 @@
+ 
+ SFXOpenAL::~SFXOpenAL()
+ {
++#ifndef NO_SOUND
+     if (m_ok)
+     {
+         alDeleteSources(1, &m_soundSource);
+     }
++#endif
+ }   // ~SFXOpenAL
+ 
+ //-----------------------------------------------------------------------------
+ 
+ bool SFXOpenAL::init()
+ {
++#ifndef NO_SOUND
+     alGenSources(1, &m_soundSource );
+     if (!SFXManager::checkError("generating a source")) return false;
+     
+@@ -100,7 +109,7 @@
+     else              alSourcei (m_soundSource, AL_SOURCE_RELATIVE, AL_TRUE);
+     
+     alSourcei(m_soundSource, AL_LOOPING, m_loop ? AL_TRUE : AL_FALSE);
+-    
++#endif
+     m_ok = SFXManager::checkError("setting up the source");
+     
+     return m_ok;
+@@ -123,7 +132,9 @@
+     {
+         factor = 0.5f;
+     }
++#ifndef NO_SOUND
+     alSourcef(m_soundSource,AL_PITCH,factor);
++#endif
+     SFXManager::checkError("changing the speed");
+ }   // speed
+ 
+@@ -136,8 +147,9 @@
+     m_gain = m_defaultGain * gain;
+     
+     if(!m_ok) return;
+-
++#ifndef NO_SOUND
+     alSourcef(m_soundSource, AL_GAIN, m_defaultGain * gain);
++#endif
+     SFXManager::checkError("setting volume");
+ }   // volume
+ 
+@@ -149,8 +161,9 @@
+     m_loop = status;
+     
+     if(!m_ok) return;
+-
++#ifndef NO_SOUND
+     alSourcei(m_soundSource, AL_LOOPING, status ? AL_TRUE : AL_FALSE);
++#endif
+     SFXManager::checkError("looping");
+ }   // loop
+ 
+@@ -162,8 +175,10 @@
+     if(!m_ok) return;
+ 
+     m_loop = false;
++#ifndef NO_SOUND
+     alSourcei(m_soundSource, AL_LOOPING, AL_FALSE);
+     alSourceStop(m_soundSource);
++#endif
+     SFXManager::checkError("stoping");
+ }   // stop
+ 
+@@ -174,7 +189,9 @@
+ void SFXOpenAL::pause()
+ {
+     if(!m_ok) return;
++#ifndef NO_SOUND
+     alSourcePause(m_soundSource);
++#endif
+     SFXManager::checkError("pausing");
+ }   // pause
+ 
+@@ -191,8 +208,9 @@
+         // creation of OpenAL source failed, giving up
+         if (!m_ok) return;
+     }
+-    
++#ifndef NO_SOUND    
+     alSourcePlay(m_soundSource);
++#endif
+     SFXManager::checkError("resuming");
+ }   // resume
+ 
+@@ -211,7 +229,9 @@
+         if (!m_ok) return;
+     }
+ 
++#ifndef NO_SOUND    
+     alSourcePlay(m_soundSource);
++#endif
+     SFXManager::checkError("playing");
+ }   // play
+ 
+@@ -221,6 +241,7 @@
+  */
+ void SFXOpenAL::position(const Vec3 &position)
+ {
++#ifndef NO_SOUND    
+     if(!UserConfigParams::m_sfx)
+         return;
+     if (!m_ok)
+@@ -241,6 +262,7 @@
+ 
+     alSource3f(m_soundSource, AL_POSITION,
+                (float)position.getX(), (float)position.getY(), (float)position.getZ());
++#endif
+     SFXManager::checkError("positioning");
+ }   // position
+ 
+@@ -249,6 +271,7 @@
+  */
+ SFXManager::SFXStatus SFXOpenAL::getStatus()
+ {
++#ifndef NO_SOUND
+     if(!m_ok) return SFXManager::SFX_UNKNOWN;
+ 
+     int state = 0;
+@@ -261,12 +284,16 @@
+     case AL_INITIAL: return SFXManager::SFX_INITIAL;
+     default:         return SFXManager::SFX_UNKNOWN;
+     }
++#else
++    return SFXManager::SFX_UNKNOWN;
++#endif
+ }   // getStatus
+ 
+ //-----------------------------------------------------------------------------
+ 
+ void SFXOpenAL::onSoundEnabledBack()
+ {
++#ifndef NO_SOUND
+     if (m_loop)
+     {
+         if (!m_ok) init();
+@@ -278,13 +305,16 @@
+             alSourcef(m_soundSource, AL_GAIN, (m_gain < 0.0f ? m_defaultGain : m_gain));
+         }
+     }
++#endif
+ }
+ 
+ //-----------------------------------------------------------------------------
+ 
+ void SFXOpenAL::setRolloff(float rolloff)
+ {
++#ifndef NO_SOUND
+     alSourcef (m_soundSource, AL_ROLLOFF_FACTOR,  rolloff);
++#endif
+ }
+ 
+ #endif //if HAVE_OGGVORBIS
+Index: audio/sfx_manager.hpp
+===================================================================
+--- audio/sfx_manager.hpp	(revision 10230)
++++ audio/sfx_manager.hpp	(working copy)
+@@ -24,10 +24,14 @@
+ #include <string>
+ #include <vector>
+ #include <map>
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ #include "utils/no_copy.hpp"
+@@ -94,8 +98,10 @@
+ 
+     void                      loadSfx();
+ 
++#ifndef NO_SOUND
+     bool                      loadVorbisBuffer(const std::string &name, 
+                                                ALuint buffer);
++#endif
+ public:
+                              SFXManager();
+     virtual                 ~SFXManager();
+Index: audio/music_ogg.hpp
+===================================================================
+--- audio/music_ogg.hpp	(revision 10230)
++++ audio/music_ogg.hpp	(working copy)
+@@ -22,6 +22,7 @@
+ 
+ #include <string>
+ 
++#ifndef NO_SOUND
+ #include <ogg/ogg.h>
+ // Disable warning about potential loss of precision in vorbisfile.h
+ #if defined(WIN32) && !defined(__CYGWIN__)
+@@ -31,11 +32,16 @@
+ #if defined(WIN32) && !defined(__CYGWIN__)
+ #  pragma warning(default:4244)
+ #endif
++#endif
+ 
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ #include "audio/music.hpp"
+ 
+@@ -69,19 +75,25 @@
+ 
+ private:
+     bool release();
++#ifndef NO_SOUND
+     bool streamIntoBuffer(ALuint buffer);
++#endif
+ 
+     std::string     m_fileName;
+     FILE*           m_oggFile;
++#ifndef NO_SOUND
+     OggVorbis_File  m_oggStream;
+     vorbis_info*    m_vorbisInfo;
++#endif
+     bool            m_error;
+ 
+     bool            m_playing;
+-    
++   
++#ifndef NO_SOUND
+     ALuint m_soundBuffers[2];
+     ALuint m_soundSource;
+     ALenum nb_channels;
++#endif
+ 
+     bool m_pausedMusic;
+     static const int m_buffer_size = 11025*4;//one full second of audio at 44100 samples per second
+Index: audio/sfx_openal.hpp
+===================================================================
+--- audio/sfx_openal.hpp	(revision 10230)
++++ audio/sfx_openal.hpp	(working copy)
+@@ -21,10 +21,14 @@
+ #define HEADER_SFX_OPENAL_HPP
+ 
+ #include <assert.h>
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ #include "audio/sfx_base.hpp"
+ #include "audio/sfx_manager.hpp"
+@@ -37,7 +41,9 @@
+ {
+ private:
+     SFXBuffer*   m_soundBuffer;   //!< Buffers hold sound data.
++#ifndef NO_SOUND
+     ALuint       m_soundSource;   //!< Sources are points emitting sound.
++#endif
+     bool         m_ok;
+     bool         m_positional;
+     float        m_defaultGain;
+Index: audio/sfx_buffer.cpp
+===================================================================
+--- audio/sfx_buffer.cpp	(revision 10230)
++++ audio/sfx_buffer.cpp	(working copy)
+@@ -22,15 +22,17 @@
+ #include "io/file_manager.hpp"
+ #include "utils/constants.hpp"
+ 
++#ifndef NO_SOUND
+ #include <vorbis/codec.h>
+ #include <vorbis/vorbisfile.h>
+ 
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#  include <OpenAL/alc.h>
+-#else
+-#  include <AL/al.h>
+-#  include <AL/alc.h>
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ //----------------------------------------------------------------------------
+@@ -40,7 +42,9 @@
+                      float rolloff,
+                      float gain)
+ {
++#ifndef NO_SOUND
+     m_buffer     = 0;
++#endif
+     m_gain       = 1.0f;
+     m_rolloff    = 0.1f;
+     m_loaded     = false;
+@@ -56,7 +60,9 @@
+ SFXBuffer::SFXBuffer(const std::string& file,
+                      const XMLNode* node)
+ {
++#ifndef NO_SOUND
+     m_buffer     = 0;
++#endif
+     m_gain       = 1.0f;
+     m_rolloff    = 0.1f;
+     m_positional = false;
+@@ -73,7 +79,7 @@
+ bool SFXBuffer::load()
+ {
+     if (m_loaded) return false;
+-    
++#ifndef NO_SOUND 
+     alGetError(); // clear errors from previously
+     
+     alGenBuffers(1, &m_buffer);
+@@ -90,7 +96,7 @@
+         // TODO: free al buffer here?
+         return false;
+     }
+-    
++#endif
+     m_loaded = true;
+     return true;
+ }
+@@ -99,11 +105,13 @@
+ 
+ void SFXBuffer::unload()
+ {
++#ifndef NO_SOUND
+     if (m_loaded)
+     {
+         alDeleteBuffers(1, &m_buffer);
+         m_buffer = 0;
+     }
++#endif
+     m_loaded = false;
+ }
+ 
+@@ -112,6 +120,7 @@
+  *  based on a routine by Peter Mulholland, used with permission (quote : 
+  *  "Feel free to use")
+  */
++#ifndef NO_SOUND
+ bool SFXBuffer::loadVorbisBuffer(const std::string &name, ALuint buffer)
+ {
+     const int ogg_endianness = (IS_LITTLE_ENDIAN ? 0 : 1);
+@@ -177,4 +186,4 @@
+     fclose(file);
+     return success;
+ }
+-
++#endif
+Index: audio/music_manager.cpp
+===================================================================
+--- audio/music_manager.cpp	(revision 10230)
++++ audio/music_manager.cpp	(working copy)
+@@ -22,12 +22,14 @@
+ 
+ #include <assert.h>
+ #include <fstream>
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#  include <OpenAL/alc.h>
+-#else
+-#  include <AL/al.h>
+-#  include <AL/alc.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ #include "audio/music_ogg.hpp"
+@@ -45,11 +47,14 @@
+     setMasterMusicVolume(UserConfigParams::m_music_volume);
+ 
+     //FIXME: I'm not sure that this code goes here
++#ifndef NO_SOUND
+     ALCdevice* device = alcOpenDevice ( NULL ); //The default sound device
+     if( device == NULL )
+     {
++#endif
+         fprintf(stderr, "WARNING: Could not open the default sound device.\n");
+         m_initialized = false;
++#ifndef NO_SOUND
+     }
+     else
+     {
+@@ -69,7 +74,7 @@
+     }
+ 
+     alGetError(); //Called here to clear any non-important errors found
+-
++#endif
+     loadMusicInformation();
+ }  // MusicManager
+ 
+@@ -85,6 +90,7 @@
+         i->second = NULL;
+     }
+ 
++#ifndef NO_SOUND
+     if(m_initialized)
+     {
+         ALCcontext* context = alcGetCurrentContext();
+@@ -95,6 +101,7 @@
+ 
+         alcCloseDevice( device );
+     }
++#endif
+ }   // ~MusicManager
+ 
+ //-----------------------------------------------------------------------------
+Index: audio/sfx_manager.cpp
+===================================================================
+--- audio/sfx_manager.cpp	(revision 10230)
++++ audio/sfx_manager.cpp	(working copy)
+@@ -29,12 +29,14 @@
+ #include <stdlib.h>
+ #include <math.h>
+ 
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#  include <OpenAL/alc.h>
+-#else
+-#  include <AL/al.h>
+-#  include <AL/alc.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#       include <OpenAL/alc.h>
++#   else
++#       include <AL/al.h>
++#       include <AL/alc.h>
++#   endif
+ #endif
+ 
+ #include "audio/sfx_openal.hpp"
+@@ -273,8 +275,9 @@
+     //       buffer->getFileName().c_str(), (unsigned int)buffer,
+     //       positional,
+     //       race_manager->getNumLocalPlayers(), buffer->isPositional());
+-    
++#ifndef NO_SOUND 
+     assert( alIsBuffer(buffer->getBuffer()) );
++#endif
+     SFXBase* sfx = new SFXOpenAL(buffer, positional, buffer->getGain());
+     
+     sfx->volume(m_master_gain);
+@@ -401,6 +404,7 @@
+  */
+ bool SFXManager::checkError(const std::string &context)
+ {
++#ifndef NO_SOUND
+     // Check (and clear) the error flag
+     int error = alGetError();
+ 
+@@ -410,6 +414,7 @@
+             context.c_str(), SFXManager::getErrorString(error).c_str());
+         return false;
+     }
++#endif
+     return true;
+ }   // checkError
+ 
+@@ -447,6 +452,7 @@
+ //-----------------------------------------------------------------------------
+ const std::string SFXManager::getErrorString(int err)
+ {
++#ifndef NO_SOUND
+     switch(err)
+     {
+         case AL_NO_ERROR:          return std::string("AL_NO_ERROR"         );
+@@ -457,6 +463,8 @@
+         case AL_OUT_OF_MEMORY:     return std::string("AL_OUT_OF_MEMORY"    );
+         default:                   return std::string("UNKNOWN");
+     };
++#endif
++    return std::string("Sound disabled.");
+ }   // getErrorString
+ 
+ //-----------------------------------------------------------------------------
+@@ -474,9 +482,10 @@
+     m_listenerVec[3] = 0; 
+     m_listenerVec[4] = 0;
+     m_listenerVec[5] = 1;
+-    
++#ifndef NO_SOUND 
+     alListener3f(AL_POSITION, position.getX(), position.getY(), position.getZ());
+     alListenerfv(AL_ORIENTATION, m_listenerVec);
++#endif
+ }
+ 
+ //-----------------------------------------------------------------------------
+Index: audio/music_ogg.cpp
+===================================================================
+--- audio/music_ogg.cpp	(revision 10230)
++++ audio/music_ogg.cpp	(working copy)
+@@ -22,10 +22,12 @@
+ #include "audio/music_ogg.hpp"
+ 
+ #include <stdexcept>
+-#ifdef __APPLE__
+-#  include <OpenAL/al.h>
+-#else
+-#  include <AL/al.h>
++#ifndef NO_SOUND
++#   ifdef __APPLE__
++#       include <OpenAL/al.h>
++#   else
++#       include <AL/al.h>
++#   endif
+ #endif
+ 
+ #include "audio/music_manager.hpp"
+@@ -35,11 +37,13 @@
+ 
+ MusicOggStream::MusicOggStream()
+ {
++#ifndef NO_SOUND
+     //m_oggStream= NULL;
+     m_soundBuffers[0] = m_soundBuffers[1]= 0;
+     m_soundSource     = -1;
+     m_pausedMusic     = true;
+     m_playing         = false;
++#endif
+ }   // MusicOggStream
+ 
+ //-----------------------------------------------------------------------------
+@@ -65,7 +69,8 @@
+         printf("Loading Music: %s failed (fopen returned NULL)\n", m_fileName.c_str());
+         return false;
+     }
+-    
++#ifndef NO_SOUND
++
+ #if defined( WIN32 ) || defined( WIN64 )
+     const int result = ov_open_callbacks((void *)m_oggFile, &m_oggStream, NULL, 0, OV_CALLBACKS_DEFAULT);
+ #else
+@@ -121,7 +126,7 @@
+     alSourcef (m_soundSource, AL_ROLLOFF_FACTOR,  0.0          );
+     alSourcef (m_soundSource, AL_GAIN,            1.0          );
+     alSourcei (m_soundSource, AL_SOURCE_RELATIVE, AL_TRUE      );
+-
++#endif
+     m_error=false;
+     return true;
+ }   // load
+@@ -129,6 +134,7 @@
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::empty()
+ {
++#ifndef NO_SOUND
+     int queued= 0;
+     alGetSourcei(m_soundSource, AL_BUFFERS_QUEUED, &queued);
+ 
+@@ -139,13 +145,14 @@
+ 
+         if (!check("alSourceUnqueueBuffers")) return false;
+     }
+-
++#endif
+     return true;
+ }   // empty
+ 
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::release()
+ {
++#ifndef NO_SOUND
+     if (m_fileName == "")
+     {
+         // nothing is loaded
+@@ -166,13 +173,14 @@
+ 
+     m_soundSource = -1;
+     m_playing = false;
+-    
++#endif    
+     return true;
+ }   // release
+ 
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::playMusic()
+ {
++#ifndef NO_SOUND
+     if(isPlaying())
+         return true;
+ 
+@@ -185,6 +193,7 @@
+     alSourceQueueBuffers(m_soundSource, 2, m_soundBuffers);
+ 
+     alSourcePlay(m_soundSource);
++#endif
+     m_pausedMusic = false;
+     m_playing = true;
+ 
+@@ -209,13 +218,16 @@
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::stopMusic()
+ {
++#ifndef NO_SOUND
+     m_playing = false;
++#endif
+     return (release());
+ }   // stopMusic
+ 
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::pauseMusic()
+ {
++#ifndef NO_SOUND
+     m_playing = false;
+     if (m_fileName == "")
+     {
+@@ -224,6 +236,7 @@
+     }
+ 
+     alSourceStop(m_soundSource);
++#endif
+     m_pausedMusic= true;
+     return true;
+ }   // pauseMusic
+@@ -231,6 +244,7 @@
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::resumeMusic()
+ {
++#ifndef NO_SOUND
+     m_playing = true;
+     
+     if (m_fileName == "")
+@@ -240,6 +254,7 @@
+     }
+ 
+     alSourcePlay(m_soundSource);
++#endif
+     m_pausedMusic= false;
+     return true;
+ }   // resumeMusic
+@@ -247,6 +262,7 @@
+ //-----------------------------------------------------------------------------
+ void MusicOggStream::volumeMusic(float gain)
+ {
++#ifndef NO_SOUND
+     if (gain > 1.0f)
+     {
+         gain = 1.0f;
+@@ -259,25 +275,31 @@
+     }
+     
+     alSourcef(m_soundSource, AL_GAIN, gain);
++#endif
+ } // volumeMusic
+ 
+ //-----------------------------------------------------------------------------
+ void MusicOggStream::updateFading(float percent)
+ {
++#ifndef NO_SOUND
+     alSourcef(m_soundSource,AL_GAIN,percent);
+     update();
++#endif
+ }   // updateFading
+ 
+ //-----------------------------------------------------------------------------
+ void MusicOggStream::updateFaster(float percent, float max_pitch)
+ {
++#ifndef NO_SOUND
+     alSourcef(m_soundSource,AL_PITCH,1+max_pitch*percent);
+     update();
++#endif
+ }   // updateFaster
+ 
+ //-----------------------------------------------------------------------------
+ void MusicOggStream::update()
+ {
++#ifndef NO_SOUND
+ 
+     if (m_pausedMusic || m_soundSource == ALuint(-1))
+     {
+@@ -326,8 +348,10 @@
+     {
+         fprintf(stderr,"WARNING: Attempt to stream music into buffer failed twice in a row.\n");
+     }
++#endif
+ }   // update
+ 
++#ifndef NO_SOUND
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::streamIntoBuffer(ALuint buffer)
+ {
+@@ -359,10 +383,12 @@
+ 
+     return true;
+ }   // streamIntoBuffer
++#endif
+ 
+ //-----------------------------------------------------------------------------
+ bool MusicOggStream::check(const char* what)
+ {
++#ifndef NO_SOUND
+     int error = alGetError();
+ 
+     if (error != AL_NO_ERROR)
+@@ -370,6 +396,7 @@
+         fprintf(stderr, "[MusicOggStream] OpenAL error at %s : %s (%i)\n", what, SFXManager::getErrorString(error).c_str(), error);
+         return false;
+     }
++#endif
+ 
+     return true;
+ }   // check
+@@ -377,6 +404,7 @@
+ //-----------------------------------------------------------------------------
+ std::string MusicOggStream::errorString(int code)
+ {
++#ifndef NO_SOUND
+     switch(code)
+     {
+         case OV_EREAD:
+@@ -392,6 +420,9 @@
+         default:
+             return std::string("Unknown Vorbis error.");
+     }
++#else
++    return std::string("Sound disabled.");
++#endif
+ }   // errorString
+ 
+ #endif // HAVE_OGGVORBIS
+Index: main.cpp
+===================================================================
+--- main.cpp	(revision 10230)
++++ main.cpp	(working copy)
+@@ -1095,7 +1095,7 @@
+ 
+ //=============================================================================
+ 
+-int main(int argc, char *argv[] )
++int main2(int argc, char *argv[] )
+ {
+     srand(( unsigned ) time( 0 ));
+ 
+Index: addons/network_http.cpp
+===================================================================
+--- addons/network_http.cpp	(revision 10230)
++++ addons/network_http.cpp	(working copy)
+@@ -16,9 +16,13 @@
+ //  along with this program; if not, write to the Free Software
+ //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ 
++#define NO_ADDONS
++
+ #include "addons/network_http.hpp"
+ 
+-#include <curl/curl.h>
++#ifndef NO_ADDONS
++#   include <curl/curl.h>
++#endif
+ #include <errno.h>
+ #include <stdio.h>
+ #include <string>
+@@ -69,6 +73,7 @@
+                              m_abort(false),
+                              m_thread_id(NULL)
+ {
++#ifndef NO_ADDONS
+     // Don't even start the network threads if networking is disabled.
+     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED )
+         return;
+@@ -85,6 +90,7 @@
+     m_all_requests.lock();
+     m_all_requests.getData().push(request);
+     m_all_requests.unlock();    
++#endif
+ }   // NetworkHttp
+ 
+ // ---------------------------------------------------------------------------
+@@ -96,6 +102,7 @@
+  */
+ void NetworkHttp::startNetworkThread()
+ {
++#ifndef NO_ADDONS
+     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED )
+         return;
+ 
+@@ -118,6 +125,7 @@
+         printf("[addons] Warning: could not create thread, error=%d.\n", errno);
+     }
+     pthread_attr_destroy(&attr);
++#endif
+ }   // startNetworkThread
+ 
+ // ---------------------------------------------------------------------------
+@@ -128,6 +136,7 @@
+  */
+ void *NetworkHttp::mainLoop(void *obj)
+ {
++#ifndef NO_ADDONS
+     NetworkHttp *me=(NetworkHttp*)obj;
+ 
+     pthread_setcancelstate(PTHREAD_CANCEL_ENABLE,      NULL);
+@@ -219,6 +228,7 @@
+     me->m_all_requests.unlock();
+ 
+     pthread_exit(NULL);
++#endif
+     return 0;
+ }   // mainLoop
+ 
+@@ -230,6 +240,7 @@
+  */
+ void NetworkHttp::stopNetworkThread()
+ {
++#ifndef NO_ADDONS
+     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED)
+         return;
+ 
+@@ -245,6 +256,7 @@
+     if(UserConfigParams::logAddons())
+         printf("[addons] Inserting QUIT request.\n");
+     insertRequest(r);
++#endif
+ }   // stopNetworkThread
+ 
+ // ---------------------------------------------------------------------------
+@@ -252,6 +264,7 @@
+  */
+ NetworkHttp::~NetworkHttp()
+ {
++#ifndef NO_ADDONS
+     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED)
+         return;
+     pthread_join(*m_thread_id.getData(), NULL);
+@@ -261,6 +274,7 @@
+     curl_easy_cleanup(m_curl_session);
+     m_curl_session = NULL;
+     curl_global_cleanup();
++#endif
+ }   // ~NetworkHttp
+ 
+ // ---------------------------------------------------------------------------
+@@ -270,6 +284,7 @@
+  *  \return 0 if an error happened and no online connection will be available,
+  *          1 otherwise.
+  */
++#ifndef NO_ADDONS
+ CURLcode NetworkHttp::init()
+ {
+     news_manager->clearErrorMessage();
+@@ -369,6 +384,7 @@
+         printf("[addons] %s\n", core::stringc(error_message).c_str());
+     return status;
+ }   // init
++#endif
+ 
+ // ---------------------------------------------------------------------------
+ /** Reinitialises the network manager. This is triggered when the users
+@@ -390,6 +406,7 @@
+  *  reInit request is handled. It removes all queued requests, deletes
+  *  the news.xml and addons.xml files, and trigges a reload of those files.
+  */
++#ifndef NO_ADDONS
+ CURLcode NetworkHttp::reInit()
+ {
+     // This also switches the addons_manager to be not ready anymore,
+@@ -561,7 +578,7 @@
+     request->setProgress( (status==CURLE_OK) ? 1.0f : -1.0f );
+     return status;
+ }   // downloadFileInternal
+-
++#endif
+ // ----------------------------------------------------------------------------
+ /** Signals to the progress function to request any ongoing download to be 
+  *  cancelled. This function can also be called if there is actually no 
+Index: addons/network_http.hpp
+===================================================================
+--- addons/network_http.hpp	(revision 10230)
++++ addons/network_http.hpp	(working copy)
+@@ -27,7 +27,12 @@
+ #ifdef WIN32
+ #  include <winsock2.h>
+ #endif
++
++#define NO_ADDONS
++
++#ifndef NO_ADDONS
+ #include <curl/curl.h>
++#endif
+ 
+ #include "addons/request.hpp"
+ #include "utils/synchronised.hpp"
+@@ -69,17 +74,21 @@
+     Synchronised<pthread_t *> m_thread_id;
+ 
+     /** The curl session. */
++#ifndef NO_ADDONS
+     CURL                     *m_curl_session;
++#endif
+ 
+     static void  *mainLoop(void *obj);
++#ifndef NO_ADDONS
+     CURLcode      init();
+     CURLcode      loadAddonsList(const XMLNode *xml,
+                                  const std::string &filename);
+     CURLcode      downloadFileInternal(Request *request);
++    CURLcode      reInit();
++#endif
+     static int    progressDownload(void *clientp, double dltotal, double dlnow,
+                                    double ultotal, double ulnow);
+     void          insertRequest(Request *request);
+-    CURLcode      reInit();
+ public:
+                   NetworkHttp();
+                  ~NetworkHttp();

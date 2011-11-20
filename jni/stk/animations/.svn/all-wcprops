@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/animations
+END
+animation_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/animations/animation_base.hpp
+END
+billboard_animation.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/animations/billboard_animation.hpp
+END
+three_d_animation.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/9924/main/trunk/src/animations/three_d_animation.hpp
+END
+ipo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/9587/main/trunk/src/animations/ipo.cpp
+END
+animation_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9861/main/trunk/src/animations/animation_base.cpp
+END
+billboard_animation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/9861/main/trunk/src/animations/billboard_animation.cpp
+END
+three_d_animation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10001/main/trunk/src/animations/three_d_animation.cpp
+END
+ipo.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/9587/main/trunk/src/animations/ipo.hpp
+END

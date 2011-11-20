@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/10131/main/trunk/src/karts
+END
+moveable.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/karts/moveable.hpp
+END
+kart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/9965/main/trunk/src/karts/kart.cpp
+END
+max_speed.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9349/main/trunk/src/karts/max_speed.cpp
+END
+kart.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/kart.hpp
+END
+kart_properties_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10103/main/trunk/src/karts/kart_properties_manager.cpp
+END
+max_speed.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9011/main/trunk/src/karts/max_speed.hpp
+END
+kart_with_stats.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9725/main/trunk/src/karts/kart_with_stats.cpp
+END
+kart_properties_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10103/main/trunk/src/karts/kart_properties_manager.hpp
+END
+kart_properties.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/10058/main/trunk/src/karts/kart_properties.cpp
+END
+emergency_animation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9903/main/trunk/src/karts/emergency_animation.cpp
+END
+kart_with_stats.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9503/main/trunk/src/karts/kart_with_stats.hpp
+END
+kart_model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/10103/main/trunk/src/karts/kart_model.cpp
+END
+kart_properties.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/10058/main/trunk/src/karts/kart_properties.hpp
+END
+emergency_animation.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9903/main/trunk/src/karts/emergency_animation.hpp
+END
+kart_model.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9842/main/trunk/src/karts/kart_model.hpp
+END
+moveable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/9831/main/trunk/src/karts/moveable.cpp
+END

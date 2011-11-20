@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/race
+END
+highscores.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/race/highscores.cpp
+END
+history.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/8132/main/trunk/src/race/history.cpp
+END
+highscores.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/race/highscores.hpp
+END
+race_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9382/main/trunk/src/race/race_manager.cpp
+END
+highscore_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9276/main/trunk/src/race/highscore_manager.cpp
+END
+grand_prix_data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8938/main/trunk/src/race/grand_prix_data.cpp
+END
+history.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/race/history.hpp
+END
+grand_prix_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/race/grand_prix_manager.cpp
+END
+race_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/race/race_manager.hpp
+END
+highscore_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/race/highscore_manager.hpp
+END
+grand_prix_data.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8938/main/trunk/src/race/grand_prix_data.hpp
+END
+grand_prix_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/race/grand_prix_manager.hpp
+END

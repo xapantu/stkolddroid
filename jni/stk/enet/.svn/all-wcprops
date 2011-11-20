@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/supertuxkart/!svn/ver/10207/main/trunk/src/enet
+END
+enet.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/enet.dsp
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/9253/main/trunk/src/enet/configure
+END
+tutorial.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/enet/tutorial.txt
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/LICENSE
+END
+protocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/9244/main/trunk/src/enet/protocol.c
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/enet/Doxyfile
+END
+win32.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/win32.c
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9256/main/trunk/src/enet/configure.in
+END
+design.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/enet/design.txt
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/depcomp
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/9244/main/trunk/src/enet/ChangeLog
+END
+packet.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/packet.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/list.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/README
+END
+host.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/9244/main/trunk/src/enet/host.c
+END
+callbacks.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/callbacks.c
+END
+unix.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/unix.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10207/main/trunk/src/enet/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/missing
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/compress.c
+END
+peer.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/9244/main/trunk/src/enet/peer.c
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/9253/main/trunk/src/enet/aclocal.m4
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9338/main/trunk/src/enet/CMakeLists.txt
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/7976/main/trunk/src/enet/install-sh
+END

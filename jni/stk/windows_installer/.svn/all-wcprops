@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9163/main/trunk/src/windows_installer
+END
+install.ico
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/windows_installer/install.ico
+END
+icon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/8319/main/trunk/src/windows_installer/icon.ico
+END
+uninstall.ico
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/windows_installer/uninstall.ico
+END
+supertuxkart.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/9163/main/trunk/src/windows_installer/supertuxkart.nsi
+END

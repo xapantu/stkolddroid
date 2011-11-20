@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/supertuxkart/!svn/ver/10130/main/trunk/src/ide/vc10
+END
+supertuxkart.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/9891/main/trunk/src/ide/vc10/supertuxkart.vcxproj.filters
+END
+enet.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8804/main/trunk/src/ide/vc10/enet.vcxproj
+END
+bullet_lib.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/10130/main/trunk/src/ide/vc10/bullet_lib.vcxproj
+END
+supertuxkart.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9891/main/trunk/src/ide/vc10/supertuxkart.vcxproj
+END
+supertuxkart.sln
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/8804/main/trunk/src/ide/vc10/supertuxkart.sln
+END

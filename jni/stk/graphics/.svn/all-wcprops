@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/supertuxkart/!svn/ver/10228/main/trunk/src/graphics
+END
+material.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10228/main/trunk/src/graphics/material.cpp
+END
+rain.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/rain.hpp
+END
+particle_kind_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/7639/main/trunk/src/graphics/particle_kind_manager.cpp
+END
+material.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10070/main/trunk/src/graphics/material.hpp
+END
+hit_effect.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9619/main/trunk/src/graphics/hit_effect.hpp
+END
+particle_kind_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/7639/main/trunk/src/graphics/particle_kind_manager.hpp
+END
+irr_driver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9980/main/trunk/src/graphics/irr_driver.cpp
+END
+particle_kind.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9641/main/trunk/src/graphics/particle_kind.cpp
+END
+irr_driver.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/graphics/irr_driver.hpp
+END
+particle_kind.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9641/main/trunk/src/graphics/particle_kind.hpp
+END
+moving_texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/graphics/moving_texture.cpp
+END
+explosion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9619/main/trunk/src/graphics/explosion.cpp
+END
+post_processing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/10006/main/trunk/src/graphics/post_processing.cpp
+END
+slip_stream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/9501/main/trunk/src/graphics/slip_stream.cpp
+END
+moving_texture.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/moving_texture.hpp
+END
+shadow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9240/main/trunk/src/graphics/shadow.cpp
+END
+explosion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9619/main/trunk/src/graphics/explosion.hpp
+END
+post_processing.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/10006/main/trunk/src/graphics/post_processing.hpp
+END
+slip_stream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8662/main/trunk/src/graphics/slip_stream.hpp
+END
+camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9963/main/trunk/src/graphics/camera.cpp
+END
+shadow.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9240/main/trunk/src/graphics/shadow.hpp
+END
+stars.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/9918/main/trunk/src/graphics/stars.cpp
+END
+particle_emitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9932/main/trunk/src/graphics/particle_emitter.cpp
+END
+hardware_skinning.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/supertuxkart/!svn/ver/9278/main/trunk/src/graphics/hardware_skinning.cpp
+END
+camera.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9963/main/trunk/src/graphics/camera.hpp
+END
+CBatchingMesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/graphics/CBatchingMesh.cpp
+END
+stars.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/8814/main/trunk/src/graphics/stars.hpp
+END
+particle_emitter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9785/main/trunk/src/graphics/particle_emitter.hpp
+END
+hardware_skinning.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/supertuxkart/!svn/ver/9254/main/trunk/src/graphics/hardware_skinning.hpp
+END
+per_camera_node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/per_camera_node.cpp
+END
+CBatchingMesh.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/graphics/CBatchingMesh.hpp
+END
+hit_sfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9619/main/trunk/src/graphics/hit_sfx.cpp
+END
+per_camera_node.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/per_camera_node.hpp
+END
+hit_sfx.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9619/main/trunk/src/graphics/hit_sfx.hpp
+END
+mesh_tools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9736/main/trunk/src/graphics/mesh_tools.cpp
+END
+referee.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/10012/main/trunk/src/graphics/referee.cpp
+END
+mesh_tools.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/mesh_tools.hpp
+END
+referee.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9903/main/trunk/src/graphics/referee.hpp
+END
+lod_node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9603/main/trunk/src/graphics/lod_node.cpp
+END
+skid_marks.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9937/main/trunk/src/graphics/skid_marks.cpp
+END
+material_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9791/main/trunk/src/graphics/material_manager.cpp
+END
+lod_node.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9663/main/trunk/src/graphics/lod_node.hpp
+END
+rain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/graphics/rain.cpp
+END
+skid_marks.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9937/main/trunk/src/graphics/skid_marks.hpp
+END
+material_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/8866/main/trunk/src/graphics/material_manager.hpp
+END

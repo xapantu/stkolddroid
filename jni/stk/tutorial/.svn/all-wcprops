@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/tutorial
+END
+tutorial_data.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7386/main/trunk/src/tutorial/tutorial_data.hpp
+END
+tutorial_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/7386/main/trunk/src/tutorial/tutorial_manager.hpp
+END
+tutorial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/7043/main/trunk/src/tutorial/tutorial.cpp
+END
+tutorial.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/tutorial/tutorial.hpp
+END
+tutorial_data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/tutorial/tutorial_data.cpp
+END
+tutorial_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/tutorial/tutorial_manager.cpp
+END

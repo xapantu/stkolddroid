@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/windows_installer/prerequisites
+END
+vcredist_x86.exe
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/windows_installer/prerequisites/vcredist_x86.exe
+END
+oalinst.exe
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/windows_installer/prerequisites/oalinst.exe
+END

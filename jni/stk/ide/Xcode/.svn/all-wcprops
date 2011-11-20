@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/supertuxkart/!svn/ver/10141/main/trunk/src/ide/Xcode
+END
+cleanupRelease.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/ide/Xcode/cleanupRelease.sh
+END
+Config.xcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9514/main/trunk/src/ide/Xcode/Config.xcconfig
+END
+SuperTuxKart-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/8400/main/trunk/src/ide/Xcode/SuperTuxKart-Info.plist
+END
+stk.icns
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/ide/Xcode/stk.icns
+END

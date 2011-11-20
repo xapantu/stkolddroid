@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/10221/main/trunk/src/input
+END
+device_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8458/main/trunk/src/input/device_manager.hpp
+END
+input_device.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9939/main/trunk/src/input/input_device.cpp
+END
+input_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/8662/main/trunk/src/input/input_manager.hpp
+END
+binding.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/input/binding.hpp
+END
+input_device.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9939/main/trunk/src/input/input_device.hpp
+END
+input.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/input/input.hpp
+END
+device_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/10221/main/trunk/src/input/device_manager.cpp
+END
+input_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10049/main/trunk/src/input/input_manager.cpp
+END
+binding.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8662/main/trunk/src/input/binding.cpp
+END

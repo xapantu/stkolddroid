@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/10098/main/trunk/src/states_screens/dialogs
+END
+track_info_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/8976/main/trunk/src/states_screens/dialogs/track_info_dialog.cpp
+END
+confirm_resolution_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/supertuxkart/!svn/ver/8093/main/trunk/src/states_screens/dialogs/confirm_resolution_dialog.cpp
+END
+race_paused_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/5938/main/trunk/src/states_screens/dialogs/race_paused_dialog.hpp
+END
+gp_info_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/states_screens/dialogs/gp_info_dialog.cpp
+END
+message_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/9716/main/trunk/src/states_screens/dialogs/message_dialog.cpp
+END
+track_info_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/7499/main/trunk/src/states_screens/dialogs/track_info_dialog.hpp
+END
+confirm_resolution_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/supertuxkart/!svn/ver/5938/main/trunk/src/states_screens/dialogs/confirm_resolution_dialog.hpp
+END
+gp_info_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/5938/main/trunk/src/states_screens/dialogs/gp_info_dialog.hpp
+END
+addons_loading.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/supertuxkart/!svn/ver/10098/main/trunk/src/states_screens/dialogs/addons_loading.cpp
+END
+message_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/9886/main/trunk/src/states_screens/dialogs/message_dialog.hpp
+END
+enter_player_name_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/states_screens/dialogs/enter_player_name_dialog.cpp
+END
+addons_loading.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/supertuxkart/!svn/ver/10098/main/trunk/src/states_screens/dialogs/addons_loading.hpp
+END
+enter_player_name_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/supertuxkart/!svn/ver/8299/main/trunk/src/states_screens/dialogs/enter_player_name_dialog.hpp
+END
+press_a_key_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/6721/main/trunk/src/states_screens/dialogs/press_a_key_dialog.cpp
+END
+race_over_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/supertuxkart/!svn/ver/8665/main/trunk/src/states_screens/dialogs/race_over_dialog.cpp
+END
+player_info_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/9986/main/trunk/src/states_screens/dialogs/player_info_dialog.cpp
+END
+add_device_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/9902/main/trunk/src/states_screens/dialogs/add_device_dialog.cpp
+END
+press_a_key_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/5938/main/trunk/src/states_screens/dialogs/press_a_key_dialog.hpp
+END
+race_over_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/supertuxkart/!svn/ver/8177/main/trunk/src/states_screens/dialogs/race_over_dialog.hpp
+END
+race_paused_dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/states_screens/dialogs/race_paused_dialog.cpp
+END
+player_info_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/supertuxkart/!svn/ver/8434/main/trunk/src/states_screens/dialogs/player_info_dialog.hpp
+END
+add_device_dialog.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/5938/main/trunk/src/states_screens/dialogs/add_device_dialog.hpp
+END

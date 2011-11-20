@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/modes
+END
+standard_race.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/standard_race.hpp
+END
+world_status.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9820/main/trunk/src/modes/world_status.hpp
+END
+game_tutorial.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/7045/main/trunk/src/modes/game_tutorial.hpp
+END
+tutorial_race.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/tutorial_race.hpp
+END
+world_with_rank.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/8798/main/trunk/src/modes/world_with_rank.hpp
+END
+three_strikes_battle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/modes/three_strikes_battle.cpp
+END
+profile_world.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9927/main/trunk/src/modes/profile_world.cpp
+END
+three_strikes_battle.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/three_strikes_battle.hpp
+END
+profile_world.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9372/main/trunk/src/modes/profile_world.hpp
+END
+follow_the_leader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/follow_the_leader.cpp
+END
+linear_world.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9997/main/trunk/src/modes/linear_world.cpp
+END
+follow_the_leader.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/follow_the_leader.hpp
+END
+linear_world.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/linear_world.hpp
+END
+world.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/9954/main/trunk/src/modes/world.cpp
+END
+standard_race.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/standard_race.cpp
+END
+world_status.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9822/main/trunk/src/modes/world_status.cpp
+END
+world.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/modes/world.hpp
+END
+game_tutorial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/7043/main/trunk/src/modes/game_tutorial.cpp
+END
+tutorial_race.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/modes/tutorial_race.cpp
+END
+world_with_rank.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/modes/world_with_rank.cpp
+END

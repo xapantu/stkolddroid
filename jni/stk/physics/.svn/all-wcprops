@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/supertuxkart/!svn/ver/10051/main/trunk/src/physics
+END
+physical_object.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/10051/main/trunk/src/physics/physical_object.cpp
+END
+irr_debug_drawer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/physics/irr_debug_drawer.cpp
+END
+physical_object.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/10051/main/trunk/src/physics/physical_object.hpp
+END
+irr_debug_drawer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/10048/main/trunk/src/physics/irr_debug_drawer.hpp
+END
+btUprightConstraint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/9909/main/trunk/src/physics/btUprightConstraint.cpp
+END
+btKartRaycast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7636/main/trunk/src/physics/btKartRaycast.cpp
+END
+triangle_mesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9950/main/trunk/src/physics/triangle_mesh.cpp
+END
+physics.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9924/main/trunk/src/physics/physics.cpp
+END
+btUprightConstraint.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/9909/main/trunk/src/physics/btUprightConstraint.hpp
+END
+user_pointer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/physics/user_pointer.hpp
+END
+btKartRaycast.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7600/main/trunk/src/physics/btKartRaycast.hpp
+END
+triangle_mesh.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9950/main/trunk/src/physics/triangle_mesh.hpp
+END
+physics.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/physics/physics.hpp
+END
+btKart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/8172/main/trunk/src/physics/btKart.cpp
+END
+kart_motion_state.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/8781/main/trunk/src/physics/kart_motion_state.hpp
+END
+btKart.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/physics/btKart.hpp
+END

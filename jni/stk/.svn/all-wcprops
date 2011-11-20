@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/supertuxkart/!svn/ver/10229/main/trunk/src
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/Doxyfile
+END
+main_loop.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/main_loop.hpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/main.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/9885/main/trunk/src/Makefile.am
+END
+main_loop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/9761/main/trunk/src/main_loop.cpp
+END

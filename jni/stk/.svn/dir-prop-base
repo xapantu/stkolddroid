@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 78
+supertuxkart
+supertuxkart.exe
+Makefile.in
+.deps
+Makefile
+libstatic_ssg.a
+html
+
+END

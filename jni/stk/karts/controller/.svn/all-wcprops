@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10131/main/trunk/src/karts/controller
+END
+end_controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/end_controller.hpp
+END
+player_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10131/main/trunk/src/karts/controller/player_controller.cpp
+END
+default_ai_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/supertuxkart/!svn/ver/10066/main/trunk/src/karts/controller/default_ai_controller.cpp
+END
+controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/karts/controller/controller.cpp
+END
+player_controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/player_controller.hpp
+END
+default_ai_controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/default_ai_controller.hpp
+END
+new_ai_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10066/main/trunk/src/karts/controller/new_ai_controller.cpp
+END
+ai_base_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/9421/main/trunk/src/karts/controller/ai_base_controller.cpp
+END
+kart_control.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/kart_control.hpp
+END
+controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/controller.hpp
+END
+end_controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/9421/main/trunk/src/karts/controller/end_controller.cpp
+END
+new_ai_controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/new_ai_controller.hpp
+END
+ai_base_controller.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/karts/controller/ai_base_controller.hpp
+END

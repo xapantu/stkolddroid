@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/challenges
+END
+challenge_data.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/7713/main/trunk/src/challenges/challenge_data.hpp
+END
+challenge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/challenges/challenge.cpp
+END
+unlock_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/challenges/unlock_manager.cpp
+END
+challenge.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/challenges/challenge.hpp
+END
+unlock_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/7610/main/trunk/src/challenges/unlock_manager.hpp
+END
+challenge_data.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/challenges/challenge_data.cpp
+END

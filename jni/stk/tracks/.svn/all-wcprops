@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/supertuxkart/!svn/ver/10105/main/trunk/src/tracks
+END
+quad_set.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7720/main/trunk/src/tracks/quad_set.cpp
+END
+graph_node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10016/main/trunk/src/tracks/graph_node.cpp
+END
+check_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/tracks/check_manager.cpp
+END
+quad_set.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/tracks/quad_set.hpp
+END
+graph_node.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10016/main/trunk/src/tracks/graph_node.hpp
+END
+check_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/9805/main/trunk/src/tracks/check_manager.hpp
+END
+check_sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/tracks/check_sphere.cpp
+END
+track_sector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10016/main/trunk/src/tracks/track_sector.cpp
+END
+track_object_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/tracks/track_object_manager.cpp
+END
+bezier_curve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/8135/main/trunk/src/tracks/bezier_curve.cpp
+END
+check_line.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8665/main/trunk/src/tracks/check_line.cpp
+END
+check_sphere.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/tracks/check_sphere.hpp
+END
+track_sector.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10016/main/trunk/src/tracks/track_sector.hpp
+END
+track_object_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/tracks/track_object_manager.hpp
+END
+bezier_curve.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/tracks/bezier_curve.hpp
+END
+check_line.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/tracks/check_line.hpp
+END
+track_object.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/tracks/track_object.cpp
+END
+quad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/9011/main/trunk/src/tracks/quad.cpp
+END
+check_structure.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9810/main/trunk/src/tracks/check_structure.cpp
+END
+track_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/10105/main/trunk/src/tracks/track_manager.cpp
+END
+track_object.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10050/main/trunk/src/tracks/track_object.hpp
+END
+quad.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/9011/main/trunk/src/tracks/quad.hpp
+END
+check_structure.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9810/main/trunk/src/tracks/check_structure.hpp
+END
+track_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/10103/main/trunk/src/tracks/track_manager.hpp
+END
+track.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/9973/main/trunk/src/tracks/track.cpp
+END
+track.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10102/main/trunk/src/tracks/track.hpp
+END
+check_lap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9810/main/trunk/src/tracks/check_lap.cpp
+END
+quad_graph.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9810/main/trunk/src/tracks/quad_graph.cpp
+END
+ambient_light_sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/tracks/ambient_light_sphere.cpp
+END
+check_lap.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/tracks/check_lap.hpp
+END
+terrain_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9312/main/trunk/src/tracks/terrain_info.cpp
+END
+quad_graph.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9807/main/trunk/src/tracks/quad_graph.hpp
+END
+ambient_light_sphere.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/tracks/ambient_light_sphere.hpp
+END
+terrain_info.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/tracks/terrain_info.hpp
+END

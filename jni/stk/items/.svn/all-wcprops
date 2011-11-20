@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/10182/main/trunk/src/items
+END
+item.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/items/item.cpp
+END
+swatter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9876/main/trunk/src/items/swatter.hpp
+END
+projectile_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/9807/main/trunk/src/items/projectile_manager.hpp
+END
+powerup_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9302/main/trunk/src/items/powerup_manager.hpp
+END
+bowling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9956/main/trunk/src/items/bowling.cpp
+END
+powerup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9899/main/trunk/src/items/powerup.cpp
+END
+item.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/items/item.hpp
+END
+cake.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/9883/main/trunk/src/items/cake.cpp
+END
+rubber_band.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9731/main/trunk/src/items/rubber_band.cpp
+END
+bowling.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9712/main/trunk/src/items/bowling.hpp
+END
+powerup.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/items/powerup.hpp
+END
+cake.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/9883/main/trunk/src/items/cake.hpp
+END
+rubber_band.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/items/rubber_band.hpp
+END
+attachment_plugin.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9876/main/trunk/src/items/attachment_plugin.hpp
+END
+rubber_ball.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10182/main/trunk/src/items/rubber_ball.cpp
+END
+plunger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9731/main/trunk/src/items/plunger.cpp
+END
+flyable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/10041/main/trunk/src/items/flyable.cpp
+END
+rubber_ball.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10041/main/trunk/src/items/rubber_ball.hpp
+END
+plunger.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9712/main/trunk/src/items/plunger.hpp
+END
+attachment_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/9011/main/trunk/src/items/attachment_manager.cpp
+END
+flyable.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/10041/main/trunk/src/items/flyable.hpp
+END
+attachment_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/9011/main/trunk/src/items/attachment_manager.hpp
+END
+item_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/8579/main/trunk/src/items/item_manager.cpp
+END
+attachment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9898/main/trunk/src/items/attachment.cpp
+END
+swatter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/9966/main/trunk/src/items/swatter.cpp
+END
+projectile_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/10003/main/trunk/src/items/projectile_manager.cpp
+END
+powerup_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/9302/main/trunk/src/items/powerup_manager.cpp
+END
+item_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/8579/main/trunk/src/items/item_manager.hpp
+END
+attachment.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9557/main/trunk/src/items/attachment.hpp
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/10043/main/trunk/src/audio
+END
+sfx_buffer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/8428/main/trunk/src/audio/sfx_buffer.hpp
+END
+sfx_openal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9431/main/trunk/src/audio/sfx_openal.cpp
+END
+music_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9972/main/trunk/src/audio/music_manager.hpp
+END
+sfx_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/audio/sfx_base.hpp
+END
+sfx_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/8648/main/trunk/src/audio/sfx_manager.hpp
+END
+music_ogg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/audio/music_ogg.hpp
+END
+sfx_openal.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9431/main/trunk/src/audio/sfx_openal.hpp
+END
+music.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/audio/music.hpp
+END
+music_information.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9973/main/trunk/src/audio/music_information.cpp
+END
+sfx_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/9929/main/trunk/src/audio/sfx_buffer.cpp
+END
+music_information.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9973/main/trunk/src/audio/music_information.hpp
+END
+music_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10043/main/trunk/src/audio/music_manager.cpp
+END
+sfx_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/9276/main/trunk/src/audio/sfx_manager.cpp
+END
+music_ogg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/audio/music_ogg.cpp
+END

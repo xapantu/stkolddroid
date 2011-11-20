@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/8912/main/trunk/src/tinygettext
+END
+po_parser.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/po_parser.hpp
+END
+dictionary_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8662/main/trunk/src/tinygettext/dictionary_manager.cpp
+END
+log_stream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/log_stream.hpp
+END
+dictionary_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8662/main/trunk/src/tinygettext/dictionary_manager.hpp
+END
+stk_file_system.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/stk_file_system.cpp
+END
+plural_forms.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/plural_forms.cpp
+END
+dictionary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7981/main/trunk/src/tinygettext/dictionary.cpp
+END
+stk_file_system.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/stk_file_system.hpp
+END
+plural_forms.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/plural_forms.hpp
+END
+dictionary.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7981/main/trunk/src/tinygettext/dictionary.hpp
+END
+iconv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/iconv.cpp
+END
+log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/log.cpp
+END
+language.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8912/main/trunk/src/tinygettext/language.cpp
+END
+iconv.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/iconv.hpp
+END
+log.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/log.hpp
+END
+language.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/language.hpp
+END
+file_system.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/file_system.hpp
+END
+tinygettext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/tinygettext.cpp
+END
+po_parser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/po_parser.cpp
+END
+tinygettext.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7958/main/trunk/src/tinygettext/tinygettext.hpp
+END

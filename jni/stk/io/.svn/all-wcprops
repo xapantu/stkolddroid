@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/supertuxkart/!svn/ver/10138/main/trunk/src/io
+END
+file_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/io/file_manager.hpp
+END
+xml_writer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/io/xml_writer.hpp
+END
+xml_node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/10138/main/trunk/src/io/xml_node.cpp
+END
+file_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/9968/main/trunk/src/io/file_manager.cpp
+END
+xml_node.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/supertuxkart/!svn/ver/10134/main/trunk/src/io/xml_node.hpp
+END
+xml_writer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8060/main/trunk/src/io/xml_writer.cpp
+END

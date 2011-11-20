@@ -1,0 +1,43 @@
+10
+
+dir
+10230
+https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart/main/trunk/src/bullet/src/BulletCollision
+https://supertuxkart.svn.sourceforge.net/svnroot/supertuxkart
+
+
+
+2011-11-07T20:43:00.445041Z
+10124
+hikerstk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+178a84e3-b1eb-0310-8ba1-8eac791a3b58
+
+CollisionShapes
+dir
+
+BroadphaseCollision
+dir
+
+Gimpact
+dir
+
+NarrowPhaseCollision
+dir
+
+CollisionDispatch
+dir
+

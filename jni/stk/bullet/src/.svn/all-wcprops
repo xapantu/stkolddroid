@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/supertuxkart/!svn/ver/10124/main/trunk/src/bullet/src
+END
+Bullet-C-Api.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/Bullet-C-Api.h
+END
+btBulletDynamicsCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/btBulletDynamicsCommon.h
+END
+btBulletCollisionCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/btBulletCollisionCommon.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/Makefile.am
+END

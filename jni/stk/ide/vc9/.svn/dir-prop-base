@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 136
+Debug
+Release
+irr*
+irrlicht-debug
+curl-debug
+supertuxkart.ncb
+supertuxkart.suo
+bullet_lib.vcproj.*
+supertuxkart.vcproj.*
+enet.vcproj.*
+
+
+END

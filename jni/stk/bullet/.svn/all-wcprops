@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/supertuxkart/!svn/ver/10207/main/trunk/src/bullet
+END
+stk.patch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10124/main/trunk/src/bullet/stk.patch
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/bullet/LICENSE
+END
+copy_bullet_files
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/10123/main/trunk/src/bullet/copy_bullet_files
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/bullet/AUTHORS
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/VERSION
+END
+Changelog
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10123/main/trunk/src/bullet/Changelog
+END
+BulletLicense.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/BulletLicense.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/10207/main/trunk/src/bullet/Makefile.am
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/CMakeLists.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/README
+END

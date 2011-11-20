@@ -1,4 +1,4 @@
-//  $Id: material.cpp 10075 2011-11-01 23:07:15Z hikerstk $
+//  $Id: material.cpp 10228 2011-11-19 23:41:26Z auria $
 //
 //  SuperTuxKart - a fun racing game with go-kart
 //  Copyright (C) 2004 Steve Baker <sjbaker1@airmail.net>
@@ -290,6 +290,12 @@ void Material::install(bool is_full_path)
     const std::string &full_path = is_full_path 
                                  ? m_texname
                                  : file_manager->getTextureFile(m_texname);
+    
+    if (full_path.size() == 0)
+    {
+        fprintf(stderr, "[Material] WARNING, cannot find texture '%s'\n", m_texname.c_str());
+    }
+    
     m_texture = irr_driver->getTexture(full_path,
                                        isPreMul(), isPreDiv());
 

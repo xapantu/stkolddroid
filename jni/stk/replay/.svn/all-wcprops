@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/supertuxkart/!svn/ver/9939/main/trunk/src/replay
+END
+replay_recorder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_recorder.cpp
+END
+replay_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_base.cpp
+END
+replay_recorder.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_recorder.hpp
+END
+replay_buffers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_buffers.cpp
+END
+replay_player.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_player.cpp
+END
+replay_buffer_tpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/9939/main/trunk/src/replay/replay_buffer_tpl.hpp
+END
+replay_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_base.hpp
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/replay/README
+END
+replay_buffers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_buffers.hpp
+END
+replay_player.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/replay/replay_player.hpp
+END

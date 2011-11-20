@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/10124/main/trunk/src/bullet/src/BulletDynamics/Dynamics
+END
+Bullet-C-API.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/src/BulletDynamics/Dynamics/Bullet-C-API.cpp
+END
+btSimpleDynamicsWorld.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp
+END
+btContinuousDynamicsWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/supertuxkart/!svn/ver/4300/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btContinuousDynamicsWorld.h
+END
+btRigidBody.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/supertuxkart/!svn/ver/10124/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btRigidBody.cpp
+END
+btSimpleDynamicsWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+END
+btRigidBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/supertuxkart/!svn/ver/10124/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btRigidBody.h
+END
+btDiscreteDynamicsWorld.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp
+END
+btActionInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btActionInterface.h
+END
+btDynamicsWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/supertuxkart/!svn/ver/10122/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
+END
+btContinuousDynamicsWorld.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btContinuousDynamicsWorld.cpp
+END
+btDiscreteDynamicsWorld.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+END

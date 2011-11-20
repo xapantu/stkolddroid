@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/supertuxkart/!svn/ver/10139/main/trunk/src/config
+END
+player.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/config/player.hpp
+END
+user_config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/10139/main/trunk/src/config/user_config.cpp
+END
+device_config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/9656/main/trunk/src/config/device_config.cpp
+END
+stk_config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10066/main/trunk/src/config/stk_config.cpp
+END
+user_config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/9994/main/trunk/src/config/user_config.hpp
+END
+device_config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/9656/main/trunk/src/config/device_config.hpp
+END
+stk_config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/10066/main/trunk/src/config/stk_config.hpp
+END

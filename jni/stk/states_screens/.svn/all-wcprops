@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/10226/main/trunk/src/states_screens
+END
+options_screen_input2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/9911/main/trunk/src/states_screens/options_screen_input2.hpp
+END
+addons_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/9911/main/trunk/src/states_screens/addons_screen.cpp
+END
+help_screen_1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/6070/main/trunk/src/states_screens/help_screen_1.cpp
+END
+help_screen_2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/6070/main/trunk/src/states_screens/help_screen_2.cpp
+END
+race_gui_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10153/main/trunk/src/states_screens/race_gui_base.cpp
+END
+options_screen_input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8683/main/trunk/src/states_screens/options_screen_input.cpp
+END
+help_screen_3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/6070/main/trunk/src/states_screens/help_screen_3.cpp
+END
+help_screen_4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/6323/main/trunk/src/states_screens/help_screen_4.cpp
+END
+state_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10015/main/trunk/src/states_screens/state_manager.cpp
+END
+options_screen_audio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8424/main/trunk/src/states_screens/options_screen_audio.cpp
+END
+help_screen_1.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/5736/main/trunk/src/states_screens/help_screen_1.hpp
+END
+addons_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/9911/main/trunk/src/states_screens/addons_screen.hpp
+END
+race_result_gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/10226/main/trunk/src/states_screens/race_result_gui.cpp
+END
+help_screen_2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/5736/main/trunk/src/states_screens/help_screen_2.hpp
+END
+race_gui_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/9832/main/trunk/src/states_screens/race_gui_base.hpp
+END
+race_gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9764/main/trunk/src/states_screens/race_gui.cpp
+END
+options_screen_input.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8683/main/trunk/src/states_screens/options_screen_input.hpp
+END
+help_screen_3.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/5736/main/trunk/src/states_screens/help_screen_3.hpp
+END
+state_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/states_screens/state_manager.hpp
+END
+feature_unlocked.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10036/main/trunk/src/states_screens/feature_unlocked.cpp
+END
+help_screen_4.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/6070/main/trunk/src/states_screens/help_screen_4.hpp
+END
+options_screen_video.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/10073/main/trunk/src/states_screens/options_screen_video.cpp
+END
+options_screen_audio.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/states_screens/options_screen_audio.hpp
+END
+race_result_gui.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/9958/main/trunk/src/states_screens/race_result_gui.hpp
+END
+race_gui.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/9764/main/trunk/src/states_screens/race_gui.hpp
+END
+feature_unlocked.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/7610/main/trunk/src/states_screens/feature_unlocked.hpp
+END
+minimal_race_gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/states_screens/minimal_race_gui.cpp
+END
+options_screen_video.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/states_screens/options_screen_video.hpp
+END
+tracks_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/9383/main/trunk/src/states_screens/tracks_screen.cpp
+END
+options_screen_players.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/9989/main/trunk/src/states_screens/options_screen_players.cpp
+END
+minimal_race_gui.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/states_screens/minimal_race_gui.hpp
+END
+race_setup_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/9852/main/trunk/src/states_screens/race_setup_screen.cpp
+END
+tracks_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/8656/main/trunk/src/states_screens/tracks_screen.hpp
+END
+credits.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/10063/main/trunk/src/states_screens/credits.cpp
+END
+options_screen_players.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/states_screens/options_screen_players.hpp
+END
+race_setup_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/5736/main/trunk/src/states_screens/race_setup_screen.hpp
+END
+credits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/9937/main/trunk/src/states_screens/credits.hpp
+END
+tutorial_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/7481/main/trunk/src/states_screens/tutorial_screen.cpp
+END
+challenges.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9282/main/trunk/src/states_screens/challenges.cpp
+END
+kart_selection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10013/main/trunk/src/states_screens/kart_selection.cpp
+END
+main_menu_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/9988/main/trunk/src/states_screens/main_menu_screen.cpp
+END
+tutorial_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/states_screens/tutorial_screen.hpp
+END
+arenas_screen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10142/main/trunk/src/states_screens/arenas_screen.cpp
+END
+challenges.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/9282/main/trunk/src/states_screens/challenges.hpp
+END
+grand_prix_win.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10018/main/trunk/src/states_screens/grand_prix_win.cpp
+END
+kart_selection.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/9920/main/trunk/src/states_screens/kart_selection.hpp
+END
+main_menu_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/9988/main/trunk/src/states_screens/main_menu_screen.hpp
+END
+arenas_screen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/supertuxkart/!svn/ver/10142/main/trunk/src/states_screens/arenas_screen.hpp
+END
+grand_prix_lose.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8811/main/trunk/src/states_screens/grand_prix_lose.cpp
+END
+grand_prix_win.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10018/main/trunk/src/states_screens/grand_prix_win.hpp
+END
+grand_prix_lose.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/states_screens/grand_prix_lose.hpp
+END
+options_screen_ui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/9984/main/trunk/src/states_screens/options_screen_ui.cpp
+END
+options_screen_input2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/9911/main/trunk/src/states_screens/options_screen_input2.cpp
+END
+options_screen_ui.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/states_screens/options_screen_ui.hpp
+END

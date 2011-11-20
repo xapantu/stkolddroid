@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/10229/main/trunk/src/guiengine/widgets
+END
+bubble_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/8946/main/trunk/src/guiengine/widgets/bubble_widget.cpp
+END
+text_box_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/9990/main/trunk/src/guiengine/widgets/text_box_widget.cpp
+END
+progress_bar_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/progress_bar_widget.hpp
+END
+model_view_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/model_view_widget.hpp
+END
+bubble_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/bubble_widget.hpp
+END
+text_box_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/text_box_widget.hpp
+END
+CGUIEditBox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10229/main/trunk/src/guiengine/widgets/CGUIEditBox.cpp
+END
+CGUIEditBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/10229/main/trunk/src/guiengine/widgets/CGUIEditBox.h
+END
+ribbon_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10008/main/trunk/src/guiengine/widgets/ribbon_widget.cpp
+END
+button_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/guiengine/widgets/button_widget.cpp
+END
+list_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10021/main/trunk/src/guiengine/widgets/list_widget.cpp
+END
+spinner_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/10021/main/trunk/src/guiengine/widgets/spinner_widget.cpp
+END
+dynamic_ribbon_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/10021/main/trunk/src/guiengine/widgets/dynamic_ribbon_widget.cpp
+END
+label_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/guiengine/widgets/label_widget.cpp
+END
+list_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/list_widget.hpp
+END
+button_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/button_widget.hpp
+END
+ribbon_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/ribbon_widget.hpp
+END
+icon_button_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/supertuxkart/!svn/ver/8749/main/trunk/src/guiengine/widgets/icon_button_widget.cpp
+END
+spinner_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/spinner_widget.hpp
+END
+label_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/label_widget.hpp
+END
+dynamic_ribbon_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/dynamic_ribbon_widget.hpp
+END
+check_box_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10021/main/trunk/src/guiengine/widgets/check_box_widget.cpp
+END
+icon_button_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/icon_button_widget.hpp
+END
+progress_bar_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/supertuxkart/!svn/ver/8663/main/trunk/src/guiengine/widgets/progress_bar_widget.cpp
+END
+check_box_widget.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/10039/main/trunk/src/guiengine/widgets/check_box_widget.hpp
+END
+model_view_widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/supertuxkart/!svn/ver/8503/main/trunk/src/guiengine/widgets/model_view_widget.cpp
+END

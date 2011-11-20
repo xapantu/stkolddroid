@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/supertuxkart/!svn/ver/10140/main/trunk/src/addons
+END
+addons_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/10104/main/trunk/src/addons/addons_manager.cpp
+END
+zip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/supertuxkart/!svn/ver/8910/main/trunk/src/addons/zip.cpp
+END
+addon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10140/main/trunk/src/addons/addon.cpp
+END
+news_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/supertuxkart/!svn/ver/9951/main/trunk/src/addons/news_manager.cpp
+END
+addons_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/supertuxkart/!svn/ver/10104/main/trunk/src/addons/addons_manager.hpp
+END
+zip.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/addons/zip.hpp
+END
+network_http.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10140/main/trunk/src/addons/network_http.cpp
+END
+request.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/supertuxkart/!svn/ver/8660/main/trunk/src/addons/request.cpp
+END
+addon.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/addons/addon.hpp
+END
+news_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/addons/news_manager.hpp
+END
+network_http.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/addons/network_http.hpp
+END
+request.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/10040/main/trunk/src/addons/request.hpp
+END

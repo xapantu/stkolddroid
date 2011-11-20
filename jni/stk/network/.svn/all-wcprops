@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/network
+END
+flyable_info.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/flyable_info.hpp
+END
+race_info_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_info_message.hpp
+END
+race_result_ack_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_result_ack_message.hpp
+END
+race_start_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_start_message.hpp
+END
+connect_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/connect_message.hpp
+END
+kart_control_message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/kart_control_message.cpp
+END
+kart_update_message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/kart_update_message.cpp
+END
+num_players_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/num_players_message.hpp
+END
+world_loaded_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/world_loaded_message.hpp
+END
+network_kart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/8174/main/trunk/src/network/network_kart.cpp
+END
+kart_control_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/kart_control_message.hpp
+END
+race_state.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/network/race_state.cpp
+END
+kart_update_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/kart_update_message.hpp
+END
+race_result_message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_result_message.cpp
+END
+character_selected_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/character_selected_message.hpp
+END
+item_info.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/item_info.hpp
+END
+network_kart.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/supertuxkart/!svn/ver/7642/main/trunk/src/network/network_kart.hpp
+END
+race_state.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/supertuxkart/!svn/ver/7579/main/trunk/src/network/race_state.hpp
+END
+character_info_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/character_info_message.hpp
+END
+race_result_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_result_message.hpp
+END
+character_confirm_message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/character_confirm_message.hpp
+END
+network_manager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7977/main/trunk/src/network/network_manager.cpp
+END
+message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/message.cpp
+END
+network_manager.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/network_manager.hpp
+END
+message.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/message.hpp
+END
+race_info_message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/race_info_message.cpp
+END
+remote_kart_info.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/supertuxkart/!svn/ver/8661/main/trunk/src/network/remote_kart_info.hpp
+END
+connect_message.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/supertuxkart/!svn/ver/7493/main/trunk/src/network/connect_message.cpp
+END
