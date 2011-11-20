@@ -204,10 +204,10 @@ void IrrDriver::initDevice()
         // size is the problem
         if(!m_device)
         {
-            UserConfigParams::m_width  = 800;
-            UserConfigParams::m_height = 600;
+            UserConfigParams::m_width  = 300;
+            UserConfigParams::m_height = 200;
         
-            m_device = createDevice(video::EDT_OPENGL,
+            m_device = createDevice(video::EDT_OGLES1,
                         core::dimension2du(UserConfigParams::m_width,
                                            UserConfigParams::m_height ),
                                     32, //bits per pixel

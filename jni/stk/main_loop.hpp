@@ -39,6 +39,8 @@ public:
          MainLoop();
         ~MainLoop();
     void run();
+    void firstRun();
+    bool doIteration();
     void abort();
 };   // MainLoop
 

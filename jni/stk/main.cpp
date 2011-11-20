@@ -953,11 +953,14 @@ int handleCmdLine(int argc, char **argv)
  */
 void initUserConfig(char *argv[])
 {
+    alog("Init IrrDriver");
     irr_driver              = new IrrDriver();
+    alog("IrrDriver loaded. Init the FileManager");
     file_manager            = new FileManager(argv);
+    T__
     user_config             = new UserConfig();     // needs file_manager
     const bool config_ok    = user_config->loadConfig();
-    
+    T__
     if (UserConfigParams::m_language.toString() != "system")
     {
 #ifdef WIN32
@@ -984,10 +987,13 @@ void initUserConfig(char *argv[])
 //=============================================================================
 void initRest()
 {
+    T__
     stk_config->load(file_manager->getDataFile("stk_config.xml"));
 
+    alog("Config loaded, let's init the device");
     // Now create the actual non-null device in the irrlicht driver
     irr_driver->initDevice();
+    alog("Device initted");
     
     // Init GUI
     IrrlichtDevice* device = irr_driver->getDevice();
@@ -1097,18 +1103,24 @@ void cleanSuperTuxKart()
 
 int main2(int argc, char *argv[] )
 {
+    T__
     srand(( unsigned ) time( 0 ));
 
     try {
+        T__
         // Init the minimum managers so that user config exists, then
         // handle all command line options that do not need (or must
         // not have) other managers initialised:
         initUserConfig(argv); // argv passed so config file can be
                               // found more reliably
+#ifndef ANDROID
         handleCmdLinePreliminary(argc, argv);
+#endif
 
+        T__
         initRest();
 
+        T__
         if (UserConfigParams::m_log_errors)
         {
              //Enable logging of stdout and stderr to logfile
@@ -1129,13 +1141,19 @@ int main2(int argc, char *argv[] )
             }
         }
 
+        alog("Loading InputManager...");
         input_manager = new InputManager ();
+        alog("input_manager loaded");
 
         // Get into menu mode initially.
         input_manager->setMode(InputManager::MENU);
 
+        alog("Loading the MainLoop....");
         main_loop = new MainLoop();
+        alog("MainLoop created");
+        alog("Loading material...");
         material_manager        -> loadMaterial    ();
+        alog("Material loaded");
         GUIEngine::addLoadingIcon( irr_driver->getTexture(
                            file_manager->getGUIDir() + "/options_video.png") );
         kart_properties_manager -> loadAllKarts    ();
@@ -1306,6 +1324,10 @@ int main2(int argc, char *argv[] )
             network_manager->setupPlayerKartInfo();
             race_manager->startNew();
         }
+#ifdef ANDROID
+        alog("Initialization terminaled");
+        return 0;
+#endif
         main_loop->run();
 
     }  // try

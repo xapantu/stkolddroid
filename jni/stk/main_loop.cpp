@@ -112,55 +112,67 @@ void MainLoop::updateRace(float dt)
     World::getWorld()->updateWorld(dt);
 }   // updateRace
 
+static IrrlichtDevice* device;
+
+
 //-----------------------------------------------------------------------------
 /** Run the actual main loop.
  */
-void MainLoop::run()
+void MainLoop::firstRun()
 {
-    IrrlichtDevice* device = irr_driver->getDevice();
+    device = irr_driver->getDevice();
 
     m_curr_time = device->getTimer()->getRealTime();
-    while(!m_abort)
+}
+
+void MainLoop::run()
+{
+}
+
+bool MainLoop::doIteration()
+{
+    if(m_abort)
+        return false;
+    PROFILER_PUSH_CPU_MARKER("Main loop", 0xFF, 0x00, 0xF7);
+    
+    m_prev_time = m_curr_time;
+    float dt   = getLimitedDt();
+
+    network_manager->update(dt);
+
+    if (World::getWorld())  // race is active if world exists
     {
-        PROFILER_PUSH_CPU_MARKER("Main loop", 0xFF, 0x00, 0xF7);
-        
-        m_prev_time = m_curr_time;
-        float dt   = getLimitedDt();
+        // Busy wait if race_manager is active (i.e. creating of world is done)
+        // till all clients have reached this state.
+        if (network_manager->getState()==NetworkManager::NS_READY_SET_GO_BARRIER) ;
+        updateRace(dt);
+    }   // if race is active
 
-        network_manager->update(dt);
-
-        if (World::getWorld())  // race is active if world exists
-        {
-            // Busy wait if race_manager is active (i.e. creating of world is done)
-            // till all clients have reached this state.
-            if (network_manager->getState()==NetworkManager::NS_READY_SET_GO_BARRIER) continue;
-            updateRace(dt);
-        }   // if race is active
-
-        // We need to check again because update_race may have requested
-        // the main loop to abort; and it's not a good idea to continue
-        // since the GUI engine is no more to be called then.
-        // Also only do music, input, and graphics update if graphics are
-        // enabled.
-        if (!m_abort && !ProfileWorld::isNoGraphics())
-        {
-            PROFILER_PUSH_CPU_MARKER("Music manager update", 0x7F, 0x00, 0x00);
-            music_manager->update(dt);
-            PROFILER_POP_CPU_MARKER();
-            
-            PROFILER_PUSH_CPU_MARKER("Input manager update", 0x00, 0x7F, 0x00);
-            input_manager->update(dt);
-            PROFILER_POP_CPU_MARKER();
-            
-            PROFILER_PUSH_CPU_MARKER("IrrDriver update", 0x00, 0x00, 0x7F);
-            irr_driver->update(dt);
-            PROFILER_POP_CPU_MARKER();
-            
-            PROFILER_SYNC_FRAME();
-        }
-        
+    // We need to check again because update_race may have requested
+    // the main loop to abort; and it's not a good idea to continue
+    // since the GUI engine is no more to be called then.
+    // Also only do music, input, and graphics update if graphics are
+    // enabled.
+    if (!m_abort && !ProfileWorld::isNoGraphics())
+    {
+        PROFILER_PUSH_CPU_MARKER("Music manager update", 0x7F, 0x00, 0x00);
+        music_manager->update(dt);
         PROFILER_POP_CPU_MARKER();
-    }  // while !m_exit
+        
+        PROFILER_PUSH_CPU_MARKER("Input manager update", 0x00, 0x7F, 0x00);
+        input_manager->update(dt);
+        PROFILER_POP_CPU_MARKER();
+        
+        PROFILER_PUSH_CPU_MARKER("IrrDriver update", 0x00, 0x00, 0x7F);
+        irr_driver->update(dt);
+        PROFILER_POP_CPU_MARKER();
+        
+        PROFILER_SYNC_FRAME();
+    }
+    
+    PROFILER_POP_CPU_MARKER();
+    //}  // while !m_exit
+    return true;
 
 }   // run
 
