@@ -355,8 +355,8 @@ STK = stk/challenges/unlock_manager.cpp \
 # PNG (also includez zlib and bzip)
 #
 
-#LOCAL_MODULE    := png
-png = 	irrlicht/libpng/pngrtran.c irrlicht/libpng/pngrio.c irrlicht/libpng/pngwio.c irrlicht/libpng/pngwrite.c \
+LOCAL_MODULE    := png
+LOCAL_SRC_FILES = 	irrlicht/libpng/pngrtran.c irrlicht/libpng/pngrio.c irrlicht/libpng/pngwio.c irrlicht/libpng/pngwrite.c \
 	irrlicht/libpng/example.c irrlicht/libpng/pngtrans.c irrlicht/libpng/pngpread.c irrlicht/libpng/pngset.c irrlicht/libpng/pngwutil.c \
 	irrlicht/libpng/pngmem.c irrlicht/libpng/pngget.c irrlicht/libpng/pngread.c irrlicht/libpng/pngwtran.c irrlicht/libpng/pngrutil.c \
 	irrlicht/libpng/png.c irrlicht/libpng/pngerror.c irrlicht/zlib/crc32.c irrlicht/zlib/compress.c irrlicht/zlib/trees.c irrlicht/zlib/uncompr.c \
@@ -365,9 +365,10 @@ png = 	irrlicht/libpng/pngrtran.c irrlicht/libpng/pngrio.c irrlicht/libpng/pngwi
 	irrlicht/bzip2/bzip.css irrlicht/bzip2/decompress.c irrlicht/bzip2/huffman.c irrlicht/bzip2/bzcompress.c irrlicht/bzip2/crctable.c \
 	irrlicht/bzip2/blocksort.c irrlicht/bzip2/bzlib.c \
 
-#LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-#LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-#include $(BUILD_STATIC_LIBRARY)
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+include $(BUILD_SHARED_LIBRARY)
+include $(CLEAR_VARS)
 
 # JPEG
 #
@@ -641,8 +642,8 @@ irrlicht = irrlicht/CIrrDeviceAndroid.cpp \
 #include $(CLEAR_VARS)
 
 LOCAL_MODULE    := native-activity
-LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(jpeg) $(png)
-LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(jpeg)
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2 -lpng
 LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
 LOCAL_STATIC_LIBRARIES := android_native_app_glue #libirrlicht jpeg png
 
