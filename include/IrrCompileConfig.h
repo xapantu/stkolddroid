@@ -848,5 +848,7 @@ precision will be lower but speed higher. currently X86 only
 #define alog(obj) (obj);  
 #endif
 
-#endif // __IRR_COMPILE_CONFIG_H_INCLUDED__
+#define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", __VA_ARGS__))
+#define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", __VA_ARGS__))
 
+#endif // __IRR_COMPILE_CONFIG_H_INCLUDED__

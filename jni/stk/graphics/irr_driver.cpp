@@ -120,25 +120,33 @@ void IrrDriver::createListOfVideoModes()
  */
 void IrrDriver::initDevice()
 {
+    T__
     // If --no-graphics option was used, the null device can still be used.
     if (!ProfileWorld::isNoGraphics())
     {
+        T__
         // This code is only executed once. No need to reload the video
         // modes every time the resolution changes.
+#ifndef ANDROID
         if(m_modes.size()==0)
         {
+            T__
             createListOfVideoModes();
 		    // The debug name is only set if irrlicht is compiled in debug 
 		    // mode. So we use this to print a warning to the user.
             if(m_device->getDebugName())
             {
+                T__
                 printf("!!!!! Performance warning: Irrlicht compiled with debug mode.!!!!!\n");
                 printf("!!!!! This can have a significant performance impact         !!!!!\n");
             }
 
         } // end if firstTime
+#endif
 
+        T__
         m_device->closeDevice();
+        T__
         m_video_driver  = NULL;
         m_gui_env       = NULL;
         m_scene_manager = NULL;
@@ -149,9 +157,11 @@ void IrrDriver::initDevice()
         // two calles - the first one didn't make a difference (but 
         // certainly can't hurt), but the second one apparenlty solved
         // the problem for now.
+        T__
         m_device->clearSystemMessages();
         m_device->run(); 
         // Clear the pointer stored in the file manager
+        T__
         file_manager->dropFileSystem();
         m_device->drop();
         m_device  = NULL;
@@ -160,8 +170,10 @@ void IrrDriver::initDevice()
 
         // Test if user has chosen a driver or if we should try all to find
         // a working one.
+        T__
         if( UserConfigParams::m_renderer != 0 ) num_drivers = 1;
 
+#ifndef ANDROID
         // ---- open device
         // Try different drivers: start with opengl, then DirectX
         for(int driver_type=0; driver_type<num_drivers; driver_type++)
@@ -199,14 +211,16 @@ void IrrDriver::initDevice()
             }   // for bits=32, 24, 16
             if(m_device) break;
         }   // for edt_types
-    
+#endif
         // if still no device, try with a standard 800x600 window size, maybe
         // size is the problem
         if(!m_device)
         {
+            T__
             UserConfigParams::m_width  = 300;
             UserConfigParams::m_height = 200;
         
+            T__
             m_device = createDevice(video::EDT_OGLES1,
                         core::dimension2du(UserConfigParams::m_width,
                                            UserConfigParams::m_height ),
@@ -216,23 +230,28 @@ void IrrDriver::initDevice()
                                     false,  // vsync
                                     this    // event receiver
                                     );
+            T__
             if (m_device)
             {
+                T__
                 fprintf(stderr, "An invalid resolution was set in the config file, reverting to saner values\n");
             }
         }
     }
     
+    T__
     if(!m_device)
     {
         fprintf(stderr, "Couldn't initialise irrlicht device. Quitting.\n");
         exit(-1);
     }
     
+    T__
     m_scene_manager = m_device->getSceneManager();
     m_gui_env       = m_device->getGUIEnvironment();
     m_video_driver  = m_device->getVideoDriver();
 
+    T__
     // Only change video driver settings if we are showing graphics
     if (!ProfileWorld::isNoGraphics()) {
         m_device->setResizable(false);
@@ -252,9 +271,11 @@ void IrrDriver::initDevice()
             ->setAttribute(scene::B3D_LOADER_IGNORE_MIPMAP_FLAG, true);
     }
 
+    T__
     // Stores the new file system pointer.
     file_manager->reInit();
 
+    T__
     // Initialize material2D
     video::SMaterial& material2D = m_video_driver->getMaterial2D();
     material2D.setFlag(video::EMF_ANTI_ALIASING, true);
@@ -269,15 +290,18 @@ void IrrDriver::initDevice()
         //material2D.TextureLayer[n].LODBias = 16;
         material2D.UseMipMaps = true;
     }
+    T__
     material2D.AntiAliasing=video::EAAM_FULL_BASIC;
     //m_video_driver->enableMaterial2D();
     
+    T__
     // Initialize post-processing if supported
     m_post_processing.init(m_video_driver);
     
     // set cursor visible by default (what's the default is not too clearly documented,
     // so let's decide ourselves...)
-    m_device->getCursorControl()->setVisible(true);
+    T__
+    //m_device->getCursorControl()->setVisible(true);
     m_pointer_shown = true;
     
 }   // initDevice

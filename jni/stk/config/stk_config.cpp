@@ -62,6 +62,7 @@ void STKConfig::load(const std::string &filename)
             if(root) delete root;
             std::ostringstream msg;
             msg << "Couldn't load config '" << filename << "': no config node.";
+            LOGI("Couldn't load config.");
             throw std::runtime_error(msg.str());
         }
         getAllData(root);
@@ -69,6 +70,7 @@ void STKConfig::load(const std::string &filename)
 
     catch(std::exception& err)
     {
+        LOGI("FATAL error while reading StkConfig %s", filename.c_str());
         fprintf(stderr, "FATAL ERROR while reading StkConfig '%s':\n", filename.c_str());
         fprintf(stderr, "    %s", err.what());
         fprintf(stderr, "\n");

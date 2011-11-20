@@ -77,6 +77,7 @@ extern "C" void android_main_2() {
 
 static bool first_run = true;
 extern "C" void main_loop_interation(){
+    LOGI("Iteration");
     if(first_run) main_loop->firstRun();
     first_run = false;
     main_loop->doIteration();

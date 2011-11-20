@@ -116,6 +116,7 @@ FileManager* file_manager = 0;
  */
 FileManager::FileManager(char *argv[])
 {
+    T__
 #ifdef __APPLE__
     // irrLicht's createDevice method has a nasty habit of messing the CWD.
     // since the code above may rely on it, save it to be able to restore 
@@ -129,17 +130,24 @@ FileManager::FileManager(char *argv[])
 #endif
 
     m_file_system  = irr_driver->getDevice()->getFileSystem();
+    T__
     m_file_system->grab();
+    T__
     m_is_full_path = false;
 
     irr::io::path exe_path;
 
+#ifdef ANDROID
+    exe_path = "/";
+#else
     // Also check for data dirs relative to the path of the executable.
     // This is esp. useful for Visual Studio, since it's not necessary
     // to define the working directory when debugging, it works automatically.
     if(m_file_system->existFile(argv[0]))
         exe_path = m_file_system->getFileDir(argv[0]);
+#endif
 
+#ifndef ANDROID
     if ( getenv ( "SUPERTUXKART_DATADIR" ) != NULL )
         m_root_dir= getenv ( "SUPERTUXKART_DATADIR" ) ;
 #ifdef __APPLE__
@@ -157,11 +165,13 @@ FileManager::FileManager(char *argv[])
         m_root_dir += "/..";
     }
     else
+#endif
 #ifdef SUPERTUXKART_DATADIR
-        m_root_dir = SUPERTUXKART_DATADIR ;
+        m_root_dir = SUPERTUXKART_DATADIR;
 #else
         m_root_dir = "/usr/local/share/games/supertuxkart" ;
 #endif
+    LOGI("SUPERTUXKART_DATADIR=%s", m_root_dir.c_str());
     // We can't use _() here, since translations will only be initalised
     // after the filemanager (to get the path to the tranlsations from it)
     fprintf(stderr, "[FileManager] Data files will be fetched from: '%s'\n",
@@ -540,6 +550,7 @@ bool FileManager::checkAndCreateDirectoryP(const std::string &path)
  */
 void FileManager::checkAndCreateConfigDir()
 {
+#ifndef ANDROID
     if(getenv("SUPERTUXKART_SAVEDIR") && 
         checkAndCreateDirectory(getenv("SUPERTUXKART_SAVEDIR")) )
     {
@@ -611,7 +622,11 @@ void FileManager::checkAndCreateConfigDir()
         m_config_dir += "/supertuxkart";
 #endif
     }   // if(getenv("SUPERTUXKART_SAVEDIR") && checkAndCreateDirectory(...))
-
+#else
+    m_config_dir = SUPERTUXKART_DATADIR;
+    m_config_dir += "/config/";
+#endif
+    LOGI("config_dir: %s", m_config_dir.c_str());
 
     if(!checkAndCreateDirectory(m_config_dir))
     {
