@@ -18,8 +18,6 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-#if HAVE_OGGVORBIS
-
 #include "audio/sfx_openal.hpp"
 #include "audio/sfx_buffer.hpp"
 #include "race/race_manager.hpp"
@@ -27,7 +25,7 @@
 #include <stdio.h>
 #include <string>
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -43,7 +41,7 @@
 SFXOpenAL::SFXOpenAL(SFXBuffer* buffer, bool positional, float gain) : SFXBase()
 {
     m_soundBuffer = buffer;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_soundSource = 0;
 #endif
     m_ok          = false;
@@ -65,7 +63,7 @@ SFXOpenAL::SFXOpenAL(SFXBuffer* buffer, bool positional, float gain) : SFXBase()
 
 SFXOpenAL::~SFXOpenAL()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if (m_ok)
     {
         alDeleteSources(1, &m_soundSource);
@@ -77,7 +75,7 @@ SFXOpenAL::~SFXOpenAL()
 
 bool SFXOpenAL::init()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alGenSources(1, &m_soundSource );
     if (!SFXManager::checkError("generating a source")) return false;
     
@@ -132,7 +130,7 @@ void SFXOpenAL::speed(float factor)
     {
         factor = 0.5f;
     }
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcef(m_soundSource,AL_PITCH,factor);
 #endif
     SFXManager::checkError("changing the speed");
@@ -147,7 +145,7 @@ void SFXOpenAL::volume(float gain)
     m_gain = m_defaultGain * gain;
     
     if(!m_ok) return;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcef(m_soundSource, AL_GAIN, m_defaultGain * gain);
 #endif
     SFXManager::checkError("setting volume");
@@ -161,7 +159,7 @@ void SFXOpenAL::setLoop(bool status)
     m_loop = status;
     
     if(!m_ok) return;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcei(m_soundSource, AL_LOOPING, status ? AL_TRUE : AL_FALSE);
 #endif
     SFXManager::checkError("looping");
@@ -175,7 +173,7 @@ void SFXOpenAL::stop()
     if(!m_ok) return;
 
     m_loop = false;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcei(m_soundSource, AL_LOOPING, AL_FALSE);
     alSourceStop(m_soundSource);
 #endif
@@ -189,7 +187,7 @@ void SFXOpenAL::stop()
 void SFXOpenAL::pause()
 {
     if(!m_ok) return;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcePause(m_soundSource);
 #endif
     SFXManager::checkError("pausing");
@@ -208,7 +206,7 @@ void SFXOpenAL::resume()
         // creation of OpenAL source failed, giving up
         if (!m_ok) return;
     }
-#ifndef NO_SOUND    
+#if HAVE_OGGVORBIS    
     alSourcePlay(m_soundSource);
 #endif
     SFXManager::checkError("resuming");
@@ -229,7 +227,7 @@ void SFXOpenAL::play()
         if (!m_ok) return;
     }
 
-#ifndef NO_SOUND    
+#if HAVE_OGGVORBIS    
     alSourcePlay(m_soundSource);
 #endif
     SFXManager::checkError("playing");
@@ -241,7 +239,7 @@ void SFXOpenAL::play()
  */
 void SFXOpenAL::position(const Vec3 &position)
 {
-#ifndef NO_SOUND    
+#if HAVE_OGGVORBIS    
     if(!UserConfigParams::m_sfx)
         return;
     if (!m_ok)
@@ -271,7 +269,7 @@ void SFXOpenAL::position(const Vec3 &position)
  */
 SFXManager::SFXStatus SFXOpenAL::getStatus()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if(!m_ok) return SFXManager::SFX_UNKNOWN;
 
     int state = 0;
@@ -293,7 +291,7 @@ SFXManager::SFXStatus SFXOpenAL::getStatus()
 
 void SFXOpenAL::onSoundEnabledBack()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if (m_loop)
     {
         if (!m_ok) init();
@@ -312,9 +310,8 @@ void SFXOpenAL::onSoundEnabledBack()
 
 void SFXOpenAL::setRolloff(float rolloff)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcef (m_soundSource, AL_ROLLOFF_FACTOR,  rolloff);
 #endif
 }
 
-#endif //if HAVE_OGGVORBIS

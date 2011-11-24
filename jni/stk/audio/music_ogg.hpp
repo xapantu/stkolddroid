@@ -22,7 +22,7 @@
 
 #include <string>
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #include <ogg/ogg.h>
 // Disable warning about potential loss of precision in vorbisfile.h
 #if defined(WIN32) && !defined(__CYGWIN__)
@@ -34,7 +34,7 @@
 #endif
 #endif
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -75,13 +75,13 @@ protected:
 
 private:
     bool release();
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     bool streamIntoBuffer(ALuint buffer);
 #endif
 
     std::string     m_fileName;
     FILE*           m_oggFile;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     OggVorbis_File  m_oggStream;
     vorbis_info*    m_vorbisInfo;
 #endif
@@ -89,7 +89,7 @@ private:
 
     bool            m_playing;
    
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     ALuint m_soundBuffers[2];
     ALuint m_soundSource;
     ALenum nb_channels;

@@ -21,7 +21,7 @@
 #define HEADER_SFX_OPENAL_HPP
 
 #include <assert.h>
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -41,7 +41,7 @@ class SFXOpenAL : public SFXBase
 {
 private:
     SFXBuffer*   m_soundBuffer;   //!< Buffers hold sound data.
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     ALuint       m_soundSource;   //!< Sources are points emitting sound.
 #endif
     bool         m_ok;

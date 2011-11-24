@@ -22,7 +22,7 @@
 
 #include <assert.h>
 #include <fstream>
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -47,14 +47,14 @@ MusicManager::MusicManager()
     setMasterMusicVolume(UserConfigParams::m_music_volume);
 
     //FIXME: I'm not sure that this code goes here
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     ALCdevice* device = alcOpenDevice ( NULL ); //The default sound device
     if( device == NULL )
     {
 #endif
         fprintf(stderr, "WARNING: Could not open the default sound device.\n");
         m_initialized = false;
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     }
     else
     {
@@ -90,7 +90,7 @@ MusicManager::~MusicManager()
         i->second = NULL;
     }
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if(m_initialized)
     {
         ALCcontext* context = alcGetCurrentContext();

@@ -24,7 +24,7 @@
 #include <string>
 #include <vector>
 #include <map>
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -98,7 +98,7 @@ private:
 
     void                      loadSfx();
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     bool                      loadVorbisBuffer(const std::string &name, 
                                                ALuint buffer);
 #endif

@@ -21,7 +21,7 @@
 #define HEADER_SFX_BUFFER_HPP
 
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -53,13 +53,13 @@ private:
     /** The file that contains the OGG audio data */
     std::string m_file;
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     ALuint   m_buffer;
 #endif
     bool     m_positional;
     float    m_rolloff;
     float    m_gain;
-#ifndef NO_SOUND 
+#if HAVE_OGGVORBIS 
     bool loadVorbisBuffer(const std::string &name, ALuint buffer);
 #endif
 public:
@@ -93,7 +93,7 @@ public:
     /** \return whether this buffer was loaded from disk */
     bool     isLoaded()       const { return m_loaded; }
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     /** Only returns a valid buffer if isLoaded() returned true */
     ALuint   getBuffer()      const { return m_buffer; }
 #endif

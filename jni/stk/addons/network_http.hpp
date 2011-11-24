@@ -30,7 +30,7 @@
 
 #define NO_ADDONS
 
-#ifndef NO_ADDONS
+#ifndef NO_CURL
 #include <curl/curl.h>
 #endif
 
@@ -74,12 +74,12 @@ private:
     Synchronised<pthread_t *> m_thread_id;
 
     /** The curl session. */
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     CURL                     *m_curl_session;
 #endif
 
     static void  *mainLoop(void *obj);
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     CURLcode      init();
     CURLcode      loadAddonsList(const XMLNode *xml,
                                  const std::string &filename);

@@ -29,7 +29,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #       include <OpenAL/alc.h>
@@ -275,7 +275,7 @@ SFXBase* SFXManager::createSoundSource(SFXBuffer* buffer,
     //       buffer->getFileName().c_str(), (unsigned int)buffer,
     //       positional,
     //       race_manager->getNumLocalPlayers(), buffer->isPositional());
-#ifndef NO_SOUND 
+#if HAVE_OGGVORBIS 
     assert( alIsBuffer(buffer->getBuffer()) );
 #endif
     SFXBase* sfx = new SFXOpenAL(buffer, positional, buffer->getGain());
@@ -404,7 +404,7 @@ void SFXManager::resumeAll()
  */
 bool SFXManager::checkError(const std::string &context)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     // Check (and clear) the error flag
     int error = alGetError();
 
@@ -452,7 +452,7 @@ void SFXManager::setMasterSFXVolume(float gain)
 //-----------------------------------------------------------------------------
 const std::string SFXManager::getErrorString(int err)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     switch(err)
     {
         case AL_NO_ERROR:          return std::string("AL_NO_ERROR"         );
@@ -482,7 +482,7 @@ void SFXManager::positionListener(const Vec3 &position, const Vec3 &front)
     m_listenerVec[3] = 0; 
     m_listenerVec[4] = 0;
     m_listenerVec[5] = 1;
-#ifndef NO_SOUND 
+#if HAVE_OGGVORBIS 
     alListener3f(AL_POSITION, position.getX(), position.getY(), position.getZ());
     alListenerfv(AL_ORIENTATION, m_listenerVec);
 #endif

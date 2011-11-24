@@ -17,12 +17,10 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-#if HAVE_OGGVORBIS
-
 #include "audio/music_ogg.hpp"
 
 #include <stdexcept>
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #   ifdef __APPLE__
 #       include <OpenAL/al.h>
 #   else
@@ -37,7 +35,7 @@
 
 MusicOggStream::MusicOggStream()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     //m_oggStream= NULL;
     m_soundBuffers[0] = m_soundBuffers[1]= 0;
     m_soundSource     = -1;
@@ -69,7 +67,7 @@ bool MusicOggStream::load(const std::string& filename)
         printf("Loading Music: %s failed (fopen returned NULL)\n", m_fileName.c_str());
         return false;
     }
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 
 #if defined( WIN32 ) || defined( WIN64 )
     const int result = ov_open_callbacks((void *)m_oggFile, &m_oggStream, NULL, 0, OV_CALLBACKS_DEFAULT);
@@ -134,7 +132,7 @@ bool MusicOggStream::load(const std::string& filename)
 //-----------------------------------------------------------------------------
 bool MusicOggStream::empty()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     int queued= 0;
     alGetSourcei(m_soundSource, AL_BUFFERS_QUEUED, &queued);
 
@@ -152,7 +150,7 @@ bool MusicOggStream::empty()
 //-----------------------------------------------------------------------------
 bool MusicOggStream::release()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if (m_fileName == "")
     {
         // nothing is loaded
@@ -180,7 +178,7 @@ bool MusicOggStream::release()
 //-----------------------------------------------------------------------------
 bool MusicOggStream::playMusic()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if(isPlaying())
         return true;
 
@@ -218,7 +216,7 @@ bool MusicOggStream::isPlaying()
 //-----------------------------------------------------------------------------
 bool MusicOggStream::stopMusic()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_playing = false;
 #endif
     return (release());
@@ -227,7 +225,7 @@ bool MusicOggStream::stopMusic()
 //-----------------------------------------------------------------------------
 bool MusicOggStream::pauseMusic()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_playing = false;
     if (m_fileName == "")
     {
@@ -244,7 +242,7 @@ bool MusicOggStream::pauseMusic()
 //-----------------------------------------------------------------------------
 bool MusicOggStream::resumeMusic()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_playing = true;
     
     if (m_fileName == "")
@@ -262,7 +260,7 @@ bool MusicOggStream::resumeMusic()
 //-----------------------------------------------------------------------------
 void MusicOggStream::volumeMusic(float gain)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if (gain > 1.0f)
     {
         gain = 1.0f;
@@ -281,7 +279,7 @@ void MusicOggStream::volumeMusic(float gain)
 //-----------------------------------------------------------------------------
 void MusicOggStream::updateFading(float percent)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcef(m_soundSource,AL_GAIN,percent);
     update();
 #endif
@@ -290,7 +288,7 @@ void MusicOggStream::updateFading(float percent)
 //-----------------------------------------------------------------------------
 void MusicOggStream::updateFaster(float percent, float max_pitch)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     alSourcef(m_soundSource,AL_PITCH,1+max_pitch*percent);
     update();
 #endif
@@ -299,7 +297,7 @@ void MusicOggStream::updateFaster(float percent, float max_pitch)
 //-----------------------------------------------------------------------------
 void MusicOggStream::update()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 
     if (m_pausedMusic || m_soundSource == ALuint(-1))
     {
@@ -351,7 +349,7 @@ void MusicOggStream::update()
 #endif
 }   // update
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 //-----------------------------------------------------------------------------
 bool MusicOggStream::streamIntoBuffer(ALuint buffer)
 {
@@ -388,7 +386,7 @@ bool MusicOggStream::streamIntoBuffer(ALuint buffer)
 //-----------------------------------------------------------------------------
 bool MusicOggStream::check(const char* what)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     int error = alGetError();
 
     if (error != AL_NO_ERROR)
@@ -404,7 +402,7 @@ bool MusicOggStream::check(const char* what)
 //-----------------------------------------------------------------------------
 std::string MusicOggStream::errorString(int code)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     switch(code)
     {
         case OV_EREAD:
@@ -424,5 +422,3 @@ std::string MusicOggStream::errorString(int code)
     return std::string("Sound disabled.");
 #endif
 }   // errorString
-
-#endif // HAVE_OGGVORBIS

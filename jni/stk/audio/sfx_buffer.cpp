@@ -22,7 +22,7 @@
 #include "io/file_manager.hpp"
 #include "utils/constants.hpp"
 
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 #include <vorbis/codec.h>
 #include <vorbis/vorbisfile.h>
 
@@ -42,7 +42,7 @@ SFXBuffer::SFXBuffer(const std::string& file,
                      float rolloff,
                      float gain)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_buffer     = 0;
 #endif
     m_gain       = 1.0f;
@@ -60,7 +60,7 @@ SFXBuffer::SFXBuffer(const std::string& file,
 SFXBuffer::SFXBuffer(const std::string& file,
                      const XMLNode* node)
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     m_buffer     = 0;
 #endif
     m_gain       = 1.0f;
@@ -79,7 +79,7 @@ SFXBuffer::SFXBuffer(const std::string& file,
 bool SFXBuffer::load()
 {
     if (m_loaded) return false;
-#ifndef NO_SOUND 
+#if HAVE_OGGVORBIS 
     alGetError(); // clear errors from previously
     
     alGenBuffers(1, &m_buffer);
@@ -105,7 +105,7 @@ bool SFXBuffer::load()
 
 void SFXBuffer::unload()
 {
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
     if (m_loaded)
     {
         alDeleteBuffers(1, &m_buffer);
@@ -120,7 +120,7 @@ void SFXBuffer::unload()
  *  based on a routine by Peter Mulholland, used with permission (quote : 
  *  "Feel free to use")
  */
-#ifndef NO_SOUND
+#if HAVE_OGGVORBIS
 bool SFXBuffer::loadVorbisBuffer(const std::string &name, ALuint buffer)
 {
     const int ogg_endianness = (IS_LITTLE_ENDIAN ? 0 : 1);

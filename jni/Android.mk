@@ -661,7 +661,7 @@ STK = stk/challenges/unlock_manager.cpp \
 LOCAL_MODULE    := irrlicht
 LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(png) $(jpeg) $(STK)
 LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DHAVE_OGGVORBIS -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
 LOCAL_STATIC_LIBRARIES := android_native_app_glue #jpeg #libirrlicht jpeg png
 #LOCAL_SHARED_LIBRARIES := jpeg
 

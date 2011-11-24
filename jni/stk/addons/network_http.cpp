@@ -16,11 +16,9 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-#define NO_ADDONS
-
 #include "addons/network_http.hpp"
 
-#ifndef NO_ADDONS
+#ifndef NO_CURL
 #   include <curl/curl.h>
 #endif
 #include <errno.h>
@@ -73,7 +71,7 @@ NetworkHttp::NetworkHttp() : m_all_requests(std::priority_queue<Request*,
                              m_abort(false),
                              m_thread_id(NULL)
 {
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     // Don't even start the network threads if networking is disabled.
     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED )
         return;
@@ -102,7 +100,7 @@ NetworkHttp::NetworkHttp() : m_all_requests(std::priority_queue<Request*,
  */
 void NetworkHttp::startNetworkThread()
 {
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED )
         return;
 
@@ -136,7 +134,7 @@ void NetworkHttp::startNetworkThread()
  */
 void *NetworkHttp::mainLoop(void *obj)
 {
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     NetworkHttp *me=(NetworkHttp*)obj;
 
     pthread_setcancelstate(PTHREAD_CANCEL_ENABLE,      NULL);
@@ -240,7 +238,7 @@ void *NetworkHttp::mainLoop(void *obj)
  */
 void NetworkHttp::stopNetworkThread()
 {
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED)
         return;
 
@@ -264,7 +262,7 @@ void NetworkHttp::stopNetworkThread()
  */
 NetworkHttp::~NetworkHttp()
 {
-#ifndef NO_ADDONS
+#ifndef NO_CURL
     if(UserConfigParams::m_internet_status!=NetworkHttp::IPERM_ALLOWED)
         return;
     pthread_join(*m_thread_id.getData(), NULL);
@@ -284,7 +282,7 @@ NetworkHttp::~NetworkHttp()
  *  \return 0 if an error happened and no online connection will be available,
  *          1 otherwise.
  */
-#ifndef NO_ADDONS
+#ifndef NO_CURL
 CURLcode NetworkHttp::init()
 {
     news_manager->clearErrorMessage();
@@ -406,7 +404,7 @@ void NetworkHttp::insertReInit()
  *  reInit request is handled. It removes all queued requests, deletes
  *  the news.xml and addons.xml files, and trigges a reload of those files.
  */
-#ifndef NO_ADDONS
+#ifndef NO_CURL
 CURLcode NetworkHttp::reInit()
 {
     // This also switches the addons_manager to be not ready anymore,
