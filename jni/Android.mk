@@ -38,15 +38,14 @@ png = 	irrlicht/libpng/pngrtran.c irrlicht/libpng/pngrio.c irrlicht/libpng/pngwi
 
 #LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
 #LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-#include $(BUILD_STATIC_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 # JPEG
 #
 #include $(CLEAR_VARS)
 
-#LOCAL_MODULE    := jpeg
-#LOCAL_SRC_FILES
-jpeg = irrlicht/jpeglib/jcarith.c irrlicht/jpeglib/rdcolmap.c irrlicht/jpeglib/jfdctflt.c irrlicht/jpeglib/jdapimin.c \
+LOCAL_MODULE    := jpeg
+LOCAL_SRC_FILES = irrlicht/jpeglib/jcarith.c irrlicht/jpeglib/rdcolmap.c irrlicht/jpeglib/jfdctflt.c irrlicht/jpeglib/jdapimin.c \
 	irrlicht/jpeglib/rdppm.c irrlicht/jpeglib/wrgif.c irrlicht/jpeglib/jdcolor.c irrlicht/jpeglib/jerror.c irrlicht/jpeglib/jquant1.c \
 	irrlicht/jpeglib/rdbmp.c irrlicht/jpeglib/jaricom.c irrlicht/jpeglib/jcmaster.c irrlicht/jpeglib/jcinit.c irrlicht/jpeglib/jdapistd.c \
 	irrlicht/jpeglib/jdsample.c irrlicht/jpeglib/jfdctfst.c irrlicht/jpeglib/jdinput.c irrlicht/jpeglib/jcapistd.c irrlicht/jpeglib/jidctfst.c \
@@ -59,15 +58,14 @@ jpeg = irrlicht/jpeglib/jcarith.c irrlicht/jpeglib/rdcolmap.c irrlicht/jpeglib/j
 	irrlicht/jpeglib/jdarith.c irrlicht/jpeglib/wrbmp.c irrlicht/jpeglib/jdatadst.c irrlicht/jpeglib/jidctflt.c irrlicht/jpeglib/jdpostct.c \
 	irrlicht/jpeglib/jcprepct.c irrlicht/jpeglib/jdtrans.c irrlicht/jpeglib/jidctint.c irrlicht/jpeglib/jcmainct.c irrlicht/jpeglib/jccolor.c
 
-#LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-#LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-#include $(BUILD_STATIC_LIBRARY)
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 
 
-#LOCAL_MODULE    := libirrlicht
-irrlicht = irrlicht/CIrrDeviceAndroid.cpp \
+LOCAL_SRC_FILES = irrlicht/CIrrDeviceAndroid.cpp \
 	irrlicht/CParticleGravityAffector.cpp \
 	irrlicht/CTRTextureFlat.cpp \
 	irrlicht/CParticleSphereEmitter.cpp \
@@ -306,173 +304,31 @@ irrlicht = irrlicht/CIrrDeviceAndroid.cpp \
 	irrlicht/CImageLoaderPCX.cpp \
 	irrlicht/CImageLoaderBMP.cpp \
 	irrlicht/CD3D8Texture.cpp \
-	irrlicht/CSMFMeshFileLoader.cpp
-#LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-#LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+	irrlicht/CSMFMeshFileLoader.cpp $(png)
 
-#include $(BUILD_STATIC_LIBRARY)
-#include $(CLEAR_VARS)
+LOCAL_MODULE    := irrlicht
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+#LOCAL_STATIC_LIBRARIES := android_native_app_glue #libirrlicht jpeg png
+LOCAL_STATIC_LIBRARIES := jpeg
+include $(BUILD_SHARED_LIBRARY)
 
-#include $(CLEAR_VARS)
+
+include $(CLEAR_VARS)
 
 
-STK = stk/challenges/unlock_manager.cpp \
-   stk/challenges/challenge_data.cpp \
-   stk/challenges/challenge.cpp \
-   stk/tracks/check_manager.cpp \
-   stk/tracks/track.cpp \
-   stk/tracks/check_line.cpp \
-   stk/tracks/track_manager.cpp \
-   stk/tracks/track_sector.cpp \
-   stk/tracks/quad_graph.cpp \
-   stk/tracks/track_object.cpp \
-   stk/tracks/graph_node.cpp \
-   stk/tracks/check_structure.cpp \
-   stk/tracks/track_object_manager.cpp \
-   stk/tracks/terrain_info.cpp \
-   stk/tracks/ambient_light_sphere.cpp \
-   stk/tracks/quad.cpp \
-   stk/tracks/check_lap.cpp \
-   stk/tracks/bezier_curve.cpp \
-   stk/tracks/check_sphere.cpp \
-   stk/tracks/quad_set.cpp \
-   stk/audio/sfx_manager.cpp \
-   stk/audio/music_ogg.cpp \
-   stk/audio/sfx_openal.cpp \
-   stk/audio/music_manager.cpp \
-   stk/audio/music_information.cpp \
-   stk/audio/sfx_buffer.cpp \
-   stk/items/bowling.cpp \
-   stk/items/item.cpp \
-   stk/items/powerup_manager.cpp \
-   stk/items/swatter.cpp \
-   stk/items/attachment_manager.cpp \
-   stk/items/flyable.cpp \
-   stk/items/item_manager.cpp \
-   stk/items/powerup.cpp \
-   stk/items/plunger.cpp \
-   stk/items/rubber_ball.cpp \
-   stk/items/rubber_band.cpp \
-   stk/items/attachment.cpp \
-   stk/items/projectile_manager.cpp \
-   stk/items/cake.cpp \
-   stk/race/history.cpp \
-   stk/race/grand_prix_manager.cpp \
-   stk/race/race_manager.cpp \
-   stk/race/highscore_manager.cpp \
-   stk/race/highscores.cpp \
-   stk/race/grand_prix_data.cpp \
-   stk/main_loop.cpp \
-   stk/physics/irr_debug_drawer.cpp \
-   stk/physics/btUprightConstraint.cpp \
-   stk/physics/physics.cpp \
-   stk/physics/btKart.cpp \
-   stk/physics/physical_object.cpp \
-   stk/physics/triangle_mesh.cpp \
-   stk/physics/btKartRaycast.cpp \
-   stk/tutorial/tutorial_data.cpp \
-   stk/tutorial/tutorial_manager.cpp \
-   stk/tutorial/tutorial.cpp \
-   stk/enet/peer.c stk/enet/compress.c stk/enet/host.c stk/enet/callbacks.c stk/enet/packet.c stk/enet/win32.c stk/enet/protocol.c stk/enet/list.c stk/enet/unix.c stk/main.cpp \
-   stk/states_screens/help_screen_4.cpp \
-   stk/states_screens/help_screen_2.cpp \
-   stk/states_screens/credits.cpp \
-   stk/states_screens/challenges.cpp \
-   stk/states_screens/tutorial_screen.cpp \
-   stk/states_screens/help_screen_3.cpp \
-   stk/states_screens/race_result_gui.cpp \
-   stk/states_screens/options_screen_players.cpp \
-   stk/states_screens/options_screen_audio.cpp \
-   stk/states_screens/state_manager.cpp \
-   stk/states_screens/help_screen_1.cpp \
-   stk/states_screens/race_gui.cpp \
-   stk/states_screens/options_screen_input2.cpp \
-   stk/states_screens/kart_selection.cpp \
-   stk/states_screens/options_screen_input.cpp \
-   stk/states_screens/main_menu_screen.cpp \
-   stk/states_screens/options_screen_ui.cpp \
-   stk/states_screens/feature_unlocked.cpp \
-   stk/states_screens/grand_prix_win.cpp \
-   stk/states_screens/dialogs/track_info_dialog.cpp \
-   stk/states_screens/dialogs/race_over_dialog.cpp \
-   stk/states_screens/dialogs/player_info_dialog.cpp \
-   stk/states_screens/dialogs/addons_loading.cpp \
-   stk/states_screens/dialogs/confirm_resolution_dialog.cpp \
-   stk/states_screens/dialogs/press_a_key_dialog.cpp \
-   stk/states_screens/dialogs/message_dialog.cpp \
-   stk/states_screens/dialogs/add_device_dialog.cpp \
-   stk/states_screens/dialogs/race_paused_dialog.cpp \
-   stk/states_screens/dialogs/enter_player_name_dialog.cpp \
-   stk/states_screens/dialogs/gp_info_dialog.cpp \
-   stk/states_screens/arenas_screen.cpp \
-   stk/states_screens/addons_screen.cpp \
-   stk/states_screens/options_screen_video.cpp \
-   stk/states_screens/race_gui_base.cpp \
-   stk/states_screens/race_setup_screen.cpp \
-   stk/states_screens/minimal_race_gui.cpp \
-   stk/states_screens/tracks_screen.cpp \
-   stk/states_screens/grand_prix_lose.cpp \
-   stk/network/message.cpp \
-   stk/network/network_kart.cpp \
-   stk/network/kart_control_message.cpp \
-   stk/network/race_state.cpp \
-   stk/network/kart_update_message.cpp \
-   stk/network/race_info_message.cpp \
-   stk/network/race_result_message.cpp \
-   stk/network/network_manager.cpp \
-   stk/network/connect_message.cpp \
-   stk/utils/vec3.cpp \
-   stk/utils/translation.cpp \
-   stk/utils/profiler.cpp \
-   stk/utils/leak_check.cpp \
-   stk/utils/string_utils.cpp \
-   stk/utils/constants.cpp \
-   stk/utils/random_generator.cpp \
-   stk/addons/news_manager.cpp \
-   stk/addons/network_http.cpp \
-   stk/addons/addon.cpp \
-   stk/addons/zip.cpp \
-   stk/addons/request.cpp \
-   stk/addons/addons_manager.cpp \
-   stk/animations/billboard_animation.cpp \
-   stk/animations/animation_base.cpp \
-   stk/animations/ipo.cpp \
-   stk/animations/three_d_animation.cpp \
-   stk/input/input_manager.cpp \
-   stk/input/device_manager.cpp \
-   stk/input/binding.cpp \
-   stk/input/input_device.cpp \
-   stk/modes/standard_race.cpp \
-   stk/modes/three_strikes_battle.cpp \
-   stk/modes/world_status.cpp \
-   stk/modes/world_with_rank.cpp \
-   stk/modes/profile_world.cpp \
-   stk/modes/world.cpp \
-   stk/modes/tutorial_race.cpp \
-   stk/modes/follow_the_leader.cpp \
-   stk/modes/linear_world.cpp \
-   stk/modes/game_tutorial.cpp \
-   stk/config/stk_config.cpp \
-   stk/config/user_config.cpp \
-   stk/config/device_config.cpp \
-   stk/karts/emergency_animation.cpp \
-   stk/karts/moveable.cpp \
-   stk/karts/kart_with_stats.cpp \
-   stk/karts/kart.cpp \
-   stk/karts/kart_properties_manager.cpp \
-   stk/karts/max_speed.cpp \
-   stk/karts/kart_model.cpp \
-   stk/karts/controller/controller.cpp \
-   stk/karts/controller/new_ai_controller.cpp \
-   stk/karts/controller/player_controller.cpp \
-   stk/karts/controller/ai_base_controller.cpp \
-   stk/karts/controller/default_ai_controller.cpp \
-   stk/karts/controller/end_controller.cpp \
-   stk/karts/kart_properties.cpp \
-   stk/io/xml_node.cpp \
-   stk/io/file_manager.cpp \
-   stk/io/xml_writer.cpp \
-   stk/bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.cpp \
+# ENET
+LOCAL_SRC_FILES := stk/enet/peer.c stk/enet/compress.c stk/enet/host.c stk/enet/callbacks.c stk/enet/packet.c stk/enet/win32.c stk/enet/protocol.c stk/enet/list.c stk/enet/unix.c 
+LOCAL_MODULE    := enet
+LOCAL_LDLIBS    := -llog -landroid
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+include $(BUILD_SHARED_LIBRARY)
+
+
+include $(CLEAR_VARS)
+
+# bullet
+LOCAL_SRC_FILES := stk/bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.cpp \
    stk/bullet/src/BulletCollision/CollisionDispatch/btInternalEdgeUtility.cpp \
    stk/bullet/src/BulletCollision/CollisionDispatch/SphereTriangleDetector.cpp \
    stk/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorld.cpp \
@@ -589,7 +445,172 @@ STK = stk/challenges/unlock_manager.cpp \
    stk/bullet/src/LinearMath/btQuickprof.cpp \
    stk/bullet/src/LinearMath/btGeometryUtil.cpp \
    stk/bullet/src/LinearMath/btConvexHullComputer.cpp \
-   stk/bullet/src/LinearMath/btAlignedAllocator.cpp \
+   stk/bullet/src/LinearMath/btAlignedAllocator.cpp
+LOCAL_MODULE    := bullet
+LOCAL_LDLIBS    := -llog -landroid
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
+include $(BUILD_STATIC_LIBRARY)
+
+
+include $(CLEAR_VARS)
+
+
+STK = stk/challenges/unlock_manager.cpp \
+   stk/challenges/challenge_data.cpp \
+   stk/challenges/challenge.cpp \
+   stk/tracks/check_manager.cpp \
+   stk/tracks/track.cpp \
+   stk/tracks/check_line.cpp \
+   stk/tracks/track_manager.cpp \
+   stk/tracks/track_sector.cpp \
+   stk/tracks/quad_graph.cpp \
+   stk/tracks/track_object.cpp \
+   stk/tracks/graph_node.cpp \
+   stk/tracks/check_structure.cpp \
+   stk/tracks/track_object_manager.cpp \
+   stk/tracks/terrain_info.cpp \
+   stk/tracks/ambient_light_sphere.cpp \
+   stk/tracks/quad.cpp \
+   stk/tracks/check_lap.cpp \
+   stk/tracks/bezier_curve.cpp \
+   stk/tracks/check_sphere.cpp \
+   stk/tracks/quad_set.cpp \
+   stk/audio/sfx_manager.cpp \
+   stk/audio/music_ogg.cpp \
+   stk/audio/sfx_openal.cpp \
+   stk/audio/music_manager.cpp \
+   stk/audio/music_information.cpp \
+   stk/audio/sfx_buffer.cpp \
+   stk/items/bowling.cpp \
+   stk/items/item.cpp \
+   stk/items/powerup_manager.cpp \
+   stk/items/swatter.cpp \
+   stk/items/attachment_manager.cpp \
+   stk/items/flyable.cpp \
+   stk/items/item_manager.cpp \
+   stk/items/powerup.cpp \
+   stk/items/plunger.cpp \
+   stk/items/rubber_ball.cpp \
+   stk/items/rubber_band.cpp \
+   stk/items/attachment.cpp \
+   stk/items/projectile_manager.cpp \
+   stk/items/cake.cpp \
+   stk/race/history.cpp \
+   stk/race/grand_prix_manager.cpp \
+   stk/race/race_manager.cpp \
+   stk/race/highscore_manager.cpp \
+   stk/race/highscores.cpp \
+   stk/race/grand_prix_data.cpp \
+   stk/main_loop.cpp \
+   stk/physics/irr_debug_drawer.cpp \
+   stk/physics/btUprightConstraint.cpp \
+   stk/physics/physics.cpp \
+   stk/physics/btKart.cpp \
+   stk/physics/physical_object.cpp \
+   stk/physics/triangle_mesh.cpp \
+   stk/physics/btKartRaycast.cpp \
+   stk/tutorial/tutorial_data.cpp \
+   stk/tutorial/tutorial_manager.cpp \
+   stk/tutorial/tutorial.cpp \
+   stk/main.cpp \
+   stk/states_screens/help_screen_4.cpp \
+   stk/states_screens/help_screen_2.cpp \
+   stk/states_screens/credits.cpp \
+   stk/states_screens/challenges.cpp \
+   stk/states_screens/tutorial_screen.cpp \
+   stk/states_screens/help_screen_3.cpp \
+   stk/states_screens/race_result_gui.cpp \
+   stk/states_screens/options_screen_players.cpp \
+   stk/states_screens/options_screen_audio.cpp \
+   stk/states_screens/state_manager.cpp \
+   stk/states_screens/help_screen_1.cpp \
+   stk/states_screens/race_gui.cpp \
+   stk/states_screens/options_screen_input2.cpp \
+   stk/states_screens/kart_selection.cpp \
+   stk/states_screens/options_screen_input.cpp \
+   stk/states_screens/main_menu_screen.cpp \
+   stk/states_screens/options_screen_ui.cpp \
+   stk/states_screens/feature_unlocked.cpp \
+   stk/states_screens/grand_prix_win.cpp \
+   stk/states_screens/dialogs/track_info_dialog.cpp \
+   stk/states_screens/dialogs/race_over_dialog.cpp \
+   stk/states_screens/dialogs/player_info_dialog.cpp \
+   stk/states_screens/dialogs/addons_loading.cpp \
+   stk/states_screens/dialogs/confirm_resolution_dialog.cpp \
+   stk/states_screens/dialogs/press_a_key_dialog.cpp \
+   stk/states_screens/dialogs/message_dialog.cpp \
+   stk/states_screens/dialogs/add_device_dialog.cpp \
+   stk/states_screens/dialogs/race_paused_dialog.cpp \
+   stk/states_screens/dialogs/enter_player_name_dialog.cpp \
+   stk/states_screens/dialogs/gp_info_dialog.cpp \
+   stk/states_screens/arenas_screen.cpp \
+   stk/states_screens/addons_screen.cpp \
+   stk/states_screens/options_screen_video.cpp \
+   stk/states_screens/race_gui_base.cpp \
+   stk/states_screens/race_setup_screen.cpp \
+   stk/states_screens/minimal_race_gui.cpp \
+   stk/states_screens/tracks_screen.cpp \
+   stk/states_screens/grand_prix_lose.cpp \
+   stk/network/message.cpp \
+   stk/network/network_kart.cpp \
+   stk/network/kart_control_message.cpp \
+   stk/network/race_state.cpp \
+   stk/network/kart_update_message.cpp \
+   stk/network/race_info_message.cpp \
+   stk/network/race_result_message.cpp \
+   stk/network/network_manager.cpp \
+   stk/network/connect_message.cpp \
+   stk/utils/vec3.cpp \
+   stk/utils/translation.cpp \
+   stk/utils/profiler.cpp \
+   stk/utils/leak_check.cpp \
+   stk/utils/string_utils.cpp \
+   stk/utils/constants.cpp \
+   stk/utils/random_generator.cpp \
+   stk/addons/news_manager.cpp \
+   stk/addons/network_http.cpp \
+   stk/addons/addon.cpp \
+   stk/addons/zip.cpp \
+   stk/addons/request.cpp \
+   stk/addons/addons_manager.cpp \
+   stk/animations/billboard_animation.cpp \
+   stk/animations/animation_base.cpp \
+   stk/animations/ipo.cpp \
+   stk/animations/three_d_animation.cpp \
+   stk/input/input_manager.cpp \
+   stk/input/device_manager.cpp \
+   stk/input/binding.cpp \
+   stk/input/input_device.cpp \
+   stk/modes/standard_race.cpp \
+   stk/modes/three_strikes_battle.cpp \
+   stk/modes/world_status.cpp \
+   stk/modes/world_with_rank.cpp \
+   stk/modes/profile_world.cpp \
+   stk/modes/world.cpp \
+   stk/modes/tutorial_race.cpp \
+   stk/modes/follow_the_leader.cpp \
+   stk/modes/linear_world.cpp \
+   stk/modes/game_tutorial.cpp \
+   stk/config/stk_config.cpp \
+   stk/config/user_config.cpp \
+   stk/config/device_config.cpp \
+   stk/karts/emergency_animation.cpp \
+   stk/karts/moveable.cpp \
+   stk/karts/kart_with_stats.cpp \
+   stk/karts/kart.cpp \
+   stk/karts/kart_properties_manager.cpp \
+   stk/karts/max_speed.cpp \
+   stk/karts/kart_model.cpp \
+   stk/karts/controller/controller.cpp \
+   stk/karts/controller/new_ai_controller.cpp \
+   stk/karts/controller/player_controller.cpp \
+   stk/karts/controller/ai_base_controller.cpp \
+   stk/karts/controller/default_ai_controller.cpp \
+   stk/karts/controller/end_controller.cpp \
+   stk/karts/kart_properties.cpp \
+   stk/io/xml_node.cpp \
+   stk/io/file_manager.cpp \
+   stk/io/xml_writer.cpp \
    stk/guiengine/modaldialog.cpp \
    stk/guiengine/widget.cpp \
    stk/guiengine/screen.cpp \
@@ -651,21 +672,35 @@ STK = stk/challenges/unlock_manager.cpp \
    stk/tinygettext/iconv.cpp \
    stk/tinygettext/dictionary_manager.cpp \
 
-#LOCAL_SRC_FILES = $(STK)
-#LOCAL_MODULE    := native-activity
-#LOCAL_LDLIBS := -llog -landroid -lEGL -GLESv1_CM -lGLESv2 -lirrlicht
-#LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-#LOCAL_STATIC_LIBRARIES := android_native_app_glue #libirrlicht jpeg png
-#include $(BUILD_SHARED_LIBRARY)
+LOCAL_MODULE    := stk
+LOCAL_SRC_FILES := $(STK)
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
+LOCAL_STATIC_LIBRARIES := bullet
+LOCAL_SHARED_LIBRARIES := irrlicht enet
 
-LOCAL_MODULE    := irrlicht
-LOCAL_SRC_FILES := main.c main2.cpp $(irrlicht) $(png) $(jpeg) $(STK)
+include $(BUILD_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE    := stkmain
+LOCAL_SRC_FILES := main2.cpp
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
+LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
+LOCAL_STATIC_LIBRARIES := stk
+LOCAL_SHARED_LIBRARIES := irrlicht enet
+
+include $(BUILD_SHARED_LIBRARY)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := irrlicht2
+LOCAL_SRC_FILES := main.c
 LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
 LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
 LOCAL_STATIC_LIBRARIES := android_native_app_glue #jpeg #libirrlicht jpeg png
 #LOCAL_SHARED_LIBRARIES := jpeg
 
 include $(BUILD_SHARED_LIBRARY)
+
 
 
 $(call import-module,android/native_app_glue)

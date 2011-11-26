@@ -18,7 +18,7 @@
 //BEGIN_INCLUDE(all)
 #include <jni.h>
 #include <errno.h>
-
+#include <dlfcn.h>
 #include <EGL/egl.h>
 #include <GLES/gl.h>
 #include <main.h>
@@ -30,6 +30,13 @@
 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", __VA_ARGS__))
 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", __VA_ARGS__))
 
+
+
+void (*plug_set_window)(NativeWindowType);
+
+void (*plug_main_loop_interation)(void);
+void (*plug_android_main_2)(void);
+
 /**
  * Our saved state data.
  */
@@ -40,7 +47,6 @@ struct saved_state {
 };
 
 int android_height, android_width;
-NativeWindowType android_window;
 /**
  * Shared state for our app.
  */
@@ -194,8 +200,8 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
         case APP_CMD_INIT_WINDOW:
             // The window is being shown, get it ready.
             if (engine->app->window != NULL) {
-                android_window = engine->app->window;
-                android_main_2 ();
+                plug_set_window(engine->app->window);
+                plug_android_main_2 ();
             }
             engine->animating = 1;
             break;
@@ -236,6 +242,29 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
 void android_main(struct android_app* state) {
     struct engine engine;
 
+    void * dlhandle = NULL;
+    void * dlstk = NULL;
+    /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libjpeg.so", RTLD_NOW);*/
+    dlhandle = dlopen("/data/data/com.example.native_activity/lib/libirrlicht.so", RTLD_NOW);
+    /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libenet.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/com.example.native_activity/lib/libbullet.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/com.example.native_activity/lib/libstk.so", RTLD_NOW);*/
+    dlstk = dlopen("/data/data/com.example.native_activity/lib/libenet.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/com.example.native_activity/lib/libstkmain.so", RTLD_NOW);
+    if(dlhandle == NULL)
+        LOGW("Can't open libirrlicht.so. %s", dlerror());
+    if(dlstk == NULL)
+        LOGW("Can't open libstkmain.so. %s", dlerror());
+    plug_main_loop_interation = (void(*)(void))dlsym(dlstk, "main_loop_interation");
+    if(plug_main_loop_interation == NULL)
+        LOGW("Can't open plug_main_loop");
+    plug_android_main_2 = (void(*)(void))dlsym(dlstk, "android_main_2");
+    if(plug_android_main_2 == NULL)
+        LOGW("Can't open plug_android_main_2");
+    plug_set_window = (void(*)(void))dlsym(dlhandle, "set_android_window");
+    if(plug_set_window == NULL)
+        LOGW("Can't open plug_set_window");
+    
     // Make sure glue isn't stripped.
     app_dummy();
 
@@ -294,7 +323,7 @@ void android_main(struct android_app* state) {
                 return;
             }
         }
-            main_loop_interation();
+            plug_main_loop_interation();
 
         if (engine.animating) {
             // Done with events; draw next animation frame.

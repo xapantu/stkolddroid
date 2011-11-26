@@ -25,7 +25,12 @@
 #define T __android_log_print(ANDROID_LOG_DEBUG, "L", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 #define alog(obj) __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", obj)  
 
-extern NativeWindowType android_window;
+NativeWindowType android_window;
+
+extern "C" void set_android_window(NativeWindowType window)
+{
+    android_window = window;
+}
 
 namespace irr
 {
