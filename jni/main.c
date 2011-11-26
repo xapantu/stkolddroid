@@ -33,9 +33,12 @@
 
 
 void (*plug_set_window)(NativeWindowType);
+void (*plug_set_width)(int);
+void (*plug_set_height)(int);
 
 void (*plug_main_loop_interation)(void);
 void (*plug_android_main_2)(void);
+void (*plug_go_straight)(void);
 
 /**
  * Our saved state data.
@@ -180,6 +183,9 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) 
         engine->animating = 1;
         engine->state.x = AMotionEvent_getX(event, 0);
         engine->state.y = AMotionEvent_getY(event, 0);
+        LOGI("%f", AMotionEvent_getX(event, 0));
+        plug_go_straight();
+
         return 1;
     }
     return 0;
@@ -200,6 +206,8 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
         case APP_CMD_INIT_WINDOW:
             // The window is being shown, get it ready.
             if (engine->app->window != NULL) {
+                plug_set_width(ANativeWindow_getWidth(engine->app->window));
+                plug_set_height(ANativeWindow_getWidth(engine->app->window));
                 plug_set_window(engine->app->window);
                 plug_android_main_2 ();
             }
@@ -241,7 +249,6 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
  */
 void android_main(struct android_app* state) {
     struct engine engine;
-
     void * dlhandle = NULL;
     void * dlstk = NULL;
     /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libjpeg.so", RTLD_NOW);*/
@@ -264,7 +271,9 @@ void android_main(struct android_app* state) {
     plug_set_window = (void(*)(void))dlsym(dlhandle, "set_android_window");
     if(plug_set_window == NULL)
         LOGW("Can't open plug_set_window");
-    
+    plug_set_width = (void(*)(void))dlsym(dlhandle, "set_android_window_width");
+    plug_set_height = (void(*)(void))dlsym(dlhandle, "set_android_window_height");
+    plug_go_straight = (void(*)(void))dlsym(dlstk, "go_straight");
     // Make sure glue isn't stripped.
     app_dummy();
 
@@ -287,7 +296,9 @@ void android_main(struct android_app* state) {
 
     // loop waiting for stuff to do.
 
+    int i = 0;
     while (1) {
+        i++;
         // Read all pending events.
         int ident;
         int events;
@@ -323,7 +334,8 @@ void android_main(struct android_app* state) {
                 return;
             }
         }
-            plug_main_loop_interation();
+       // LOGI("frame");
+           plug_main_loop_interation();
 
         if (engine.animating) {
             // Done with events; draw next animation frame.
@@ -335,6 +347,8 @@ void android_main(struct android_app* state) {
             // Drawing is throttled to the screen update rate, so there
             // is no need to do timing here.
         }
+        if(i > 60000)
+            exit(0);
     }
 }
 //END_INCLUDE(all)

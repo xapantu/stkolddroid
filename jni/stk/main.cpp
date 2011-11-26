@@ -1391,3 +1391,10 @@ int main2(int argc, char *argv[] )
     return 0 ;
 }
 
+extern "C" void go_straight () {
+    irr::SEvent irrevent;
+    irrevent.KeyInput.Key = irr::KEY_UP;
+    irrevent.EventType = irr::EET_KEY_INPUT_EVENT;
+    irrevent.KeyInput.PressedDown = true;
+    irr_driver->getDevice()->postEventFromUser(irrevent);
+}

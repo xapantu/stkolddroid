@@ -26,10 +26,19 @@
 #define alog(obj) __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", obj)  
 
 NativeWindowType android_window;
-
+int android_window_width;
+int android_window_height;
 extern "C" void set_android_window(NativeWindowType window)
 {
     android_window = window;
+}
+extern "C" void set_android_window_width(int value)
+{
+    android_window_width = value;
+}
+extern "C" void set_android_window_height(int value)
+{
+    android_window_height = value;
 }
 
 namespace irr
@@ -107,47 +116,34 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
     T    
 	EGLConfig config;
 	EGLint num_configs;
-	T
     if (!eglChooseConfig(EglDisplay, attribs, &config, 1, &num_configs))
 	{
-        T
 		os::Printer::log("Could not get config for OpenGL-ES1 display.");
 	}
 
-    T
 	EglSurface = eglCreateWindowSurface(EglDisplay, config, EglWindow, NULL);
-	T
     if (EGL_NO_SURFACE==EglSurface)
 		EglSurface = eglCreateWindowSurface(EglDisplay, config, NULL, NULL);
 	if (EGL_NO_SURFACE==EglSurface)
 	{
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 		testEGLError();
 		os::Printer::log("Could not create surface for OpenGL-ES1 display.");
 	}
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
-
 #ifdef EGL_VERSION_1_2
 	eglBindAPI(EGL_OPENGL_ES_API);
 #endif
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	EglContext = eglCreateContext(EglDisplay, config, EGL_NO_CONTEXT, NULL);
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	if (testEGLError())
 	{
         T
 		os::Printer::log("Could not create Context for OpenGL-ES1 display.");
 	}
 
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	eglMakeCurrent(EglDisplay, EglSurface, EglSurface, EglContext);
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 	if (testEGLError())
 	{
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 		os::Printer::log("Could not make Context current for OpenGL-ES1 display.");
 	}
-    __android_log_print(ANDROID_LOG_DEBUG, "IrrlichtSample", "%s, %d: %s", __FILE__, __LINE__, __FUNCTION__);  
 
 	genericDriverInit(params.WindowSize, params.Stencilbuffer);
 

@@ -61,6 +61,12 @@ IrrDriver *irr_driver = NULL;
 const int MIN_SUPPORTED_HEIGHT = 600;
 const int MIN_SUPPORTED_WIDTH  = 800;
 
+#ifdef ANDROID
+/* These hacks are in COGLESDriver */
+extern int android_window_width;
+extern int android_window_height;
+#endif
+
 // ----------------------------------------------------------------------------
 /** The constructor creates the irrlicht device. It first creates a NULL 
  *  device. This is necessary to handle the Chicken/egg problem with irrlicht: 
@@ -216,11 +222,13 @@ void IrrDriver::initDevice()
         // size is the problem
         if(!m_device)
         {
-            T__
+#ifdef ANDROID
+            UserConfigParams::m_width  = 800; //android_window_width;
+            UserConfigParams::m_height = 480; //android_window_height;
+#else
             UserConfigParams::m_width  = 800;
             UserConfigParams::m_height = 600;
-        
-            T__
+#endif   
             m_device = createDevice(video::EDT_OGLES1,
                         core::dimension2du(UserConfigParams::m_width,
                                            UserConfigParams::m_height ),
@@ -230,6 +238,10 @@ void IrrDriver::initDevice()
                                     false,  // vsync
                                     this    // event receiver
                                     );
+#ifdef ANDROID
+            LOGI("%d", android_window_width);
+            LOGI("%d", android_window_height);
+#endif
             T__
             if (m_device)
             {
