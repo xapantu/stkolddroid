@@ -188,11 +188,11 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) 
 
         if(x < 100) /* left */
         {
-            plug_go_move(3, end);
+            plug_go_move(2, end);
         }
         else if(x > 700) /* right */
         {
-            plug_go_move(2, end);
+            plug_go_move(3, end);
         }
         else if(y < 240) /* up */
         {
@@ -276,12 +276,12 @@ void android_main(struct android_app* state) {
     void * dlhandle = NULL;
     void * dlstk = NULL;
     /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libjpeg.so", RTLD_NOW);*/
-    dlhandle = dlopen("/data/data/com.example.native_activity/lib/libirrlicht.so", RTLD_NOW);
+    dlhandle = dlopen("/data/data/org.supertuxkart.stk/lib/libirrlicht.so", RTLD_NOW);
     /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libenet.so", RTLD_NOW);
     dlstk = dlopen("/data/data/com.example.native_activity/lib/libbullet.so", RTLD_NOW);
     dlstk = dlopen("/data/data/com.example.native_activity/lib/libstk.so", RTLD_NOW);*/
-    dlstk = dlopen("/data/data/com.example.native_activity/lib/libenet.so", RTLD_NOW);
-    dlstk = dlopen("/data/data/com.example.native_activity/lib/libstkmain.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/org.supertuxkart.stk/lib/libenet.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/org.supertuxkart.stk/lib/libstkmain.so", RTLD_NOW);
     if(dlhandle == NULL)
         LOGW("Can't open libirrlicht.so. %s", dlerror());
     if(dlstk == NULL)
