@@ -4,7 +4,7 @@ all: build apk
 
 # target: build - Build the native code
 build:
-	${NDK_PATH}/ndk-build -j3
+	NDK_CCACHE=ccache ${NDK_PATH}/ndk-build -j3
 
 # target: apk - Make a debug APK
 apk:
