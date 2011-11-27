@@ -1391,10 +1391,29 @@ int main2(int argc, char *argv[] )
     return 0 ;
 }
 
-extern "C" void go_straight () {
+extern "C" void go_move(int sens, int end) {
     irr::SEvent irrevent;
-    irrevent.KeyInput.Key = irr::KEY_UP;
+    switch(sens)
+    {
+    case 0:
+        LOGI("UP");
+        irrevent.KeyInput.Key = irr::KEY_UP;
+        break;
+    case 1:
+        LOGI("DOWN");
+        irrevent.KeyInput.Key = irr::KEY_DOWN;
+        break;
+    case 2:
+        LOGI("LEFT");
+        irrevent.KeyInput.Key = irr::KEY_LEFT;
+        break;
+    case 3:
+        LOGI("RIGHT");
+        irrevent.KeyInput.Key = irr::KEY_RIGHT;
+        break;
+    }
+    LOGI("DOWN: %d\n", end);
     irrevent.EventType = irr::EET_KEY_INPUT_EVENT;
-    irrevent.KeyInput.PressedDown = true;
+    irrevent.KeyInput.PressedDown = end;
     irr_driver->getDevice()->postEventFromUser(irrevent);
 }

@@ -38,7 +38,7 @@ void (*plug_set_height)(int);
 
 void (*plug_main_loop_interation)(void);
 void (*plug_android_main_2)(void);
-void (*plug_go_straight)(void);
+void (*plug_go_move)(int, int);
 
 /**
  * Our saved state data.
@@ -69,6 +69,7 @@ struct engine {
     struct saved_state state;
 };
 
+#if 0
 /**
  * Initialize an EGL context for the current display.
  */
@@ -136,6 +137,7 @@ static int engine_init_display(struct engine* engine) {
 
     return 0;
 }
+#endif
 
 /**
  * Just the current frame in the display.
@@ -180,11 +182,33 @@ static void engine_term_display(struct engine* engine) {
 static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) {
     struct engine* engine = (struct engine*)app->userData;
     if (AInputEvent_getType(event) == AINPUT_EVENT_TYPE_MOTION) {
+        int x = AMotionEvent_getX(event, 0);
+        int y = AMotionEvent_getY(event, 0);
+        int end = !(AKeyEvent_getAction(event) == AMOTION_EVENT_ACTION_UP);
+
+        if(x < 100) /* left */
+        {
+            plug_go_move(3, end);
+        }
+        else if(x > 700) /* right */
+        {
+            plug_go_move(2, end);
+        }
+        else if(y < 240) /* up */
+        {
+            plug_go_move(0, end);
+        }
+        else /* down */
+        {
+            plug_go_move(1, end);
+        }
+
+        LOGI("%d\n", AKeyEvent_getAction(event));
+        LOGI("up event: %d\n", AKeyEvent_getAction(event) == AMOTION_EVENT_ACTION_UP),
         engine->animating = 1;
         engine->state.x = AMotionEvent_getX(event, 0);
         engine->state.y = AMotionEvent_getY(event, 0);
         LOGI("%f", AMotionEvent_getX(event, 0));
-        plug_go_straight();
 
         return 1;
     }
@@ -273,7 +297,7 @@ void android_main(struct android_app* state) {
         LOGW("Can't open plug_set_window");
     plug_set_width = (void(*)(void))dlsym(dlhandle, "set_android_window_width");
     plug_set_height = (void(*)(void))dlsym(dlhandle, "set_android_window_height");
-    plug_go_straight = (void(*)(void))dlsym(dlstk, "go_straight");
+    plug_go_move = (void(*)(int,int))dlsym(dlstk, "go_move");
     // Make sure glue isn't stripped.
     app_dummy();
 
