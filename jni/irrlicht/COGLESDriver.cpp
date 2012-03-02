@@ -145,7 +145,18 @@ COGLES1Driver::COGLES1Driver(const SIrrlichtCreationParameters& params,
 		os::Printer::log("Could not make Context current for OpenGL-ES1 display.");
 	}
 
-	genericDriverInit(params.WindowSize, params.Stencilbuffer);
+    // Let's compute the width/height available. Sorry, nothing is configurable ;)
+    int w, h;
+    eglQuerySurface(EglDisplay, EglSurface, EGL_WIDTH, &w);
+    eglQuerySurface(EglDisplay, EglSurface, EGL_HEIGHT, &h);
+    LOGI("h: %d, w: %d", w, h);
+    android_window_width = w;
+    android_window_height = h;
+
+    irr::core::dimension2d<unsigned int> size = params.WindowSize;
+    size.Width = w;
+    size.Height = h;
+	genericDriverInit(size, params.Stencilbuffer);
 
 	// set vsync
 	if (params.Vsync)

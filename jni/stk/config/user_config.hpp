@@ -359,7 +359,7 @@ namespace UserConfigParams
 
 
     PARAM_PREFIX BoolUserConfigParam        m_display_fps
-            PARAM_DEFAULT(  BoolUserConfigParam(false, "show_fps", 
+            PARAM_DEFAULT(  BoolUserConfigParam(true, "show_fps", 
                             &m_video_group, "Display frame per seconds") );
     PARAM_PREFIX IntUserConfigParam         m_max_fps
             PARAM_DEFAULT(  IntUserConfigParam(120, "max_fps", 
@@ -485,7 +485,7 @@ namespace UserConfigParams
     
     // ---- Misc
     PARAM_PREFIX BoolUserConfigParam        m_minimal_race_gui
-            PARAM_DEFAULT(  BoolUserConfigParam(false, "minimal-race-gui") );
+            PARAM_DEFAULT(  BoolUserConfigParam(true, "minimal-race-gui") );
     // TODO : is this used with new code? does it still work?
     PARAM_PREFIX BoolUserConfigParam        m_crashed
             PARAM_DEFAULT(  BoolUserConfigParam(false, "crashed") ); 

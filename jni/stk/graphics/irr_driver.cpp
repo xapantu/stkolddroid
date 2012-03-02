@@ -223,7 +223,8 @@ void IrrDriver::initDevice()
         if(!m_device)
         {
 #ifdef ANDROID
-            UserConfigParams::m_width  = 800; //android_window_width;
+            LOGI("%d\n", android_window_width);
+            UserConfigParams::m_width  = android_window_width;
             UserConfigParams::m_height = 480; //android_window_height;
 #else
             UserConfigParams::m_width  = 800;
@@ -239,8 +240,10 @@ void IrrDriver::initDevice()
                                     this    // event receiver
                                     );
 #ifdef ANDROID
-            LOGI("%d", android_window_width);
+            LOGI("final width: %d", android_window_width);
             LOGI("%d", android_window_height);
+            UserConfigParams::m_width  = android_window_width;
+            UserConfigParams::m_height  = android_window_height;
 #endif
             T__
             if (m_device)

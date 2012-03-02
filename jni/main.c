@@ -230,8 +230,9 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
         case APP_CMD_INIT_WINDOW:
             // The window is being shown, get it ready.
             if (engine->app->window != NULL) {
-                plug_set_width(ANativeWindow_getWidth(engine->app->window));
-                plug_set_height(ANativeWindow_getWidth(engine->app->window));
+                /*LOGI("native: %d", engine->app->contentRect.left);*/
+                plug_set_width(800);
+                plug_set_height(600);
                 plug_set_window(engine->app->window);
                 plug_android_main_2 ();
             }
@@ -262,6 +263,10 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
             engine->animating = 0;
             engine_draw_frame(engine);
             break;
+        case APP_CMD_CONTENT_RECT_CHANGED:
+            LOGI("RESIZED");
+            LOGI("%d\n", ANativeWindow_getWidth(engine->app->window));
+            break;
     }
 }
 
@@ -276,11 +281,13 @@ void android_main(struct android_app* state) {
     void * dlhandle = NULL;
     void * dlstk = NULL;
     /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libjpeg.so", RTLD_NOW);*/
+    dlhandle = dlopen("/data/data/org.supertuxkart.stk/lib/libgnustl_shared.so", RTLD_NOW);
     dlhandle = dlopen("/data/data/org.supertuxkart.stk/lib/libirrlicht.so", RTLD_NOW);
     /*dlstk = dlopen("/data/data/com.example.native_activity/lib/libenet.so", RTLD_NOW);
     dlstk = dlopen("/data/data/com.example.native_activity/lib/libbullet.so", RTLD_NOW);
     dlstk = dlopen("/data/data/com.example.native_activity/lib/libstk.so", RTLD_NOW);*/
     dlstk = dlopen("/data/data/org.supertuxkart.stk/lib/libenet.so", RTLD_NOW);
+    dlstk = dlopen("/data/data/org.supertuxkart.stk/lib/libbullet.so", RTLD_NOW);
     dlstk = dlopen("/data/data/org.supertuxkart.stk/lib/libstkmain.so", RTLD_NOW);
     if(dlhandle == NULL)
         LOGW("Can't open libirrlicht.so. %s", dlerror());

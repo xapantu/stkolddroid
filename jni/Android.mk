@@ -449,7 +449,7 @@ LOCAL_SRC_FILES := stk/bullet/src/BulletCollision/CollisionDispatch/btSphereTria
 LOCAL_MODULE    := bullet
 LOCAL_LDLIBS    := -llog -landroid
 LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_SOUND -DNO_ADDONS -DHAS_SOCKLEN_T
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 
 include $(CLEAR_VARS)
@@ -672,22 +672,11 @@ STK = stk/challenges/unlock_manager.cpp \
    stk/tinygettext/iconv.cpp \
    stk/tinygettext/dictionary_manager.cpp \
 
-LOCAL_MODULE    := stk
-LOCAL_SRC_FILES := $(STK)
-LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
-LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
-LOCAL_STATIC_LIBRARIES := bullet
-LOCAL_SHARED_LIBRARIES := irrlicht enet
-
-include $(BUILD_STATIC_LIBRARY)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE    := stkmain
-LOCAL_SRC_FILES := main2.cpp
+LOCAL_SRC_FILES := main2.cpp $(STK)
 LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv1_CM -lGLESv2
 LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ -I./jni/stk/ -Ijni/stk/bullet/src/ -Ijni/stk/enet/include/ -DNO_CURL -DHAS_SOCKLEN_T -DSUPERTUXKART_DATADIR=\"/sdcard/stk/\"
-LOCAL_STATIC_LIBRARIES := stk
-LOCAL_SHARED_LIBRARIES := irrlicht enet
+LOCAL_SHARED_LIBRARIES := irrlicht bullet enet
 
 include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)

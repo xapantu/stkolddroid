@@ -54,7 +54,7 @@ RaceManager::RaceManager()
     m_minor_mode         = MINOR_MODE_NORMAL_RACE;
     m_track_number       = 0;
     m_coin_target        = 0;
-    setTrack("hacienda");
+    setTrack("jungle");
     m_default_ai_list.clear();
     setNumLocalPlayers(0);
 }   // RaceManager
