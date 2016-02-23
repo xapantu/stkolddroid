@@ -186,21 +186,21 @@ static int32_t engine_handle_input(struct android_app* app, AInputEvent* event) 
         int y = AMotionEvent_getY(event, 0);
         int end = !(AKeyEvent_getAction(event) == AMOTION_EVENT_ACTION_UP);
 
-        if(x < 100) /* left */
-        {
-            plug_go_move(2, end);
-        }
-        else if(x > 700) /* right */
-        {
-            plug_go_move(3, end);
-        }
-        else if(y < 240) /* up */
+        if(y < 300) /* up */
         {
             plug_go_move(0, end);
         }
-        else /* down */
+        else if(y > 800) /* bottom */
         {
             plug_go_move(1, end);
+        }
+        else if(x < 300) /* left */
+        {
+            plug_go_move(2, end);
+        }
+        else /* down */
+        {
+            plug_go_move(3, end);
         }
 
         LOGI("%d\n", AKeyEvent_getAction(event));

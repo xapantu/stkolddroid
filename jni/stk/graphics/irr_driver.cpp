@@ -225,7 +225,7 @@ void IrrDriver::initDevice()
 #ifdef ANDROID
             LOGI("%d\n", android_window_width);
             UserConfigParams::m_width  = android_window_width;
-            UserConfigParams::m_height = 480; //android_window_height;
+            UserConfigParams::m_height = android_window_height;
 #else
             UserConfigParams::m_width  = 800;
             UserConfigParams::m_height = 600;
