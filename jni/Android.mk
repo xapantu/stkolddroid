@@ -23,6 +23,7 @@ LOCAL_PATH := $(call my-dir)
 
 
 include $(CLEAR_VARS)
+LOCAL_CPP_FEATURES += rtti
 # PNG (also includez zlib and bzip)
 #
 
@@ -63,6 +64,7 @@ LOCAL_CFLAGS := -I./irrlicht/ -I./../include/ -I./include/ -I./irrlicht/libpng/ 
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_CPP_FEATURES += rtti
 
 
 LOCAL_SRC_FILES = irrlicht/CIrrDeviceAndroid.cpp \
@@ -315,6 +317,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 
 include $(CLEAR_VARS)
+LOCAL_CPP_FEATURES += rtti
 
 
 # ENET
@@ -326,6 +329,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 
 include $(CLEAR_VARS)
+LOCAL_CPP_FEATURES += rtti
 
 # bullet
 LOCAL_SRC_FILES := stk/bullet/src/BulletCollision/CollisionDispatch/btSphereTriangleCollisionAlgorithm.cpp \
@@ -454,6 +458,8 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
+LOCAL_CPP_FEATURES += exceptions
+LOCAL_CPP_FEATURES += rtti
 
 STK = stk/challenges/unlock_manager.cpp \
    stk/challenges/challenge_data.cpp \

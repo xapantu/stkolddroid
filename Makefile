@@ -1,4 +1,4 @@
-NDK_PATH=/media/dev/stk/android-ndk-r7/
+NDK_PATH=android-ndk-r10e/
 # target: all - Default target. Build and create the apk.
 all: build apk
 
